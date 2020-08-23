@@ -1,0 +1,10 @@
+
+
+module top(
+	input CLK,
+	output [0..7] LEDs
+	);
+	
+	assign LEDs = 8'b5;
+	
+endmodule;
