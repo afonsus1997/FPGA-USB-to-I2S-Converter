@@ -1,0 +1,25 @@
+
+
+
+module FIFO_Manager(
+	inout [7:0] USB_IO,
+	input global_rst,
+	output RD,
+	output WR,
+	output RXF,
+	output TXE,
+	output reg PWREN,
+	output RST
+	)
+	
+	assign RST = global_rst;
+	
+	always @ (posedge global_rst) begin
+	
+		PWREN <= 0;
+	
+	end
+	
+
+	
+endmodule

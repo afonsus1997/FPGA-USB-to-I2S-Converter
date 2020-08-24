@@ -1,10 +1,16 @@
-# FPGA USB to I2S Converter
+# FPG USB to I2S Converter
 
 ### Useful information
 
 ##### FPGA info
 
 * Device reference: 10CL025YU256C8G
+* 12Mhz Clock
+  * Pin M2
+
+##### FPGA pinout
+
+![](https://cdn-ak.f.st-hatena.com/images/fotolife/p/pfpfdev/20200407/20200407192121.png)
 
 ### Useful links
 

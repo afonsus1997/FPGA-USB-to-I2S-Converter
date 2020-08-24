@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Aug 23 21:19:11 2020
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : USB-to-I2S-Converter
+Top-level Entity Name : USB-to-I2S-Converter
+Family : Cyclone 10 LP
+Device : 10CL025YU256C8G
+Timing Models : Final
+Total logic elements : 0 / 24,624 ( 0 % )
+    Total combinational functions : 0 / 24,624 ( 0 % )
+    Dedicated logic registers : 0 / 24,624 ( 0 % )
+Total registers : 0
+Total pins : 16 / 151 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
