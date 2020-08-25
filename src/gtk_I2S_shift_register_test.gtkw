@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Tue Aug 25 00:18:24 2020
+[*]
+[dumpfile] "/media/sf_GitHub/FPG USB to I2S Converter/src/I2S_shift_register_test.vcd"
+[dumpfile_mtime] "Tue Aug 25 00:13:00 2020"
+[dumpfile_size] 23988
+[savefile] "/media/sf_GitHub/FPG USB to I2S Converter/src/gtk_I2S_shift_register_test.gtkw"
+[timestart] 0
+[size] 1920 920
+[pos] -1 -1
+*-13.000000 7610 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] I2S_shift_register_tb.
+[sst_width] 212
+[signals_width] 345
+[sst_expanded] 1
+[sst_vpaned_height] 260
+@28
+I2S_shift_register_tb.uut.clk
+I2S_shift_register_tb.RST
+I2S_shift_register_tb.START
+@22
+I2S_shift_register_tb.uut.state[3:0]
+I2S_shift_register_tb.uut.next_state[3:0]
+@28
+I2S_shift_register_tb.uut.sample_left[31:0]
+I2S_shift_register_tb.uut.sample_left_r[7:0]
+I2S_shift_register_tb.uut.sample_right[31:0]
+I2S_shift_register_tb.uut.sample_right_r[7:0]
+@22
+I2S_shift_register_tb.uut.sample_size[3:0]
+@28
+I2S_shift_register_tb.uut.bit_counter_left[7:0]
+I2S_shift_register_tb.uut.bit_counter_right[7:0]
+I2S_shift_register_tb.uut.data_out
+@29
+I2S_shift_register_tb.uut.word_select
+[pattern_trace] 1
+[pattern_trace] 0

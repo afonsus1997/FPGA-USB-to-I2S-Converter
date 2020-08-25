@@ -1,0 +1,67 @@
+module shift_register(
+	input clk,
+	input [31:0] sample_left,
+	input [31:0] sample_right,
+	input [3:0] sample_size,
+	input start,
+	input rst,
+	output busy_right,
+	output busy_left,
+	output word_select,
+	output data_out,
+	output clk_out
+	);
+	
+	parameter IDLE_s=0, START_s=1, RUNNING_s=3;
+	
+	reg [31:0] sample_left_r;
+	reg [31:0] sample_right_r;
+	reg [3:0] state;
+	
+	always @ (posedge clk) begin
+	if(rst) begin
+		state       <= IDLE_s;
+	end
+	else
+		state       <= next_state;
+	end
+	
+	always @(*) begin
+	case (state)
+		IDLE_s:
+		if(start)
+			next_state = START_s;
+		else
+			next_state = IDLE_s;
+		START_s:
+			next_state = RUNNING_s;
+		RUNNING_s:
+			
+		default:
+			next_state  = IDLE_s;
+	endcase
+end
+	
+	
+	always @ (posedge clk) begin
+		if(rst) begin
+		sample_left_r <= 0;
+		sample_right_r <= 0;
+		busy_right <= 0;
+		busy_left <= 0;
+		word_select <= 0;
+		data_out <= 0;
+		clk_out <= 0;
+		end
+		
+		else if(start) begin
+			sample_left_r
+		end
+		
+		
+	end
+	
+	
+	
+endmodule
+	

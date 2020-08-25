@@ -1,0 +1,29 @@
+
+State Machine - |I2S_shift_register_tb|shift_register:uut|bit_counter_left
+Name bit_counter_left.00001000 bit_counter_left.00000000 bit_counter_left.00100000 bit_counter_left.00010000 bit_counter_left.00001100 
+bit_counter_left.00000000 0 0 0 0 0 
+bit_counter_left.00001000 1 1 0 0 0 
+bit_counter_left.00001100 0 1 0 0 1 
+bit_counter_left.00010000 0 1 0 1 0 
+bit_counter_left.00100000 0 1 1 0 0 
+
+State Machine - |I2S_shift_register_tb|shift_register:uut|bit_counter_right
+Name bit_counter_right.00001000 bit_counter_right.00000000 bit_counter_right.00100000 bit_counter_right.00010000 bit_counter_right.00001100 
+bit_counter_right.00000000 0 0 0 0 0 
+bit_counter_right.00001000 1 1 0 0 0 
+bit_counter_right.00001100 0 1 0 0 1 
+bit_counter_right.00010000 0 1 0 1 0 
+bit_counter_right.00100000 0 1 1 0 0 
+
+State Machine - |I2S_shift_register_tb|shift_register:uut|state
+Name state.START_s state.RUNNING_s state.IDLE_s 
+state.IDLE_s 0 0 0 
+state.START_s 1 0 1 
+state.RUNNING_s 0 1 1 
+
+State Machine - |I2S_shift_register_tb|shift_register:uut|counter_size
+Name counter_size.00001000 counter_size.00100000 counter_size.00010000 counter_size.00001100 
+counter_size.00001000 0 0 0 0 
+counter_size.00001100 1 0 0 1 
+counter_size.00010000 1 0 1 0 
+counter_size.00100000 1 1 0 0 
