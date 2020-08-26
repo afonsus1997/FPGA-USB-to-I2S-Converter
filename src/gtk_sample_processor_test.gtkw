@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.86 (w)1999-2017 BSI
+[*] Wed Aug 26 18:42:08 2020
+[*]
+[dumpfile] "/mnt/f/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor_test.vcd"
+[dumpfile_mtime] "Wed Aug 26 18:34:32 2020"
+[dumpfile_size] 18381
+[savefile] "/mnt/f/Documents/GitHub/FPG USB to I2S Converter/src/gtk_sample_processor_test.gtkw"
+[timestart] 0
+[size] 1920 1027
+[pos] -1 -1
+*-13.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] I2S_shift_register_tb.
+[sst_width] 213
+[signals_width] 158
+[sst_expanded] 1
+[sst_vpaned_height] 302
+@28
+I2S_shift_register_tb.uut.clk
+I2S_shift_register_tb.uut.rst
+@29
+I2S_shift_register_tb.uut.data_available
+@22
+I2S_shift_register_tb.uut.sample_size[3:0]
+I2S_shift_register_tb.uut.data_in[7:0]
+I2S_shift_register_tb.uut.data_out[31:0]
+@28
+I2S_shift_register_tb.uut.data_ready
+[pattern_trace] 1
+[pattern_trace] 0

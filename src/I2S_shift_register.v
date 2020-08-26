@@ -13,7 +13,7 @@ module shift_register(
 	);
 	
 	parameter IDLE_s=0, START_s=1, RUNNING_s=3;
-	parameter S_8BIT=0, S_12BIT=1, S_16BIT=3, S_32BIT=4;
+	parameter S_8BIT=0, S_12BIT=1, S_16BIT=3, S_24BIT=4 S_32BIT=5;
 	parameter LEFT=0, RIGHT=1;
 	
 	reg [7:0] sample_left_r;
