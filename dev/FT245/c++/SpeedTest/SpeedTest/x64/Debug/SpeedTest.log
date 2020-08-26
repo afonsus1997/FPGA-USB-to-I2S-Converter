@@ -1,0 +1,8 @@
+﻿  main.cpp
+f:\documents\github\fpg usb to i2s converter\dev\ft245\c++\speedtest\speedtest\main.cpp(39): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+f:\documents\github\fpg usb to i2s converter\dev\ft245\c++\speedtest\speedtest\main.cpp(50): warning C4838: conversion from 'int' to 'char' requires a narrowing conversion
+f:\documents\github\fpg usb to i2s converter\dev\ft245\c++\speedtest\speedtest\main.cpp(50): warning C4309: 'initializing': truncation of constant value
+f:\documents\github\fpg usb to i2s converter\dev\ft245\c++\speedtest\speedtest\main.cpp(33): warning C4477: 'printf' : format string '%X' requires an argument of type 'unsigned int', but variadic argument 1 has type 'FT_HANDLE'
+f:\documents\github\fpg usb to i2s converter\dev\ft245\c++\speedtest\speedtest\main.cpp(33): warning C4313: 'printf': '%X' in format string conflicts with argument 1 of type 'FT_HANDLE'
+  SpeedTest.vcxproj -> F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\c++\SpeedTest\x64\Debug\SpeedTest.exe
+  SpeedTest.vcxproj -> F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\c++\SpeedTest\x64\Debug\SpeedTest.pdb (Partial PDB)

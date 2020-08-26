@@ -1,0 +1,9 @@
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\bin\Debug\USBTransfer.exe
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\bin\Debug\USBTransfer.pdb
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\obj\Debug\USBTransfer.csprojResolveAssemblyReference.cache
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\obj\Debug\USBTransfer.Form.resources
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\obj\Debug\USBTransfer.csproj.GenerateResource.Cache
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\obj\Debug\USBTransfer.exe
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\obj\Debug\USBTransfer.pdb
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\bin\Debug\FTD2XX_NET.dll
+F:\Documents\GitHub\FPG USB to I2S Converter\dev\FT245\C#_example1\USBTransfer\bin\Debug\FTD2XX_NET.xml
