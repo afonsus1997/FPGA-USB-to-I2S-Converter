@@ -37,12 +37,12 @@ int main(int argc, char** argv) {
 		if (deviceInfo[i].LocId == 0x216) {
 
 			if (FT_OpenEx((void*)deviceInfo[i].LocId, FT_OPEN_BY_LOCATION, &handle) == FT_OK &&
-				//FT_SetBitMode(handle, 0xFF, 0x40) == FT_OK &&
+				FT_SetBitMode(handle, 0xFF, 0x1) == FT_OK &&
 				FT_SetLatencyTimer(handle, 2) == FT_OK &&
-				//FT_SetUSBParameters(handle, 65536, 65536) == FT_OK &&
+				FT_SetUSBParameters(handle, 128, 128) == FT_OK &&
 				FT_SetFlowControl(handle, FT_FLOW_RTS_CTS, 0, 0) == FT_OK &&
 				FT_Purge(handle, FT_PURGE_RX | FT_PURGE_TX) == FT_OK &&
-				FT_SetTimeouts(handle, 1, 1) == FT_OK) {
+				FT_SetTimeouts(handle, 10000, 10000) == FT_OK) {
 
 				// connected and configured successfully
 				printf("Device connected!\r\n");
