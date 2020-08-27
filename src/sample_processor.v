@@ -58,7 +58,7 @@ module sample_processor (
         end
         else begin
             sample_blocks[current_block_n] <= data_in;
-            current_block_n++;
+            current_block_n <= current_block_n + 1;
         end
                 
     end

@@ -13,7 +13,7 @@ module shift_register(
 	);
 	
 	parameter IDLE_s=0, START_s=1, RUNNING_s=3;
-	parameter S_8BIT=0, S_12BIT=1, S_16BIT=3, S_24BIT=4 S_32BIT=5;
+	parameter S_8BIT=0, S_12BIT=1, S_16BIT=3, S_24BIT=4, S_32BIT=5;
 	parameter LEFT=0, RIGHT=1;
 	
 	reg [7:0] sample_left_r;
@@ -89,7 +89,7 @@ module shift_register(
 				//shift bit to output
 					data_out <= sample_left_r[0];
 					sample_left_r <= sample_left_r >> 1;
-					bit_counter_left--;
+					bit_counter_left <= bit_counter_left - 1;
 				end
 				else begin
 					current_out <= RIGHT;
@@ -101,7 +101,7 @@ module shift_register(
 				//shift bit to output
 					data_out <= sample_right_r[0];
 					sample_right_r <= sample_right_r >> 1;
-					bit_counter_right--;
+					bit_counter_right <= bit_counter_right - 1;
 				end
 				else begin
 					current_out <= LEFT;

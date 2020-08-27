@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(input)
-	(rect 408 336 584 352)
+	(rect 216 520 392 536)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "FIFO_RXF" (rect 9 0 62 12)(font "Arial" ))
 	(pt 176 8)
@@ -52,11 +52,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 344 352 408 376))
+	(annotation_block (location)(rect 152 536 216 560))
 )
 (pin
 	(input)
-	(rect 408 360 584 376)
+	(rect 216 544 392 560)
 	(text "INPUT" (rect 133 0 161 10)(font "Arial" (font_size 6)))
 	(text "FIFO_TXE" (rect 9 0 59 12)(font "Arial" ))
 	(pt 176 8)
@@ -69,11 +69,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 117 12)(pt 121 8))
 	)
 	(text "VCC" (rect 136 7 156 17)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 344 376 408 400))
+	(annotation_block (location)(rect 152 560 216 584))
 )
 (pin
 	(input)
-	(rect 408 384 584 400)
+	(rect 216 568 392 584)
 	(text "INPUT" (rect 133 6 161 16)(font "Arial" (font_size 6)))
 	(text "FIFO_PWREN" (rect 9 4 82 16)(font "Arial" ))
 	(pt 176 8)
@@ -87,11 +87,11 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(flipx)
 	(text "VCC" (rect 136 -1 156 9)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 344 400 408 424))
+	(annotation_block (location)(rect 152 584 216 608))
 )
 (pin
 	(output)
-	(rect 872 336 1048 352)
+	(rect 680 520 856 536)
 	(text "OUTPUT" (rect 1 6 39 16)(font "Arial" (font_size 6)))
 	(text "FIFO_RD" (rect 90 4 138 16)(font "Arial" ))
 	(pt 0 8)
@@ -105,11 +105,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 78 4)(pt 82 8))
 	)
 	(flipx)
-	(annotation_block (location)(rect 1048 352 1112 376))
+	(annotation_block (location)(rect 856 536 920 560))
 )
 (pin
 	(output)
-	(rect 872 360 1048 376)
+	(rect 680 544 856 560)
 	(text "OUTPUT" (rect 1 6 39 16)(font "Arial" (font_size 6)))
 	(text "FIFO_WR" (rect 90 4 140 16)(font "Arial" ))
 	(pt 0 8)
@@ -123,11 +123,11 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 78 4)(pt 82 8))
 	)
 	(flipx)
-	(annotation_block (location)(rect 1048 376 1112 400))
+	(annotation_block (location)(rect 856 560 920 584))
 )
 (pin
 	(output)
-	(rect 872 384 1048 400)
+	(rect 680 568 856 584)
 	(text "OUTPUT" (rect 1 6 39 16)(font "Arial" (font_size 6)))
 	(text "FIFO_RST" (rect 90 4 143 16)(font "Arial" ))
 	(pt 0 8)
@@ -141,7 +141,7 @@ https://fpgasoftware.intel.com/eula.
 		(line (pt 78 4)(pt 82 8))
 	)
 	(flipx)
-	(annotation_block (location)(rect 1048 400 1112 424))
+	(annotation_block (location)(rect 856 584 920 608))
 )
 (pin
 	(output)
@@ -179,7 +179,7 @@ https://fpgasoftware.intel.com/eula.
 )
 (pin
 	(bidir)
-	(rect 872 312 1048 328)
+	(rect 680 496 856 512)
 	(text "BIDIR" (rect 1 6 25 16)(font "Arial" (font_size 6)))
 	(text "FIFO_IO[7..0]" (rect 90 4 159 16)(font "Arial" ))
 	(pt 0 8)
@@ -194,7 +194,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(flipx)
 	(text "VCC" (rect 4 -1 24 9)(font "Arial" (font_size 6)))
-	(annotation_block (location)(rect 1048 328 1112 352))
+	(annotation_block (location)(rect 856 512 920 536))
 )
 (symbol
 	(rect 312 40 552 192)
@@ -245,7 +245,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 608 280 816 432)
+	(rect 416 464 624 616)
 	(text "FIFO_Manager" (rect 13 8 86 20)(font "Arial" ))
 	(text "inst" (rect 16 120 33 132)(font "Arial" ))
 	(port
@@ -308,6 +308,139 @@ https://fpgasoftware.intel.com/eula.
 		(rectangle (rect 16 24 192 136))
 	)
 )
+(symbol
+	(rect 1056 280 1280 424)
+	(text "sample_processor" (rect 5 0 94 12)(font "Arial" ))
+	(text "inst1" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "data_in[7..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "data_in[7..0]" (rect 21 59 82 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "sample_size[3..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "sample_size[3..0]" (rect 21 75 107 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "data_available" (rect 0 0 70 12)(font "Arial" ))
+		(text "data_available" (rect 21 91 91 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "data_out[31..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "data_out[31..0]" (rect 141 27 215 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "data_ready" (rect 0 0 55 12)(font "Arial" ))
+		(text "data_ready" (rect 157 43 212 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(parameter
+		"S_8BIT"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_12BIT"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_16BIT"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_24BIT"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_32BIT"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_BLOCK_8BIT"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_BLOCK_12BIT"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_BLOCK_16BIT"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_BLOCK_24BIT"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_BLOCK_32BIT"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_MASK_8BIT"
+		"00000000000000000000000011111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S_MASK_12BIT"
+		"00000000000000000000111111111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S_MASK_16BIT"
+		"00000000000000001111111111111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S_MASK_24BIT"
+		"00000000000011111111111111111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"S_MASK_32BIT"
+		"11111111111111111111111111111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect 1296 -80 1704 224))
+)
 (connector
 	(pt 696 104)
 	(pt 552 104)
@@ -317,31 +450,31 @@ https://fpgasoftware.intel.com/eula.
 	(pt 312 104)
 )
 (connector
-	(pt 816 320)
-	(pt 872 320)
+	(pt 624 504)
+	(pt 680 504)
 	(bus)
 )
 (connector
-	(pt 816 344)
-	(pt 872 344)
+	(pt 624 528)
+	(pt 680 528)
 )
 (connector
-	(pt 816 368)
-	(pt 872 368)
+	(pt 624 552)
+	(pt 680 552)
 )
 (connector
-	(pt 816 392)
-	(pt 872 392)
+	(pt 624 576)
+	(pt 680 576)
 )
 (connector
-	(pt 584 344)
-	(pt 608 344)
+	(pt 392 528)
+	(pt 416 528)
 )
 (connector
-	(pt 584 368)
-	(pt 608 368)
+	(pt 392 552)
+	(pt 416 552)
 )
 (connector
-	(pt 584 392)
-	(pt 608 392)
+	(pt 392 576)
+	(pt 416 576)
 )

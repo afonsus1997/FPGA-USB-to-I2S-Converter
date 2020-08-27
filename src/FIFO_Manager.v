@@ -17,7 +17,7 @@ module FIFO_Manager(
 	
 	always @ (posedge global_rst) begin
 	
-	
+		
 	
 	end
 	
