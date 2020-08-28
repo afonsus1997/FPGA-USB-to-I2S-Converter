@@ -8,6 +8,10 @@ sample_processor_test:
 	@./sample_processor_test.out 
 	@gtkwave sample_processor_test.vcd gtk_sample_processor_test.gtkw &
 
+sample_generator_test:
+	@iverilog sample_generator_tb.v sample_generator.v -o sample_generator_test.out
+	@./sample_generator_test.out 
+
 clean:
 	@rm *.out *.vcd
 	$(info All clean!)

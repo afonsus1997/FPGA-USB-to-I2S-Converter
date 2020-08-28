@@ -1,5 +1,5 @@
-Analysis & Elaboration report for USB-to-I2S-Converter
-Tue Aug 25 00:52:12 2020
+Analysis & Synthesis report for USB-to-I2S-Converter
+Fri Aug 28 18:32:08 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -7,14 +7,27 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: Top-level Entity: |I2S_shift_register_tb
-  5. Parameter Settings for User Entity Instance: shift_register:uut
-  6. Analysis & Elaboration Settings
-  7. Port Connectivity Checks: "shift_register:uut"
-  8. Analysis & Elaboration Messages
-  9. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |top|shift_register:I2S_shift_register1|state
+  9. Registers Removed During Synthesis
+ 10. Removed Registers Triggering Further Register Optimizations
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 13. Parameter Settings for User Entity Instance: sample_generator:sample_generator1
+ 14. Parameter Settings for User Entity Instance: sample_processor:sample_processor1
+ 15. Parameter Settings for User Entity Instance: shift_register:I2S_shift_register1
+ 16. Port Connectivity Checks: "shift_register:I2S_shift_register1"
+ 17. Port Connectivity Checks: "sample_processor:sample_processor1"
+ 18. Port Connectivity Checks: "sample_generator:sample_generator1"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -39,23 +52,109 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Tue Aug 25 00:52:12 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri Aug 28 18:32:08 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; USB-to-I2S-Converter                        ;
-; Top-level Entity Name              ; I2S_shift_register_tb                       ;
+; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                ;
++------------------------------------------------------------------+--------------------+----------------------+
+; Option                                                           ; Setting            ; Default Value        ;
++------------------------------------------------------------------+--------------------+----------------------+
+; Device                                                           ; 10CL025YU256C8G    ;                      ;
+; Top-level entity name                                            ; top                ; USB-to-I2S-Converter ;
+; Family name                                                      ; Cyclone 10 LP      ; Cyclone V            ;
+; Use smart compilation                                            ; Off                ; Off                  ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                   ;
+; Enable compact report table                                      ; Off                ; Off                  ;
+; Restructure Multiplexers                                         ; Auto               ; Auto                 ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                  ;
+; Preserve fewer node names                                        ; On                 ; On                   ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable               ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001         ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993            ;
+; State Machine Processing                                         ; Auto               ; Auto                 ;
+; Safe State Machine                                               ; Off                ; Off                  ;
+; Extract Verilog State Machines                                   ; On                 ; On                   ;
+; Extract VHDL State Machines                                      ; On                 ; On                   ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                  ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000                 ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                  ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                   ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                   ;
+; Parallel Synthesis                                               ; On                 ; On                   ;
+; DSP Block Balancing                                              ; Auto               ; Auto                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                   ;
+; Power-Up Don't Care                                              ; On                 ; On                   ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                  ;
+; Remove Duplicate Registers                                       ; On                 ; On                   ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                  ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                  ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                  ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                  ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                  ;
+; Ignore SOFT Buffers                                              ; On                 ; On                   ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                  ;
+; Optimization Technique                                           ; Balanced           ; Balanced             ;
+; Carry Chain Length                                               ; 70                 ; 70                   ;
+; Auto Carry Chains                                                ; On                 ; On                   ;
+; Auto Open-Drain Pins                                             ; On                 ; On                   ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                  ;
+; Auto ROM Replacement                                             ; On                 ; On                   ;
+; Auto RAM Replacement                                             ; On                 ; On                   ;
+; Auto DSP Block Replacement                                       ; On                 ; On                   ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto                 ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto                 ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                   ;
+; Strict RAM Replacement                                           ; Off                ; Off                  ;
+; Allow Synchronous Control Signals                                ; On                 ; On                   ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                  ;
+; Auto RAM Block Balancing                                         ; On                 ; On                   ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                  ;
+; Auto Resource Sharing                                            ; Off                ; Off                  ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                  ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                  ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                  ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                   ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                  ;
+; Timing-Driven Synthesis                                          ; On                 ; On                   ;
+; Report Parameter Settings                                        ; On                 ; On                   ;
+; Report Source Assignments                                        ; On                 ; On                   ;
+; Report Connectivity Checks                                       ; On                 ; On                   ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                  ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                    ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation   ;
+; HDL message level                                                ; Level2             ; Level2               ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                  ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000                 ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000                 ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                  ;
+; Clock MUX Protection                                             ; On                 ; On                   ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                  ;
+; Block Design Naming                                              ; Auto               ; Auto                 ;
+; SDC constraint protection                                        ; Off                ; Off                  ;
+; Synthesis Effort                                                 ; Auto               ; Auto                 ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                   ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                  ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium               ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto                 ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                   ;
++------------------------------------------------------------------+--------------------+----------------------+
 
 
 +------------------------------------------+
@@ -64,326 +163,505 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |I2S_shift_register_tb ;
-+--------------------+-------+----------------------------------------------------------+
-; Parameter Name     ; Value ; Type                                                     ;
-+--------------------+-------+----------------------------------------------------------+
-; S_8BIT             ; 0     ; Signed Integer                                           ;
-; S_12BIT            ; 1     ; Signed Integer                                           ;
-; S_16BIT            ; 3     ; Signed Integer                                           ;
-; S_32BIT            ; 4     ; Signed Integer                                           ;
-; SAMPLE_LEFT_VALUE  ; 145   ; Signed Integer                                           ;
-; SAMPLE_RIGHT_VALUE ; 145   ; Signed Integer                                           ;
-; SAMPLE_SIZE_VALUE  ; 0     ; Signed Integer                                           ;
-+--------------------+-------+----------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+; top.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v                ;         ;
+; sample_generator.v               ; yes             ; User Verilog HDL File  ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_generator.v   ;         ;
+; sample_processor.v               ; yes             ; User Verilog HDL File  ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v   ;         ;
+; I2S_shift_register.v             ; yes             ; User Verilog HDL File  ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v ;         ;
++----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; rst   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |top                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |top                ; top         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------+
+; State Machine - |top|shift_register:I2S_shift_register1|state    ;
++-----------------+---------------+-----------------+--------------+
+; Name            ; state.START_s ; state.RUNNING_s ; state.IDLE_s ;
++-----------------+---------------+-----------------+--------------+
+; state.IDLE_s    ; 0             ; 0               ; 0            ;
+; state.START_s   ; 1             ; 0               ; 1            ;
+; state.RUNNING_s ; 0             ; 1               ; 1            ;
++-----------------+---------------+-----------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                ;
++----------------------------------------------------------+----------------------------------------+
+; Register name                                            ; Reason for Removal                     ;
++----------------------------------------------------------+----------------------------------------+
+; sample_processor:sample_processor1|data_ready            ; Stuck at VCC due to stuck port data_in ;
+; sample_processor:sample_processor1|current_block_n[0..3] ; Lost fanout                            ;
+; shift_register:I2S_shift_register1|state.START_s         ; Lost fanout                            ;
+; shift_register:I2S_shift_register1|state.RUNNING_s       ; Lost fanout                            ;
+; shift_register:I2S_shift_register1|state.IDLE_s          ; Lost fanout                            ;
+; shift_register:I2S_shift_register1|state~4               ; Lost fanout                            ;
+; shift_register:I2S_shift_register1|state~5               ; Lost fanout                            ;
+; Total Number of Removed Registers = 10                   ;                                        ;
++----------------------------------------------------------+----------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                           ;
++--------------------------------------------------+---------------------------+--------------------------------------------------------+
+; Register name                                    ; Reason for Removal        ; Registers Removed due to This Register                 ;
++--------------------------------------------------+---------------------------+--------------------------------------------------------+
+; sample_processor:sample_processor1|data_ready    ; Stuck at VCC              ; sample_processor:sample_processor1|current_block_n[0], ;
+;                                                  ; due to stuck port data_in ; sample_processor:sample_processor1|current_block_n[1], ;
+;                                                  ;                           ; sample_processor:sample_processor1|current_block_n[2], ;
+;                                                  ;                           ; sample_processor:sample_processor1|current_block_n[3]  ;
+; shift_register:I2S_shift_register1|state.START_s ; Lost Fanouts              ; shift_register:I2S_shift_register1|state.IDLE_s        ;
++--------------------------------------------------+---------------------------+--------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |top ;
++----------------+----------------------------------+-----------------+
+; Parameter Name ; Value                            ; Type            ;
++----------------+----------------------------------+-----------------+
+; s_48k          ; 0                                ; Signed Integer  ;
+; s_88_2k        ; 1                                ; Signed Integer  ;
+; s_96k          ; 2                                ; Signed Integer  ;
+; SEED           ; 00000000000000000000000000001010 ; Unsigned Binary ;
+; S_8BIT         ; 0                                ; Signed Integer  ;
+; S_12BIT        ; 1                                ; Signed Integer  ;
+; S_16BIT        ; 3                                ; Signed Integer  ;
+; S_24BIT        ; 4                                ; Signed Integer  ;
+; S_32BIT        ; 5                                ; Signed Integer  ;
+; SAMPLE_SIZE    ; 3                                ; Signed Integer  ;
++----------------+----------------------------------+-----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: shift_register:uut ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; IDLE_s         ; 0     ; Signed Integer                         ;
-; START_s        ; 1     ; Signed Integer                         ;
-; RUNNING_s      ; 3     ; Signed Integer                         ;
-; S_8BIT         ; 0     ; Signed Integer                         ;
-; S_12BIT        ; 1     ; Signed Integer                         ;
-; S_16BIT        ; 3     ; Signed Integer                         ;
-; S_32BIT        ; 4     ; Signed Integer                         ;
-; LEFT           ; 0     ; Signed Integer                         ;
-; RIGHT          ; 1     ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sample_generator:sample_generator1 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; NBIT           ; 32    ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                 ;
-+------------------------------------------------------------------+-----------------------+----------------------+
-; Option                                                           ; Setting               ; Default Value        ;
-+------------------------------------------------------------------+-----------------------+----------------------+
-; Device                                                           ; 10CL025YU256C8G       ;                      ;
-; Top-level entity name                                            ; I2S_shift_register_tb ; USB-to-I2S-Converter ;
-; Family name                                                      ; Cyclone 10 LP         ; Cyclone V            ;
-; Use smart compilation                                            ; Off                   ; Off                  ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                    ; On                   ;
-; Enable compact report table                                      ; Off                   ; Off                  ;
-; Restructure Multiplexers                                         ; Auto                  ; Auto                 ;
-; Create Debugging Nodes for IP Cores                              ; Off                   ; Off                  ;
-; Preserve fewer node names                                        ; On                    ; On                   ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable                ; Enable               ;
-; Verilog Version                                                  ; Verilog_2001          ; Verilog_2001         ;
-; VHDL Version                                                     ; VHDL_1993             ; VHDL_1993            ;
-; State Machine Processing                                         ; Auto                  ; Auto                 ;
-; Safe State Machine                                               ; Off                   ; Off                  ;
-; Extract Verilog State Machines                                   ; On                    ; On                   ;
-; Extract VHDL State Machines                                      ; On                    ; On                   ;
-; Ignore Verilog initial constructs                                ; Off                   ; Off                  ;
-; Iteration limit for constant Verilog loops                       ; 5000                  ; 5000                 ;
-; Iteration limit for non-constant Verilog loops                   ; 250                   ; 250                  ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                    ; On                   ;
-; Infer RAMs from Raw Logic                                        ; On                    ; On                   ;
-; Parallel Synthesis                                               ; On                    ; On                   ;
-; DSP Block Balancing                                              ; Auto                  ; Auto                 ;
-; NOT Gate Push-Back                                               ; On                    ; On                   ;
-; Power-Up Don't Care                                              ; On                    ; On                   ;
-; Remove Redundant Logic Cells                                     ; Off                   ; Off                  ;
-; Remove Duplicate Registers                                       ; On                    ; On                   ;
-; Ignore CARRY Buffers                                             ; Off                   ; Off                  ;
-; Ignore CASCADE Buffers                                           ; Off                   ; Off                  ;
-; Ignore GLOBAL Buffers                                            ; Off                   ; Off                  ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                   ; Off                  ;
-; Ignore LCELL Buffers                                             ; Off                   ; Off                  ;
-; Ignore SOFT Buffers                                              ; On                    ; On                   ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                   ; Off                  ;
-; Optimization Technique                                           ; Balanced              ; Balanced             ;
-; Carry Chain Length                                               ; 70                    ; 70                   ;
-; Auto Carry Chains                                                ; On                    ; On                   ;
-; Auto Open-Drain Pins                                             ; On                    ; On                   ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                   ; Off                  ;
-; Auto ROM Replacement                                             ; On                    ; On                   ;
-; Auto RAM Replacement                                             ; On                    ; On                   ;
-; Auto DSP Block Replacement                                       ; On                    ; On                   ;
-; Auto Shift Register Replacement                                  ; Auto                  ; Auto                 ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto                  ; Auto                 ;
-; Auto Clock Enable Replacement                                    ; On                    ; On                   ;
-; Strict RAM Replacement                                           ; Off                   ; Off                  ;
-; Allow Synchronous Control Signals                                ; On                    ; On                   ;
-; Force Use of Synchronous Clear Signals                           ; Off                   ; Off                  ;
-; Auto RAM Block Balancing                                         ; On                    ; On                   ;
-; Auto RAM to Logic Cell Conversion                                ; Off                   ; Off                  ;
-; Auto Resource Sharing                                            ; Off                   ; Off                  ;
-; Allow Any RAM Size For Recognition                               ; Off                   ; Off                  ;
-; Allow Any ROM Size For Recognition                               ; Off                   ; Off                  ;
-; Allow Any Shift Register Size For Recognition                    ; Off                   ; Off                  ;
-; Use LogicLock Constraints during Resource Balancing              ; On                    ; On                   ;
-; Ignore translate_off and synthesis_off directives                ; Off                   ; Off                  ;
-; Timing-Driven Synthesis                                          ; On                    ; On                   ;
-; Report Parameter Settings                                        ; On                    ; On                   ;
-; Report Source Assignments                                        ; On                    ; On                   ;
-; Report Connectivity Checks                                       ; On                    ; On                   ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                   ; Off                  ;
-; Synchronization Register Chain Length                            ; 2                     ; 2                    ;
-; Power Optimization During Synthesis                              ; Normal compilation    ; Normal compilation   ;
-; HDL message level                                                ; Level2                ; Level2               ;
-; Suppress Register Optimization Related Messages                  ; Off                   ; Off                  ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000                  ; 5000                 ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000                  ; 5000                 ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                   ; 100                  ;
-; Clock MUX Protection                                             ; On                    ; On                   ;
-; Auto Gated Clock Conversion                                      ; Off                   ; Off                  ;
-; Block Design Naming                                              ; Auto                  ; Auto                 ;
-; SDC constraint protection                                        ; Off                   ; Off                  ;
-; Synthesis Effort                                                 ; Auto                  ; Auto                 ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                    ; On                   ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                   ; Off                  ;
-; Analysis & Synthesis Message Level                               ; Medium                ; Medium               ;
-; Disable Register Merging Across Hierarchies                      ; Auto                  ; Auto                 ;
-; Resource Aware Inference For Block RAM                           ; On                    ; On                   ;
-+------------------------------------------------------------------+-----------------------+----------------------+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sample_processor:sample_processor1 ;
++----------------+----------------------------------+-----------------------------+
+; Parameter Name ; Value                            ; Type                        ;
++----------------+----------------------------------+-----------------------------+
+; S_8BIT         ; 0                                ; Signed Integer              ;
+; S_12BIT        ; 1                                ; Signed Integer              ;
+; S_16BIT        ; 3                                ; Signed Integer              ;
+; S_24BIT        ; 4                                ; Signed Integer              ;
+; S_32BIT        ; 5                                ; Signed Integer              ;
+; S_BLOCK_8BIT   ; 1                                ; Signed Integer              ;
+; S_BLOCK_12BIT  ; 2                                ; Signed Integer              ;
+; S_BLOCK_16BIT  ; 2                                ; Signed Integer              ;
+; S_BLOCK_24BIT  ; 3                                ; Signed Integer              ;
+; S_BLOCK_32BIT  ; 4                                ; Signed Integer              ;
+; S_MASK_8BIT    ; 00000000000000000000000011111111 ; Unsigned Binary             ;
+; S_MASK_12BIT   ; 00000000000000000000111111111111 ; Unsigned Binary             ;
+; S_MASK_16BIT   ; 00000000000000001111111111111111 ; Unsigned Binary             ;
+; S_MASK_24BIT   ; 00000000000011111111111111111111 ; Unsigned Binary             ;
+; S_MASK_32BIT   ; 11111111111111111111111111111111 ; Unsigned Binary             ;
++----------------+----------------------------------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "shift_register:uut"                                                                                                                                                                        ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sample_left  ; Input  ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; sample_right ; Input  ; Warning  ; Input port expression (33 bits) is wider than the input port (32 bits) it drives.  The 1 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; rst          ; Input  ; Info     ; Explicitly unconnected                                                                                                                                                             ;
-; word_select  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-; data_out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
-; busy_right   ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
-; busy_left    ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
-; clk_out      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
-+--------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: shift_register:I2S_shift_register1 ;
++----------------+-------+--------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                   ;
++----------------+-------+--------------------------------------------------------+
+; IDLE_s         ; 0     ; Signed Integer                                         ;
+; START_s        ; 1     ; Signed Integer                                         ;
+; RUNNING_s      ; 3     ; Signed Integer                                         ;
+; S_8BIT         ; 0     ; Signed Integer                                         ;
+; S_12BIT        ; 1     ; Signed Integer                                         ;
+; S_16BIT        ; 3     ; Signed Integer                                         ;
+; S_24BIT        ; 4     ; Signed Integer                                         ;
+; S_32BIT        ; 5     ; Signed Integer                                         ;
+; LEFT           ; 0     ; Signed Integer                                         ;
+; RIGHT          ; 1     ; Signed Integer                                         ;
++----------------+-------+--------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "shift_register:I2S_shift_register1"                                                                                                                                                             ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sample_left       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "sample_left[31..1]" will be connected to GND.                              ;
+; sample_right      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "sample_right[31..1]" will be connected to GND.                             ;
+; sample_size       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; sample_size[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; sample_size[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; word_select       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; data_out          ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; clk_out           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
+; busy_right        ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
+; busy_left         ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sample_processor:sample_processor1"                                                                                                                                                             ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; data_in           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "data_in[7..1]" will be connected to GND.                                    ;
+; data_out          ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "data_out[31..1]" have no fanouts                                                      ;
+; sample_size       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; sample_size[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; sample_size[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data_available    ; Input  ; Info     ; Explicitly unconnected                                                                                                                                                             ;
++-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sample_generator:sample_generator1"                                                                                             ;
++-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                  ;
++-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+; seed[31..4] ; Input  ; Info     ; Stuck at GND                                                                                                             ;
+; seed[3]     ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
+; seed[2]     ; Input  ; Info     ; Stuck at GND                                                                                                             ;
+; seed[1]     ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
+; seed[0]     ; Input  ; Info     ; Stuck at GND                                                                                                             ;
+; out         ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
++-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Tue Aug 25 00:51:56 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off USB-to-I2S-Converter -c USB-to-I2S-Converter --analysis_and_elaboration
+    Info: Processing started: Fri Aug 28 18:31:43 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off USB-to-I2S-Converter -c USB-to-I2S-Converter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (10275): Verilog HDL Module Instantiation warning at top.v(72): ignored dangling comma in List of Port Connections File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 72
+Info (12021): Found 1 design units, including 1 entities, in source file top.v
+    Info (12023): Found entity 1: top File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file sample_generator.v
+    Info (12023): Found entity 1: sample_generator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_generator.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file audio_clock_mux.v
+    Info (12023): Found entity 1: audio_clock_mux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/audio_clock_mux.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file sample_processor_tb.v
+    Info (12023): Found entity 1: I2S_shift_register_tb File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor_tb.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file sample_processor.v
+    Info (12023): Found entity 1: sample_processor File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/my_nios.v
-    Info (12023): Found entity 1: my_nios File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/my_nios.v Line: 6
+    Info (12023): Found entity 1: my_nios File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/my_nios.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_reset_controller.v
-    Info (12023): Found entity 1: altera_reset_controller File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_reset_controller.v Line: 42
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_reset_synchronizer.v
-    Info (12023): Found entity 1: altera_reset_synchronizer File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_reset_synchronizer.v Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_irq_mapper.sv
-    Info (12023): Found entity 1: my_nios_irq_mapper File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_irq_mapper.sv Line: 31
+    Info (12023): Found entity 1: my_nios_irq_mapper File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_irq_mapper.sv Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0.v
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0.v Line: 9
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006.v
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006.v Line: 9
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv Line: 66
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter.v
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter.v Line: 9
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_width_adapter.sv
-    Info (12023): Found entity 1: altera_merlin_width_adapter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_width_adapter.sv Line: 25
+    Info (12023): Found entity 1: altera_merlin_width_adapter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_width_adapter.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_address_alignment.sv
-    Info (12023): Found entity 1: altera_merlin_address_alignment File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_address_alignment.sv Line: 26
+    Info (12023): Found entity 1: altera_merlin_address_alignment File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_address_alignment.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_uncompressor.sv
-    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_uncompressor.sv Line: 40
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_uncompressor.sv Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux_001.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux_001 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux_001.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux_001 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux_001.sv Line: 51
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv
-    Info (12023): Found entity 1: altera_merlin_arbitrator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 103
-    Info (12023): Found entity 2: altera_merlin_arb_adder File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 228
+    Info (12023): Found entity 1: altera_merlin_arbitrator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 103
+    Info (12023): Found entity 2: altera_merlin_arb_adder File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 228
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux_002.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux_002 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux_002.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux_002 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux_002.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux_002.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux_002 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux_002.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux_002 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux_002.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux_001.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux_001 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux_001.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux_001 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux_001.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter.sv Line: 21
+    Info (12023): Found entity 1: altera_merlin_burst_adapter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter.sv Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
 Info (12021): Found 5 design units, including 5 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
-    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
-    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
-    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
-    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
+    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter_new.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_new.sv Line: 25
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_new.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_incr_burst_converter.sv
-    Info (12023): Found entity 1: altera_incr_burst_converter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_incr_burst_converter.sv Line: 28
+    Info (12023): Found entity 1: altera_incr_burst_converter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_incr_burst_converter.sv Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_wrap_burst_converter.sv
-    Info (12023): Found entity 1: altera_wrap_burst_converter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_wrap_burst_converter.sv Line: 27
+    Info (12023): Found entity 1: altera_wrap_burst_converter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_wrap_burst_converter.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_default_burst_converter.sv
-    Info (12023): Found entity 1: altera_default_burst_converter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_default_burst_converter.sv Line: 30
+    Info (12023): Found entity 1: altera_default_burst_converter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_default_burst_converter.sv Line: 30
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
-    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_avalon_st_pipeline_base.v
-    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_008_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_008 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_008_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_008 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_004_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_004 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_004_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_004 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_002_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_002 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_002_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_002 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_001_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_001 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_001_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_001 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_avalon_sc_fifo.v
-    Info (12023): Found entity 1: altera_avalon_sc_fifo File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_slave_agent.sv
-    Info (12023): Found entity 1: altera_merlin_slave_agent File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_agent.sv Line: 34
+    Info (12023): Found entity 1: altera_merlin_slave_agent File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_agent.sv Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_master_agent.sv
-    Info (12023): Found entity 1: altera_merlin_master_agent File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_agent.sv Line: 28
+    Info (12023): Found entity 1: altera_merlin_master_agent File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_agent.sv Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_slave_translator.sv
-    Info (12023): Found entity 1: altera_merlin_slave_translator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_translator.sv Line: 35
+    Info (12023): Found entity 1: altera_merlin_slave_translator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_translator.sv Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_master_translator.sv
-    Info (12023): Found entity 1: altera_merlin_master_translator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_translator.sv Line: 32
+    Info (12023): Found entity 1: altera_merlin_master_translator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_translator.sv Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_timer_0.v
-    Info (12023): Found entity 1: my_nios_timer_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_timer_0.v Line: 21
+    Info (12023): Found entity 1: my_nios_timer_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_timer_0.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_sysid_qsys_0.v
-    Info (12023): Found entity 1: my_nios_sysid_qsys_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_sysid_qsys_0.v Line: 34
+    Info (12023): Found entity 1: my_nios_sysid_qsys_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_sysid_qsys_0.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_pio_1.v
-    Info (12023): Found entity 1: my_nios_pio_1 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_pio_1.v Line: 21
+    Info (12023): Found entity 1: my_nios_pio_1 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_pio_1.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_pio_0.v
-    Info (12023): Found entity 1: my_nios_pio_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_pio_0.v Line: 21
+    Info (12023): Found entity 1: my_nios_pio_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_pio_0.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_onchip_memory2_0.v
-    Info (12023): Found entity 1: my_nios_onchip_memory2_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_onchip_memory2_0.v Line: 21
+    Info (12023): Found entity 1: my_nios_onchip_memory2_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_onchip_memory2_0.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0.v Line: 9
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0.v Line: 9
 Info (12021): Found 21 design units, including 21 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_register_bank_a_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 21
-    Info (12023): Found entity 2: my_nios_nios2_gen2_0_cpu_register_bank_b_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 87
-    Info (12023): Found entity 3: my_nios_nios2_gen2_0_cpu_nios2_oci_debug File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 153
-    Info (12023): Found entity 4: my_nios_nios2_gen2_0_cpu_nios2_oci_break File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 295
-    Info (12023): Found entity 5: my_nios_nios2_gen2_0_cpu_nios2_oci_xbrk File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 588
-    Info (12023): Found entity 6: my_nios_nios2_gen2_0_cpu_nios2_oci_dbrk File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 795
-    Info (12023): Found entity 7: my_nios_nios2_gen2_0_cpu_nios2_oci_itrace File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 982
-    Info (12023): Found entity 8: my_nios_nios2_gen2_0_cpu_nios2_oci_td_mode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1115
-    Info (12023): Found entity 9: my_nios_nios2_gen2_0_cpu_nios2_oci_dtrace File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1183
-    Info (12023): Found entity 10: my_nios_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1265
-    Info (12023): Found entity 11: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1337
-    Info (12023): Found entity 12: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1380
-    Info (12023): Found entity 13: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1427
-    Info (12023): Found entity 14: my_nios_nios2_gen2_0_cpu_nios2_oci_pib File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1913
-    Info (12023): Found entity 15: my_nios_nios2_gen2_0_cpu_nios2_oci_im File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1936
-    Info (12023): Found entity 16: my_nios_nios2_gen2_0_cpu_nios2_performance_monitors File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2006
-    Info (12023): Found entity 17: my_nios_nios2_gen2_0_cpu_nios2_avalon_reg File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2023
-    Info (12023): Found entity 18: my_nios_nios2_gen2_0_cpu_ociram_sp_ram_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2116
-    Info (12023): Found entity 19: my_nios_nios2_gen2_0_cpu_nios2_ocimem File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2181
-    Info (12023): Found entity 20: my_nios_nios2_gen2_0_cpu_nios2_oci File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2362
-    Info (12023): Found entity 21: my_nios_nios2_gen2_0_cpu File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2834
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_register_bank_a_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 21
+    Info (12023): Found entity 2: my_nios_nios2_gen2_0_cpu_register_bank_b_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 87
+    Info (12023): Found entity 3: my_nios_nios2_gen2_0_cpu_nios2_oci_debug File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 153
+    Info (12023): Found entity 4: my_nios_nios2_gen2_0_cpu_nios2_oci_break File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 295
+    Info (12023): Found entity 5: my_nios_nios2_gen2_0_cpu_nios2_oci_xbrk File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 588
+    Info (12023): Found entity 6: my_nios_nios2_gen2_0_cpu_nios2_oci_dbrk File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 795
+    Info (12023): Found entity 7: my_nios_nios2_gen2_0_cpu_nios2_oci_itrace File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 982
+    Info (12023): Found entity 8: my_nios_nios2_gen2_0_cpu_nios2_oci_td_mode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1115
+    Info (12023): Found entity 9: my_nios_nios2_gen2_0_cpu_nios2_oci_dtrace File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1183
+    Info (12023): Found entity 10: my_nios_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1265
+    Info (12023): Found entity 11: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1337
+    Info (12023): Found entity 12: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1380
+    Info (12023): Found entity 13: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1427
+    Info (12023): Found entity 14: my_nios_nios2_gen2_0_cpu_nios2_oci_pib File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1913
+    Info (12023): Found entity 15: my_nios_nios2_gen2_0_cpu_nios2_oci_im File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1936
+    Info (12023): Found entity 16: my_nios_nios2_gen2_0_cpu_nios2_performance_monitors File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2006
+    Info (12023): Found entity 17: my_nios_nios2_gen2_0_cpu_nios2_avalon_reg File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2023
+    Info (12023): Found entity 18: my_nios_nios2_gen2_0_cpu_ociram_sp_ram_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2116
+    Info (12023): Found entity 19: my_nios_nios2_gen2_0_cpu_nios2_ocimem File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2181
+    Info (12023): Found entity 20: my_nios_nios2_gen2_0_cpu_nios2_oci File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2362
+    Info (12023): Found entity 21: my_nios_nios2_gen2_0_cpu File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2834
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_sysclk.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_sysclk File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_sysclk.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_sysclk File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_sysclk.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_tck.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_tck File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_tck.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_tck File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_tck.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_wrapper.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_wrapper File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_wrapper.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_wrapper File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_wrapper.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_test_bench.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_test_bench File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_test_bench.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_test_bench File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_test_bench.v Line: 21
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v
-    Info (12023): Found entity 1: my_nios_new_sdram_controller_0_input_efifo_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 21
-    Info (12023): Found entity 2: my_nios_new_sdram_controller_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 159
+    Info (12023): Found entity 1: my_nios_new_sdram_controller_0_input_efifo_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 21
+    Info (12023): Found entity 2: my_nios_new_sdram_controller_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 159
 Info (12021): Found 5 design units, including 5 entities, in source file nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v
-    Info (12023): Found entity 1: my_nios_jtag_uart_0_sim_scfifo_w File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 21
-    Info (12023): Found entity 2: my_nios_jtag_uart_0_scfifo_w File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 78
-    Info (12023): Found entity 3: my_nios_jtag_uart_0_sim_scfifo_r File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 164
-    Info (12023): Found entity 4: my_nios_jtag_uart_0_scfifo_r File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 243
-    Info (12023): Found entity 5: my_nios_jtag_uart_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 331
+    Info (12023): Found entity 1: my_nios_jtag_uart_0_sim_scfifo_w File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 21
+    Info (12023): Found entity 2: my_nios_jtag_uart_0_scfifo_w File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 78
+    Info (12023): Found entity 3: my_nios_jtag_uart_0_sim_scfifo_r File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 164
+    Info (12023): Found entity 4: my_nios_jtag_uart_0_scfifo_r File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 243
+    Info (12023): Found entity 5: my_nios_jtag_uart_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 331
 Info (12021): Found 1 design units, including 1 entities, in source file usb-to-i2s-converter.bdf
     Info (12023): Found entity 1: USB-to-I2S-Converter
 Info (12021): Found 1 design units, including 1 entities, in source file fifo_manager.v
-    Info (12023): Found entity 1: FIFO_Manager File: F:/Documents/GitHub/FPG USB to I2S Converter/src/FIFO_Manager.v Line: 4
+    Info (12023): Found entity 1: FIFO_Manager File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/FIFO_Manager.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: PLL File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 40
+    Info (12023): Found entity 1: PLL File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file i2s_shift_register.v
-    Info (12023): Found entity 1: shift_register File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file i2s_shift_register_tb.v
-    Info (12023): Found entity 1: I2S_shift_register_tb File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register_tb.v Line: 3
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(318): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 318
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(328): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 328
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(338): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 338
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(682): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 682
-Info (12127): Elaborating entity "I2S_shift_register_tb" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at I2S_shift_register_tb.v(11): object "RST" assigned a value but never read File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register_tb.v Line: 11
-Warning (10175): Verilog HDL warning at I2S_shift_register_tb.v(35): ignoring unsupported system task File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register_tb.v Line: 35
-Warning (10175): Verilog HDL warning at I2S_shift_register_tb.v(36): ignoring unsupported system task File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register_tb.v Line: 36
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register_tb.v(42): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register_tb.v Line: 42
-Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:uut" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register_tb.v Line: 31
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(92): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 92
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(103): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 103
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+    Info (12023): Found entity 1: shift_register File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pll2.v
+    Info (12023): Found entity 1: PLL2 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL2.v Line: 40
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(318): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 318
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(328): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 328
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(338): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 338
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(682): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 682
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "sample_generator" for hierarchy "sample_generator:sample_generator1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 62
+Info (12128): Elaborating entity "sample_processor" for hierarchy "sample_processor:sample_processor1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 72
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(23): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 23
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(24): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 24
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(25): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(26): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 26
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(27): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 27
+Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(22): incomplete case statement has no default case item File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(22): inferring latch(es) for variable "n_blocks_per_sample", which holds its previous value in one or more paths through the always construct File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(32): incomplete case statement has no default case item File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(32): inferring latch(es) for variable "sample_mask", which holds its previous value in one or more paths through the always construct File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(57): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 57
+Info (10041): Inferred latch for "sample_mask[0]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[1]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[2]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[3]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[4]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[5]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[6]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[7]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[8]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[9]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[10]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[11]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[12]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[13]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[14]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[15]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[16]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[17]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[18]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[19]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[20]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[21]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[22]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[23]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[24]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[25]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[26]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[27]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[28]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[29]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[30]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "sample_mask[31]" at sample_processor.v(32) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 32
+Info (10041): Inferred latch for "n_blocks_per_sample[0]" at sample_processor.v(22) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Info (10041): Inferred latch for "n_blocks_per_sample[1]" at sample_processor.v(22) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Info (10041): Inferred latch for "n_blocks_per_sample[2]" at sample_processor.v(22) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Info (10041): Inferred latch for "n_blocks_per_sample[3]" at sample_processor.v(22) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:I2S_shift_register1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 87
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(78): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 78
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(79): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 79
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(81): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 81
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(82): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 82
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(92): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 92
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(95): truncated value with size 32 to match size of target (1) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 95
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(104): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 104
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(107): truncated value with size 32 to match size of target (1) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 107
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "main_rst" is missing source, defaulting to GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 21
+Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[0]" is permanently enabled File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[1]" is permanently enabled File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 22
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 23 assignments for entity "altera_avalon_sc_fifo" -- entity does not exist in design
 Warning (20013): Ignored 43 assignments for entity "altera_merlin_burst_adapter" -- entity does not exist in design
 Warning (20013): Ignored 64 assignments for entity "altera_merlin_master_agent" -- entity does not exist in design
@@ -421,17 +699,25 @@ Warning (20013): Ignored 22 assignments for entity "my_nios_pio_0" -- entity doe
 Warning (20013): Ignored 23 assignments for entity "my_nios_pio_1" -- entity does not exist in design
 Warning (20013): Ignored 10 assignments for entity "my_nios_sysid_qsys_0" -- entity does not exist in design
 Warning (20013): Ignored 26 assignments for entity "my_nios_timer_0" -- entity does not exist in design
-Info (144001): Generated suppressed messages file F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/USB-to-I2S-Converter.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 4730 megabytes
-    Info: Processing ended: Tue Aug 25 00:52:12 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:24
+Info (144001): Generated suppressed messages file C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/output_files/USB-to-I2S-Converter.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rst" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "fpga_clk" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 7
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 69 warnings
+    Info: Peak virtual memory: 4759 megabytes
+    Info: Processing ended: Fri Aug 28 18:32:08 2020
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:46
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/USB-to-I2S-Converter.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/output_files/USB-to-I2S-Converter.map.smsg.
 
 

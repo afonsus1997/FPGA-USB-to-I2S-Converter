@@ -178,6 +178,22 @@ https://fpgasoftware.intel.com/eula.
 	(rotate180)
 )
 (pin
+	(output)
+	(rect 1856 368 2032 384)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "clk_out" (rect 90 0 125 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
 	(bidir)
 	(rect 680 496 856 512)
 	(text "BIDIR" (rect 1 6 25 16)(font "Arial" (font_size 6)))
@@ -195,54 +211,6 @@ https://fpgasoftware.intel.com/eula.
 	(flipx)
 	(text "VCC" (rect 4 -1 24 9)(font "Arial" (font_size 6)))
 	(annotation_block (location)(rect 856 512 920 536))
-)
-(symbol
-	(rect 312 40 552 192)
-	(text "PLL" (rect 109 0 136 16)(font "Arial" (font_size 10)))
-	(text "inst7" (rect 8 136 31 148)(font "Arial" ))
-	(port
-		(pt 0 64)
-		(input)
-		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
-		(text "inclk0" (rect 4 50 35 64)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 40 64))
-	)
-	(port
-		(pt 240 64)
-		(output)
-		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
-		(text "c0" (rect 224 50 238 64)(font "Arial" (font_size 8)))
-	)
-	(drawing
-		(text "Cyclone 10 LP" (rect 155 136 228 148)(font "Arial" ))
-		(text "inclk0 frequency: 12.000 MHz" (rect 50 59 197 71)(font "Arial" ))
-		(text "Operation Mode: Normal" (rect 50 72 169 84)(font "Arial" ))
-		(text "Clk " (rect 51 93 71 105)(font "Arial" ))
-		(text "Ratio" (rect 72 93 97 105)(font "Arial" ))
-		(text "Ph (dg)" (rect 98 93 133 105)(font "Arial" ))
-		(text "DC (%)" (rect 132 93 168 105)(font "Arial" ))
-		(text "c0" (rect 54 107 65 119)(font "Arial" ))
-		(text "25/6" (rect 74 107 95 119)(font "Arial" ))
-		(text "0.00" (rect 104 107 125 119)(font "Arial" ))
-		(text "50.00" (rect 136 107 163 119)(font "Arial" ))
-		(line (pt 0 0)(pt 241 0))
-		(line (pt 241 0)(pt 241 153))
-		(line (pt 0 153)(pt 241 153))
-		(line (pt 0 0)(pt 0 153))
-		(line (pt 48 91)(pt 164 91))
-		(line (pt 48 104)(pt 164 104))
-		(line (pt 48 118)(pt 164 118))
-		(line (pt 48 91)(pt 48 118))
-		(line (pt 69 91)(pt 69 118)(line_width 3))
-		(line (pt 95 91)(pt 95 118)(line_width 3))
-		(line (pt 129 91)(pt 129 118)(line_width 3))
-		(line (pt 163 91)(pt 163 118))
-		(line (pt 40 48)(pt 207 48))
-		(line (pt 207 48)(pt 207 135))
-		(line (pt 40 135)(pt 207 135))
-		(line (pt 40 48)(pt 40 135))
-		(line (pt 239 64)(pt 207 64))
-	)
 )
 (symbol
 	(rect 416 464 624 616)
@@ -439,15 +407,371 @@ https://fpgasoftware.intel.com/eula.
 	(drawing
 		(rectangle (rect 16 16 208 128))
 	)
-	(annotation_block (parameter)(rect 1296 -80 1704 224))
+	(annotation_block (parameter)(rect 1240 -96 1648 208))
 )
-(connector
-	(pt 696 104)
-	(pt 552 104)
+(symbol
+	(rect 312 40 568 224)
+	(text "PLL" (rect 117 0 144 16)(font "Arial" (font_size 10)))
+	(text "inst7" (rect 8 168 31 180)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 50 35 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 40 64))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c0" (rect 240 50 254 64)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 256 80)
+		(output)
+		(text "c1" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c1" (rect 240 66 254 80)(font "Arial" (font_size 8)))
+	)
+	(port
+		(pt 256 96)
+		(output)
+		(text "c2" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c2" (rect 240 82 254 96)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "Cyclone 10 LP" (rect 171 168 244 180)(font "Arial" ))
+		(text "inclk0 frequency: 12.000 MHz" (rect 50 59 197 71)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 50 72 169 84)(font "Arial" ))
+		(text "Clk " (rect 51 93 71 105)(font "Arial" ))
+		(text "Ratio" (rect 82 93 107 105)(font "Arial" ))
+		(text "Ph (dg)" (rect 119 93 154 105)(font "Arial" ))
+		(text "DC (%)" (rect 153 93 189 105)(font "Arial" ))
+		(text "c0" (rect 54 107 65 119)(font "Arial" ))
+		(text "25/6" (rect 84 107 105 119)(font "Arial" ))
+		(text "0.00" (rect 125 107 146 119)(font "Arial" ))
+		(text "50.00" (rect 157 107 184 119)(font "Arial" ))
+		(text "c1" (rect 54 121 65 133)(font "Arial" ))
+		(text "1/250" (rect 82 121 109 133)(font "Arial" ))
+		(text "0.00" (rect 125 121 146 133)(font "Arial" ))
+		(text "50.00" (rect 157 121 184 133)(font "Arial" ))
+		(text "c2" (rect 54 135 65 147)(font "Arial" ))
+		(text "147/20000" (rect 72 135 122 147)(font "Arial" ))
+		(text "0.00" (rect 125 135 146 147)(font "Arial" ))
+		(text "50.00" (rect 157 135 184 147)(font "Arial" ))
+		(line (pt 0 0)(pt 257 0))
+		(line (pt 257 0)(pt 257 185))
+		(line (pt 0 185)(pt 257 185))
+		(line (pt 0 0)(pt 0 185))
+		(line (pt 48 91)(pt 185 91))
+		(line (pt 48 104)(pt 185 104))
+		(line (pt 48 118)(pt 185 118))
+		(line (pt 48 132)(pt 185 132))
+		(line (pt 48 146)(pt 185 146))
+		(line (pt 48 91)(pt 48 146))
+		(line (pt 69 91)(pt 69 146)(line_width 3))
+		(line (pt 116 91)(pt 116 146)(line_width 3))
+		(line (pt 150 91)(pt 150 146)(line_width 3))
+		(line (pt 184 91)(pt 184 146))
+		(line (pt 40 48)(pt 223 48))
+		(line (pt 223 48)(pt 223 167))
+		(line (pt 40 167)(pt 223 167))
+		(line (pt 40 48)(pt 40 167))
+		(line (pt 255 64)(pt 223 64))
+		(line (pt 255 80)(pt 223 80))
+		(line (pt 255 96)(pt 223 96))
+	)
 )
-(connector
-	(pt 272 104)
-	(pt 312 104)
+(symbol
+	(rect 320 240 560 392)
+	(text "PLL2" (rect 105 0 140 16)(font "Arial" (font_size 10)))
+	(text "inst3" (rect 8 136 30 153)(font "Intel Clear" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 50 35 64)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 40 64))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "c0" (rect 0 0 14 14)(font "Arial" (font_size 8)))
+		(text "c0" (rect 224 50 238 64)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "Cyclone 10 LP" (rect 155 136 228 148)(font "Arial" ))
+		(text "inclk0 frequency: 12.000 MHz" (rect 50 59 197 71)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 50 72 169 84)(font "Arial" ))
+		(text "Clk " (rect 51 93 71 105)(font "Arial" ))
+		(text "Ratio" (rect 72 93 97 105)(font "Arial" ))
+		(text "Ph (dg)" (rect 99 93 134 105)(font "Arial" ))
+		(text "DC (%)" (rect 133 93 169 105)(font "Arial" ))
+		(text "c0" (rect 54 107 65 119)(font "Arial" ))
+		(text "1/125" (rect 72 107 99 119)(font "Arial" ))
+		(text "0.00" (rect 105 107 126 119)(font "Arial" ))
+		(text "50.00" (rect 137 107 164 119)(font "Arial" ))
+		(line (pt 0 0)(pt 241 0))
+		(line (pt 241 0)(pt 241 153))
+		(line (pt 0 153)(pt 241 153))
+		(line (pt 0 0)(pt 0 153))
+		(line (pt 48 91)(pt 165 91))
+		(line (pt 48 104)(pt 165 104))
+		(line (pt 48 118)(pt 165 118))
+		(line (pt 48 91)(pt 48 118))
+		(line (pt 69 91)(pt 69 118)(line_width 3))
+		(line (pt 96 91)(pt 96 118)(line_width 3))
+		(line (pt 130 91)(pt 130 118)(line_width 3))
+		(line (pt 164 91)(pt 164 118))
+		(line (pt 40 48)(pt 207 48))
+		(line (pt 207 48)(pt 207 135))
+		(line (pt 40 135)(pt 207 135))
+		(line (pt 40 48)(pt 40 135))
+		(line (pt 239 64)(pt 207 64))
+	)
+)
+(symbol
+	(rect 792 280 976 392)
+	(text "audio_clock_mux" (rect 5 0 89 12)(font "Arial" ))
+	(text "inst2" (rect 8 96 31 108)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk_48k" (rect 0 0 37 12)(font "Arial" ))
+		(text "clk_48k" (rect 21 27 58 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk_88_2k" (rect 0 0 49 12)(font "Arial" ))
+		(text "clk_88_2k" (rect 21 43 70 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clk_96k" (rect 0 0 37 12)(font "Arial" ))
+		(text "clk_96k" (rect 21 59 58 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clock_sel[3..0]" (rect 0 0 71 12)(font "Arial" ))
+		(text "clock_sel[3..0]" (rect 21 75 92 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
+		(text "clk_out" (rect 134 27 163 39)(font "Arial" ))
+		(line (pt 184 32)(pt 168 32))
+	)
+	(parameter
+		"s_48k"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"s_88_2k"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"s_96k"
+		"2"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 168 96))
+	)
+	(annotation_block (parameter)(rect 952 176 1128 256))
+)
+(symbol
+	(rect 1544 280 1768 424)
+	(text "shift_register" (rect 5 0 69 12)(font "Arial" ))
+	(text "inst4" (rect 8 128 30 145)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "sample_left[31..0]" (rect 0 0 89 12)(font "Arial" ))
+		(text "sample_left[31..0]" (rect 21 43 110 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "sample_right[31..0]" (rect 0 0 94 12)(font "Arial" ))
+		(text "sample_right[31..0]" (rect 21 59 115 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "sample_size[3..0]" (rect 0 0 86 12)(font "Arial" ))
+		(text "sample_size[3..0]" (rect 21 75 107 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "start" (rect 0 0 22 12)(font "Arial" ))
+		(text "start" (rect 21 91 43 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 107 33 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "busy_right" (rect 0 0 51 12)(font "Arial" ))
+		(text "busy_right" (rect 160 27 211 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "busy_left" (rect 0 0 47 12)(font "Arial" ))
+		(text "busy_left" (rect 164 43 211 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "word_select" (rect 0 0 57 12)(font "Arial" ))
+		(text "word_select" (rect 155 59 212 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "data_out" (rect 0 0 42 12)(font "Arial" ))
+		(text "data_out" (rect 168 75 210 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80))
+	)
+	(port
+		(pt 224 96)
+		(output)
+		(text "clk_out" (rect 0 0 35 12)(font "Arial" ))
+		(text "clk_out" (rect 174 91 209 103)(font "Arial" ))
+		(line (pt 224 96)(pt 208 96))
+	)
+	(parameter
+		"IDLE_s"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"START_s"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"RUNNING_s"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_8BIT"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_12BIT"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_16BIT"
+		"3"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_24BIT"
+		"4"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"S_32BIT"
+		"5"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"LEFT"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"RIGHT"
+		"1"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 208 128))
+	)
+	(annotation_block (parameter)(rect 1768 64 1952 280))
+)
+(symbol
+	(rect 1088 520 1304 632)
+	(text "sample_generator" (rect 5 0 92 12)(font "Arial" ))
+	(text "inst5" (rect 8 96 30 113)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "rst" (rect 0 0 12 12)(font "Arial" ))
+		(text "rst" (rect 21 43 33 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "scan_in" (rect 0 0 37 12)(font "Arial" ))
+		(text "scan_in" (rect 21 59 58 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "seed[NBIT-1..0]" (rect 0 0 77 12)(font "Arial" ))
+		(text "seed[NBIT-1..0]" (rect 21 75 98 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 216 32)
+		(output)
+		(text "out[NBIT-1..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "out[NBIT-1..0]" (rect 137 27 206 39)(font "Arial" ))
+		(line (pt 216 32)(pt 200 32)(line_width 3))
+	)
+	(parameter
+		"NBIT"
+		"32"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(drawing
+		(rectangle (rect 16 16 200 96))
+	)
+	(annotation_block (parameter)(rect 1304 480 1480 520))
 )
 (connector
 	(pt 624 504)
@@ -478,3 +802,111 @@ https://fpgasoftware.intel.com/eula.
 	(pt 392 576)
 	(pt 416 576)
 )
+(connector
+	(pt 280 104)
+	(pt 280 304)
+)
+(connector
+	(pt 280 304)
+	(pt 320 304)
+)
+(connector
+	(pt 272 104)
+	(pt 280 104)
+)
+(connector
+	(pt 280 104)
+	(pt 312 104)
+)
+(connector
+	(pt 752 120)
+	(pt 752 312)
+)
+(connector
+	(pt 792 312)
+	(pt 752 312)
+)
+(connector
+	(pt 736 136)
+	(pt 736 328)
+)
+(connector
+	(pt 736 328)
+	(pt 792 328)
+)
+(connector
+	(pt 720 304)
+	(pt 720 344)
+)
+(connector
+	(pt 720 344)
+	(pt 792 344)
+)
+(connector
+	(pt 568 104)
+	(pt 696 104)
+)
+(connector
+	(pt 568 120)
+	(pt 752 120)
+)
+(connector
+	(pt 568 136)
+	(pt 736 136)
+)
+(connector
+	(pt 560 304)
+	(pt 720 304)
+)
+(connector
+	(pt 1280 312)
+	(pt 1480 312)
+	(bus)
+)
+(connector
+	(pt 1480 328)
+	(pt 1544 328)
+	(bus)
+)
+(connector
+	(pt 1480 312)
+	(pt 1480 328)
+	(bus)
+)
+(connector
+	(pt 1480 328)
+	(pt 1480 344)
+	(bus)
+)
+(connector
+	(pt 1480 344)
+	(pt 1544 344)
+	(bus)
+)
+(connector
+	(pt 1024 312)
+	(pt 1024 272)
+)
+(connector
+	(pt 976 312)
+	(pt 1024 312)
+)
+(connector
+	(pt 1024 312)
+	(pt 1056 312)
+)
+(connector
+	(pt 1024 272)
+	(pt 1496 272)
+)
+(connector
+	(pt 1496 272)
+	(pt 1496 312)
+)
+(connector
+	(pt 1496 312)
+	(pt 1544 312)
+)
+(junction (pt 280 104))
+(junction (pt 1480 328))
+(junction (pt 1024 312))

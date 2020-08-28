@@ -1,0 +1,61 @@
+#! /usr/bin/vvp
+:ivl_version "10.1 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x7fffc3e932a0 .scope module, "audio_clock_mux" "audio_clock_mux" 2 4;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk_48k"
+    .port_info 1 /INPUT 1 "clk_88_2k"
+    .port_info 2 /INPUT 1 "clk_96k"
+    .port_info 3 /INPUT 4 "clock_sel"
+    .port_info 4 /OUTPUT 1 "clk_out"
+P_0x7fffc3e93420 .param/l "s_48k" 0 2 12, +C4<00000000000000000000000000000000>;
+P_0x7fffc3e93460 .param/l "s_88_2k" 0 2 12, +C4<00000000000000000000000000000001>;
+P_0x7fffc3e934a0 .param/l "s_96k" 0 2 12, +C4<00000000000000000000000000000010>;
+v0x7fffc3e93670_0 .net *"_s0", 31 0, L_0x7fffc3eb47c0;  1 drivers
+L_0x7f2ccc6d00a8 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x7fffc3eb36d0_0 .net *"_s11", 27 0, L_0x7f2ccc6d00a8;  1 drivers
+L_0x7f2ccc6d00f0 .functor BUFT 1, C4<00000000000000000000000000000001>, C4<0>, C4<0>, C4<0>;
+v0x7fffc3eb37b0_0 .net/2u *"_s12", 31 0, L_0x7f2ccc6d00f0;  1 drivers
+v0x7fffc3eb38a0_0 .net *"_s14", 0 0, L_0x7fffc3ec4bd0;  1 drivers
+v0x7fffc3eb3960_0 .net *"_s16", 31 0, L_0x7fffc3ec4d70;  1 drivers
+L_0x7f2ccc6d0138 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x7fffc3eb3a90_0 .net *"_s19", 27 0, L_0x7f2ccc6d0138;  1 drivers
+L_0x7f2ccc6d0180 .functor BUFT 1, C4<00000000000000000000000000000010>, C4<0>, C4<0>, C4<0>;
+v0x7fffc3eb3b70_0 .net/2u *"_s20", 31 0, L_0x7f2ccc6d0180;  1 drivers
+v0x7fffc3eb3c50_0 .net *"_s22", 0 0, L_0x7fffc3ec4eb0;  1 drivers
+v0x7fffc3eb3d10_0 .net *"_s24", 0 0, L_0x7fffc3ec5030;  1 drivers
+v0x7fffc3eb3df0_0 .net *"_s26", 0 0, L_0x7fffc3ec5120;  1 drivers
+L_0x7f2ccc6d0018 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x7fffc3eb3ed0_0 .net *"_s3", 27 0, L_0x7f2ccc6d0018;  1 drivers
+L_0x7f2ccc6d0060 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0x7fffc3eb3fb0_0 .net/2u *"_s4", 31 0, L_0x7f2ccc6d0060;  1 drivers
+v0x7fffc3eb4090_0 .net *"_s6", 0 0, L_0x7fffc3ec4920;  1 drivers
+v0x7fffc3eb4150_0 .net *"_s8", 31 0, L_0x7fffc3ec4a90;  1 drivers
+o0x7f2ccc7202b8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7fffc3eb4230_0 .net "clk_48k", 0 0, o0x7f2ccc7202b8;  0 drivers
+o0x7f2ccc7202e8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7fffc3eb42f0_0 .net "clk_88_2k", 0 0, o0x7f2ccc7202e8;  0 drivers
+o0x7f2ccc720318 .functor BUFZ 1, C4<z>; HiZ drive
+v0x7fffc3eb43b0_0 .net "clk_96k", 0 0, o0x7f2ccc720318;  0 drivers
+v0x7fffc3eb4580_0 .net "clk_out", 0 0, L_0x7fffc3ec52b0;  1 drivers
+o0x7f2ccc720378 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0x7fffc3eb4640_0 .net "clock_sel", 3 0, o0x7f2ccc720378;  0 drivers
+L_0x7fffc3eb47c0 .concat [ 4 28 0 0], o0x7f2ccc720378, L_0x7f2ccc6d0018;
+L_0x7fffc3ec4920 .cmp/eq 32, L_0x7fffc3eb47c0, L_0x7f2ccc6d0060;
+L_0x7fffc3ec4a90 .concat [ 4 28 0 0], o0x7f2ccc720378, L_0x7f2ccc6d00a8;
+L_0x7fffc3ec4bd0 .cmp/eq 32, L_0x7fffc3ec4a90, L_0x7f2ccc6d00f0;
+L_0x7fffc3ec4d70 .concat [ 4 28 0 0], o0x7f2ccc720378, L_0x7f2ccc6d0138;
+L_0x7fffc3ec4eb0 .cmp/eq 32, L_0x7fffc3ec4d70, L_0x7f2ccc6d0180;
+L_0x7fffc3ec5030 .functor MUXZ 1, o0x7f2ccc7202b8, o0x7f2ccc720318, L_0x7fffc3ec4eb0, C4<>;
+L_0x7fffc3ec5120 .functor MUXZ 1, L_0x7fffc3ec5030, o0x7f2ccc7202e8, L_0x7fffc3ec4bd0, C4<>;
+L_0x7fffc3ec52b0 .functor MUXZ 1, L_0x7fffc3ec5120, o0x7f2ccc7202b8, L_0x7fffc3ec4920, C4<>;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "audio_clock_mux.v";

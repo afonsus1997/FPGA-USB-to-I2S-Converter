@@ -48,20 +48,19 @@ module sample_processor (
             sample_blocks[2] = 0;
             sample_blocks[3] = 0;
         end
+        else if(data_available == 0) begin
+            if(current_block_n == n_blocks_per_sample) begin
+                data_ready <= 1;
+            end
+            else begin
+                sample_blocks[current_block_n] <= data_in;
+                current_block_n <= current_block_n + 1;
+            end
+        end
 
     end
 
-    always @ (negedge data_available) begin
-
-        if(current_block_n == n_blocks_per_sample) begin
-            data_ready <= 1;
-        end
-        else begin
-            sample_blocks[current_block_n] <= data_in;
-            current_block_n <= current_block_n + 1;
-        end
-                
-    end
+ 
 
 endmodule
 
