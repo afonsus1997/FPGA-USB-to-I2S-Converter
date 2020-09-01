@@ -1,41 +1,57 @@
 
 
-`define debug
+//`define debug
 
 
 module top (
     input fpga_clk,
-    input rst
+    input nrst,
+	 input [7:0] FIFO_IO,
+	 input FIFO_RXF,
+	 input FIFO_TXE,
+	 input FIFO_PWREN,
+	 output reg [7:0] LED,
+	 output FIFO_RD,
+	 output FIFO_WR,
+	 output FIFO_RST,
+	 output I2S_word_select,
+	 output I2S_data_out,
+	 output I2S_clk_out
+	 
+	 
 );
     
     parameter s_48k = 0, s_88_2k = 1, s_96k = 2;
     parameter SEED = 32'd10;
     parameter S_8BIT=0, S_12BIT=1, S_16BIT=3, S_24BIT=4, S_32BIT=5;
     parameter SAMPLE_SIZE = S_16BIT;
-
+	 
+	 wire rst;
 //    wire fpga_clk;
     wire main_clk;
-    wire audio_clks [1:0];
+    wire audio_clks [2:0];
     wire audio_clk_sel;
     wire audio_clk_out;
     wire main_rst;
     wire sample_gen_out;
     wire sample_processor_out;
-    wire I2S_clk_out;
-    wire I2S_word_select;
-    wire I2S_data_out;
+//    wire I2S_clk_out;
+//    wire I2S_word_select;
+//    wire I2S_data_out;
     wire data_stream_start;
+	 
+	 assign rst = ~nrst;
 
     `ifndef debug
     PLL pll1(
-        .inclk1(fpga_clk),
+        .inclk0(fpga_clk),
         .c0(main_clk),
         .c1(audio_clks[s_48k]),
         .c2(audio_clks[s_88_2k])
     );
 
-    PLL1 pll2(
-        .inclk1(fpga_clk),
+    PLL2 pll2(
+        .inclk0(fpga_clk),
         .c0(audio_clks[s_96k])
     );
     

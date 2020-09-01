@@ -100,7 +100,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : B12       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : B13       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : B14       :        :                   :         : 7         :                
 GND                          : B15       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B16       :        :                   :         : 6         :                
+I2S_data_out                 : B16       : output : 3.3-V LVTTL       :         : 6         : Y              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 3.3-V LVTTL       :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
@@ -115,8 +115,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : C11       :        :                   :      
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 3.3V    : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C15       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C16       :        :                   :         : 6         :                
+I2S_word_select              : C15       : output : 3.3-V LVTTL       :         : 6         : Y              
+I2S_clk_out                  : C16       : output : 3.3-V LVTTL       :         : 6         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D1        :        :                   :         : 1         :                
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 3.3-V LVTTL       :         : 1         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 8         :                
@@ -161,7 +161,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :      
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-MCLK_Output                  : F13       : output : 3.3-V LVTTL       :         : 6         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F13       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 6         :                
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 3.3-V LVTTL       :         : 6         : N              
@@ -227,8 +227,8 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 3.3V    : 5         :                
-FIFO_RXF                     : K15       : output : 3.3-V LVTTL       :         : 5         : Y              
-FIFO_TXE                     : K16       : output : 3.3-V LVTTL       :         : 5         : Y              
+FIFO_RXF                     : K15       : input  : 3.3-V LVTTL       :         : 5         : Y              
+FIFO_TXE                     : K16       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L3        :        :                   :         : 2         :                
@@ -236,7 +236,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :      
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : L7        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 3         :                
+nrst                         : L8        : input  : 3.3-V LVTTL       :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
@@ -246,7 +246,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : L14       :        :                   :      
 FIFO_RD                      : L15       : output : 3.3-V LVTTL       :         : 5         : Y              
 FIFO_RST                     : L16       : output : 3.3-V LVTTL       :         : 5         : Y              
 GND+                         : M1        :        :                   :         : 2         :                
-CLK_IN_12M                   : M2        : input  : 3.3-V LVTTL       :         : 2         : Y              
+fpga_clk                     : M2        : input  : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : M3        : power  :                   : 3.3V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
@@ -276,7 +276,7 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : N12       :        :                   :      
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
-FIFO_PWREN                   : N16       : output : 3.3-V LVTTL       :         : 5         : Y              
+FIFO_PWREN                   : N16       : input  : 3.3-V LVTTL       :         : 5         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 3         :                
@@ -287,10 +287,10 @@ VCCIO3                       : P7        : power  :                   : 3.3V    
 RESERVED_INPUT_WITH_WEAK_PULLUP : P8        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P9        :        :                   :         : 4         :                
 VCCIO4                       : P10       : power  :                   : 3.3V    : 4         :                
-FIFO_IO[7]                   : P11       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[7]                   : P11       : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 3.3V    : 4         :                
-FIFO_IO[2]                   : P14       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[2]                   : P14       : input  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
@@ -304,9 +304,9 @@ GND+                         : R8        :        :                   :         
 GND+                         : R9        :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R10       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R11       :        :                   :         : 4         :                
-FIFO_IO[6]                   : R12       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
-FIFO_IO[4]                   : R13       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
-FIFO_IO[1]                   : R14       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[6]                   : R12       : input  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[4]                   : R13       : input  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[1]                   : R14       : input  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : R15       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
 VCCIO3                       : T1        : power  :                   : 3.3V    : 3         :                
@@ -321,7 +321,7 @@ GND+                         : T9        :        :                   :         
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T12       :        :                   :         : 4         :                
-FIFO_IO[5]                   : T13       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
-FIFO_IO[3]                   : T14       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
-FIFO_IO[0]                   : T15       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[5]                   : T13       : input  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[3]                   : T14       : input  : 3.3-V LVTTL       :         : 4         : Y              
+FIFO_IO[0]                   : T15       : input  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : T16       : power  :                   : 3.3V    : 4         :                

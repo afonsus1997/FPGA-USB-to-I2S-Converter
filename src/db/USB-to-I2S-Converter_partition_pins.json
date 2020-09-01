@@ -2,7 +2,16 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "I2S_word_select",
+					"strict" : false
+				},
+				{
+					"name" : "I2S_data_out",
+					"strict" : false
+				}
+			]
 		}
 	]
 }

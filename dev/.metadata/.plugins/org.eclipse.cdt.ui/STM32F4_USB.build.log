@@ -1,0 +1,10 @@
+23:35:17 **** Incremental Build of configuration Debug for project STM32F4_USB ****
+make -j4 all 
+arm-none-eabi-size   STM32F4_USB.elf 
+   text	   data	    bss	    dec	    hex	filename
+  38980	    424	   4336	  43740	   aadc	STM32F4_USB.elf
+Finished building: default.size.stdout
+ 
+
+23:35:22 Build Finished. 0 errors, 0 warnings. (took 4s.591ms)
+

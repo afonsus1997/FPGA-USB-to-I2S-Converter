@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Aug 28 18:32:08 2020
+Analysis & Synthesis Status : Successful - Sat Aug 29 00:23:54 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : USB-to-I2S-Converter
 Top-level Entity Name : top
 Family : Cyclone 10 LP
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 2
+Total logic elements : 76
+    Total combinational functions : 43
+    Dedicated logic registers : 60
+Total registers : 60
+Total pins : 19
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1
