@@ -16,6 +16,9 @@ module sample_processor (
     reg [3:0] n_blocks_per_sample;
     reg [31:0] sample_mask;
 
+    wire rst_condition;
+
+    assign rst_condition = rst | data_ready;
     assign data_out = {sample_blocks[3], sample_blocks[2], sample_blocks[1], sample_blocks[0]} & sample_mask;
 
     always @(*) begin
@@ -40,7 +43,7 @@ module sample_processor (
 
 
     always @ (posedge clk) begin
-        if(rst) begin
+        if(rst_condition) begin
             data_ready <= 0;
             current_block_n <= 0;
             sample_blocks[0] = 0;

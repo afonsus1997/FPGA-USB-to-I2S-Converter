@@ -33,14 +33,14 @@ module top (
     wire audio_clk_sel;
     wire audio_clk_out;
     wire main_rst;
-    wire sample_gen_out;
-    wire sample_processor_out;
+    wire [7:0] sample_gen_out;
+    wire [31:0] sample_processor_out;
 //    wire I2S_clk_out;
 //    wire I2S_word_select;
 //    wire I2S_data_out;
     wire data_stream_start;
 	 
-	 assign rst = ~nrst;
+	 assign main_rst = ~nrst;
 
     `ifndef debug
     PLL pll1(
@@ -83,8 +83,8 @@ module top (
         .data_in(sample_gen_out),
         .data_out(sample_processor_out),
         .sample_size(SAMPLE_SIZE),
-        .data_available(),
-        .data_ready(data_stream_start),
+        .data_available(0),
+        .data_ready(data_stream_start)
     );
 
 

@@ -93,6 +93,7 @@ module shift_register(
 				end
 				else begin
 					current_out <= RIGHT;
+					sample_right_r <= sample_right;
 					bit_counter_left <= counter_size;
 				end
 			end
@@ -105,6 +106,7 @@ module shift_register(
 				end
 				else begin
 					current_out <= LEFT;
+					sample_left_r <= sample_left;
 					bit_counter_right <= counter_size;
 				end
 				

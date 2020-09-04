@@ -2086,3 +2086,789 @@ However, this IP can be configured manually.
 2020-08-31 23:29:51,851 [INFO] ProjectBuilder:1461 - Time for Copy CMSIS : 0mS.
 2020-08-31 23:45:17,832 [INFO] BlockDiagram:1818 - stop enableDisableButtons
 2020-09-01 02:59:06,689 [INFO] BlockDiagram:1818 - stop enableDisableButtons
+2020-09-01 20:07:01,717 [INFO] Activator:176 - 
+
+
+2020-09-01 20:07:01,738 [INFO] Activator:177 - !SESSION log4j initialized
+2020-09-01 20:11:15,888 [INFO] Activator:178 - 
+
+
+2020-09-01 20:11:15,892 [INFO] Activator:179 - !SESSION log4j initialized
+2020-09-01 20:15:21,559 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643
+2020-09-01 20:15:21,573 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/mcu/
+2020-09-01 20:15:21,577 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/boardmanager/
+2020-09-01 20:15:21,578 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:21,578 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:21,581 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:22,894 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:22,896 [INFO] DbMcusJson:63 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:22,897 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:22,898 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:22,940 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-09-01 20:15:22,944 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,055 [INFO] RulesReader:52 - Compatibility file has been processed (209 Rules)
+2020-09-01 20:15:23,143 [INFO] MicroXplorer:564 - Detected Java Version = 1.8.0_202
+2020-09-01 20:15:23,143 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/mcu/
+2020-09-01 20:15:23,143 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/boardmanager/
+2020-09-01 20:15:23,144 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:23,145 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:23,145 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:23,145 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,145 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,145 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,146 [INFO] DbMcusJson:63 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,146 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,146 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,146 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,146 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,146 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,147 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,147 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-09-01 20:15:23,147 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,147 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,225 [INFO] MainPanel:189 - HeapMemory: 314572800
+2020-09-01 20:15:23,327 [INFO] DbMcusXml:70 - Set database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/mcu/
+2020-09-01 20:15:23,328 [INFO] DbBoardsPdsc:56 - Set plugin database path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/boardmanager/
+2020-09-01 20:15:23,328 [INFO] DbMcus:258 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:23,329 [INFO] DbBoards:264 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:23,329 [INFO] DbExamples:326 - Set plugin images path to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/plugins/mcufinder/images/
+2020-09-01 20:15:23,330 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,330 [INFO] DbMcusDocs:112 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,331 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,331 [INFO] DbMcusJson:63 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,331 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,332 [INFO] DbBoardsDocs:112 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,332 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,332 [INFO] DbBoardsJson:56 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,332 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,332 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,333 [INFO] CrossReferenceDbSqlite:196 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/cs/
+2020-09-01 20:15:23,333 [WARN] DbFile:36 - Overriding database path with different value: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder/ => C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder
+2020-09-01 20:15:23,333 [INFO] DbExamplesSqlite:800 - Set database path to: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder//mcu/
+2020-09-01 20:15:23,359 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643
+2020-09-01 20:15:23,361 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, ]
+2020-09-01 20:15:23,363 [INFO] PluginManage:292 - Check plugin analytics
+2020-09-01 20:15:23,580 [INFO] AnalyticsPlugin:203 - Accepted Software Licenses: STM32CubeMX.5.3.0
+2020-09-01 20:15:23,581 [INFO] AnalyticsPlugin:205 - Accepted CMSIS Pack Licenses: 
+2020-09-01 20:15:23,581 [INFO] AnalyticsPlugin:207 - Accepted Firmware Licenses: 
+2020-09-01 20:15:23,582 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-09-01 20:15:23,582 [INFO] PluginManage:292 - Check plugin clock
+2020-09-01 20:15:23,598 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-09-01 20:15:23,599 [INFO] PluginManage:292 - Check plugin ddr
+2020-09-01 20:15:23,602 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-09-01 20:15:23,602 [INFO] PluginManage:292 - Check plugin filemanager
+2020-09-01 20:15:23,773 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-09-01 20:15:23,774 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-09-01 20:15:23,781 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-09-01 20:15:23,781 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-09-01 20:15:23,794 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-09-01 20:15:23,794 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-09-01 20:15:23,828 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-09-01 20:15:23,829 [INFO] PluginManage:292 - Check plugin power
+2020-09-01 20:15:23,838 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-09-01 20:15:23,839 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-09-01 20:15:23,856 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-09-01 20:15:23,857 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-09-01 20:15:23,914 [WARN] ThirdPartyDb:523 - Cannot understand database version: 1.0
+2020-09-01 20:15:23,915 [ERROR] ThirdPartyDb:236 - ThirdParty database: found version 1.0 but was expecting 4
+2020-09-01 20:15:23,921 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-09-01 20:15:23,922 [INFO] PluginManage:292 - Check plugin tools
+2020-09-01 20:15:23,925 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-09-01 20:15:23,926 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-09-01 20:15:24,213 [INFO] PluginManage:342 - Loaded plugin tutovideos (category:base,tabindex:-1)
+2020-09-01 20:15:24,213 [INFO] PluginManage:292 - Check plugin updater
+2020-09-01 20:15:24,225 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-09-01 20:15:24,226 [INFO] PluginManage:265 - PluginManage : Loaded plugins [13]
+2020-09-01 20:15:24,407 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-09-01 20:15:24,503 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,503 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-09-01 20:15:24,506 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,506 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-09-01 20:15:24,509 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,509 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-09-01 20:15:24,511 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,511 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-09-01 20:15:24,514 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,514 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-09-01 20:15:24,517 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,517 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-09-01 20:15:24,523 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,524 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-09-01 20:15:24,526 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,526 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-09-01 20:15:24,532 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,532 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-09-01 20:15:24,538 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,539 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-09-01 20:15:24,541 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,541 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-09-01 20:15:24,544 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,544 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-09-01 20:15:24,551 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,552 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-09-01 20:15:24,557 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,557 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-09-01 20:15:24,560 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,560 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-09-01 20:15:24,564 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,564 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-09-01 20:15:24,567 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,567 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-09-01 20:15:24,572 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,573 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-09-01 20:15:24,576 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,577 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-09-01 20:15:24,578 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,579 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-09-01 20:15:24,583 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,584 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-09-01 20:15:24,587 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,588 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-09-01 20:15:24,590 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,590 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-09-01 20:15:24,593 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,593 [INFO] PluginManager:200 - loadIPPluginJar : add openamp
+2020-09-01 20:15:24,596 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,597 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-09-01 20:15:24,604 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,607 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-09-01 20:15:24,609 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,609 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-09-01 20:15:24,612 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,613 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-09-01 20:15:24,616 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,617 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-09-01 20:15:24,619 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,620 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-09-01 20:15:24,624 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,624 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-09-01 20:15:24,626 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,626 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-09-01 20:15:24,630 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,630 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-09-01 20:15:24,632 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,632 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-09-01 20:15:24,634 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,635 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-09-01 20:15:24,636 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,636 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-09-01 20:15:24,637 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,638 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-09-01 20:15:24,640 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:15:24,640 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-09-01 20:15:25,882 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: null
+2020-09-01 20:15:26,730 [FATAL] Updater:282 - Updater called before beeing initialized
+2020-09-01 20:15:26,907 [FATAL] Updater:282 - Updater called before beeing initialized
+2020-09-01 20:15:26,908 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-09-01 20:15:26,908 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-09-01 20:15:26,909 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-09-01 20:15:26,911 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-09-01 20:15:26,912 [FATAL] Updater:282 - Updater called before beeing initialized
+2020-09-01 20:15:26,918 [ERROR] Updater:967 - MainUpdater not yet initialized. External WinMGr cannot be set.
+2020-09-01 20:15:26,919 [INFO] CubeProgrammer:457 - [DDR PANEL] - PathOfProgrammer: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2020-09-01 20:15:26,922 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin\STM32_Programmer_CLI.exe -l
+2020-09-01 20:15:27,325 [INFO] MainDdrPanel:49 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.win32_1.4.0.202007081208\tools\bin
+2020-09-01 20:15:27,343 [INFO] Updater:904 - Updater Version found : 6.0.1
+2020-09-01 20:15:27,369 [INFO] ApplicationProperties:181 - Using Application install path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643
+2020-09-01 20:15:27,408 [INFO] MainUpdater:463 - Copy updater definitions from MX database
+2020-09-01 20:15:27,537 [INFO] MainUpdater:2268 - connection check result : 10
+2020-09-01 20:15:27,538 [INFO] MainUpdater:2935 - Updater definition file requires update
+2020-09-01 20:15:27,539 [INFO] MainUpdater:239 - Updater Check For Update Now.
+2020-09-01 20:15:27,539 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-09-01 20:15:27,588 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2020-09-01 20:15:27,652 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2020-09-01 20:15:27,652 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-09-01 20:15:28,109 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2020-09-01 20:15:28,170 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2020-09-01 20:15:28,246 [INFO] LoadServerUpdatesThread:309 - End of LoadServerUpdate Thread
+2020-09-01 20:15:28,305 [INFO] CheckServerUpdateThread:102 - End of CheckServer Thread
+2020-09-01 20:15:28,355 [INFO] MainUpdater:2268 - connection check result : 10
+2020-09-01 20:15:28,532 [INFO] McuFinderGlobals:40 - Set McuFinder mode to 2 (CubeIDE integrated)
+2020-09-01 20:15:29,793 [INFO] CrossSelectorPresenter:1330 - Cross Selector saved comparison directory: C:\Users\Afonso Muralha\.stmcufinder\plugins\mcufinder\mcu\cs_comparisons_mx
+2020-09-01 20:15:29,801 [INFO] MultiScanPanel:193 - Auto-refresh data requested => check proxy status ongoing
+2020-09-01 20:15:29,805 [INFO] FinderPluginLoader:87 - Searching for filters in installed packs
+2020-09-01 20:15:29,808 [INFO] DbMcusXml:100 - Load MCU database from C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\/mcu/families.xml
+2020-09-01 20:15:29,954 [WARN] IntegrityCheckThread:61 - waiting for thirdparty lock release [integrity check]
+2020-09-01 20:15:29,954 [INFO] IntegrityCheckThread:63 - entering critical section [integrity check]
+2020-09-01 20:15:30,086 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,158 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2020-09-01 20:15:30,159 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2020-09-01 20:15:30,163 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2020-09-01 20:15:30,163 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2020-09-01 20:15:30,163 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2020-09-01 20:15:30,163 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2020-09-01 20:15:30,164 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2020-09-01 20:15:30,164 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2020-09-01 20:15:30,165 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2020-09-01 20:15:30,166 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,448 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2020-09-01 20:15:30,448 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2020-09-01 20:15:30,448 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2020-09-01 20:15:30,448 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2020-09-01 20:15:30,448 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2020-09-01 20:15:30,449 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2020-09-01 20:15:30,449 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2020-09-01 20:15:30,449 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2020-09-01 20:15:30,449 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2020-09-01 20:15:30,449 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2020-09-01 20:15:30,449 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : CMSIS Core with RTOS2 cause : null
+2020-09-01 20:15:30,450 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver ETH cause : null
+2020-09-01 20:15:30,450 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver PPP cause : null
+2020-09-01 20:15:30,450 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Driver SLIP cause : null
+2020-09-01 20:15:30,450 [ERROR] ConditionMgr:1027 - genDependencies : Invalid condition id : Network Core cause : null
+2020-09-01 20:15:30,450 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,470 [INFO] DbMcusJson:92 - JSON generation date=Mon Jul 27 13:58:30 BST 2020 (1595854710)
+2020-09-01 20:15:30,566 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,704 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,762 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,807 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,820 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:30,941 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,028 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,058 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,065 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,070 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,074 [INFO] Engine:289 - softwarePackList size : 13
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack FreeRTOS have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack lwIP have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack lwIP have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack MBEDTLS have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack MBEDTLS have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack PDM2PCM have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack PDM2PCM have been done, no update is requested
+2020-09-01 20:15:31,079 [INFO] Engine:305 - compute dependency for SwPack PDM2PCM have been done, no update is requested
+2020-09-01 20:15:31,081 [INFO] Engine:305 - compute dependency for SwPack USB_DEVICE have been done, no update is requested
+2020-09-01 20:15:31,081 [INFO] Engine:305 - compute dependency for SwPack USB_DEVICE have been done, no update is requested
+2020-09-01 20:15:31,081 [INFO] Engine:305 - compute dependency for SwPack USB_DEVICE have been done, no update is requested
+2020-09-01 20:15:31,082 [INFO] Engine:305 - compute dependency for SwPack USB_HOST have been done, no update is requested
+2020-09-01 20:15:31,082 [INFO] Engine:305 - compute dependency for SwPack USB_HOST have been done, no update is requested
+2020-09-01 20:15:31,083 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,083 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,083 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,083 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,083 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,084 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,085 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,085 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,085 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,086 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,086 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,086 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,086 [WARN] XmlIntegratedPack:130 - No IP in current MCU
+2020-09-01 20:15:31,086 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,090 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,145 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,158 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,165 [INFO] ThirdPartyDb:299 - Save Third Party DataBase File (C:/Users/Afonso Muralha/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) [forced]
+2020-09-01 20:15:31,173 [INFO] IntegrityCheckThread:76 - exiting critical section [integrity check]
+2020-09-01 20:15:31,173 [INFO] IntegrityCheckThread:79 - End integrity checks thread
+2020-09-01 20:15:31,479 [INFO] DbMcus:175 - Found 1761 MCUs (1722 are supported by CubeMX, 1728 are visible in CubeMX)
+2020-09-01 20:15:31,480 [INFO] ApiDb:201 - Load user favorites file C:\Users\Afonso Muralha/.stm32cubeide/favorites.mcus.txt: 0 item(s)
+2020-09-01 20:15:31,480 [INFO] ApiDb:205 - User favorites MCUs=[]
+2020-09-01 20:15:31,481 [INFO] DbMcus:187 - Set 0 / 0 favorites MCUs
+2020-09-01 20:15:32,367 [INFO] ServerAccessManage:348 - Download File 
+2020-09-01 20:15:32,400 [INFO] LoadUrlFilesThread:162 - End of LoadServerUrlFiles without Thread
+2020-09-01 20:15:32,438 [INFO] DetailPanel:331 - Set advertising image to C:/Users/Afonso Muralha/STM32Cube/Repository/\stm32cubemx-promo_image.jpg
+2020-09-01 20:15:32,723 [INFO] McuFilterPanel:245 - Update 0 favorites MCUs
+2020-09-01 20:15:32,821 [INFO] DbBoardsPdsc:94 - Found 23 items
+2020-09-01 20:15:32,823 [INFO] DbBoardsPdsc:94 - Found 9 items
+2020-09-01 20:15:32,827 [INFO] DbBoardsPdsc:94 - Found 29 items
+2020-09-01 20:15:32,828 [INFO] DbBoardsPdsc:94 - Found 1 items
+2020-09-01 20:15:32,834 [INFO] DbBoardsPdsc:94 - Found 44 items
+2020-09-01 20:15:32,840 [INFO] DbBoardsPdsc:94 - Found 40 items
+2020-09-01 20:15:32,842 [INFO] DbBoardsPdsc:94 - Found 2 items
+2020-09-01 20:15:32,844 [INFO] DbBoardsPdsc:94 - Found 4 items
+2020-09-01 20:15:32,862 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (CS42L51-CNZ), n=1
+2020-09-01 20:15:32,862 [WARN] DbBoardsPdsc:258 - Board STM32H735G-DK: unknown feature type=Audio, name=, username=Audio stereo codec with Headphone Amp (WM8994ECS/R), n=1
+2020-09-01 20:15:32,864 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Audio, name=, username=Multi-Channel Audio Codec (CS42L51-CNZ), n=1
+2020-09-01 20:15:32,865 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Meter, name=, username=Power-metering and Temperature-monitoring with sigma-delta modulators, n=1
+2020-09-01 20:15:32,865 [WARN] DbBoardsPdsc:258 - Board STM32H7B3I-EVAL: unknown feature type=Motor, name=, username=Motor Control, n=1
+2020-09-01 20:15:32,876 [INFO] DbBoardsJson:85 - JSON generation date=Thu Jul 02 14:35:57 BST 2020 (1593696957)
+2020-09-01 20:15:32,881 [INFO] DbBoards:117 - Found 152 boards (149 are supported by CubeMX)
+2020-09-01 20:15:32,888 [INFO] DbBoardsDocs:145 - JSON generation date=Mon Jul 27 13:58:30 BST 2020 (1595854710)
+2020-09-01 20:15:32,907 [INFO] DbBoardsDocs:81 - Found 185 boards documents
+2020-09-01 20:15:32,907 [WARN] DbBoards:149 - board B-G474E-DPOW1 / document id not found: 4624
+2020-09-01 20:15:32,908 [WARN] DbBoards:149 - board B-G474E-DPOW1 / document id not found: 4625
+2020-09-01 20:15:32,908 [WARN] DbBoards:127 - board B-L462E-CELL1 has no document id list !
+2020-09-01 20:15:32,908 [WARN] DbBoards:127 - board B-L475E-IOT01A2 has no document id list !
+2020-09-01 20:15:32,909 [WARN] DbBoards:127 - board NUCLEO-G491RE has no document id list !
+2020-09-01 20:15:32,909 [WARN] DbBoards:127 - board NUCLEO-H723ZG has no document id list !
+2020-09-01 20:15:32,909 [WARN] DbBoards:127 - board NUCLEO-H743ZI2 has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board NUCLEO-WB55RG has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board P-NUCLEO-WB55-Nucleo has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board P-NUCLEO-WB55-USBDongle has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board STEVAL-BFA001V1B has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board STEVAL-BFA001V2B has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board STEVAL-IDP005V1 has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board STEVAL-IDP005V2 has no document id list !
+2020-09-01 20:15:32,910 [WARN] DbBoards:127 - board STEVAL-MKSBOX1V1 has no document id list !
+2020-09-01 20:15:32,911 [WARN] DbBoards:127 - board STEVAL-STWINKT1 has no document id list !
+2020-09-01 20:15:32,911 [WARN] DbBoards:127 - board STM32F401C-DISCO has no document id list !
+2020-09-01 20:15:32,912 [WARN] DbBoards:127 - board STM32F769I-DISC1 has no document id list !
+2020-09-01 20:15:32,912 [WARN] DbBoards:127 - board STM32G474E-EVAL1 has no document id list !
+2020-09-01 20:15:32,912 [WARN] DbBoards:127 - board STM32H735G-DK has no document id list !
+2020-09-01 20:15:32,913 [WARN] DbBoards:127 - board STM32H743I-EVAL2 has no document id list !
+2020-09-01 20:15:32,913 [WARN] DbBoards:127 - board STM32H747I-DISC1 has no document id list !
+2020-09-01 20:15:32,913 [WARN] DbBoards:127 - board STM32H753I-EVAL2 has no document id list !
+2020-09-01 20:15:32,913 [WARN] DbBoards:127 - board STM32L-DISCOVERY has no document id list !
+2020-09-01 20:15:32,914 [WARN] DbBoards:127 - board STM32MP157A-DK1 has no document id list !
+2020-09-01 20:15:32,914 [WARN] DbBoards:127 - board STM32MP157F-EV1 has no document id list !
+2020-09-01 20:15:33,014 [ERROR] DbBoards:192 - No image file URL for board B-L462E-CELL1
+2020-09-01 20:15:34,367 [INFO] ApiDb:201 - Load user favorites file C:\Users\Afonso Muralha/.stm32cubeide/favorites.boards.txt: 0 item(s)
+2020-09-01 20:15:34,368 [INFO] ApiDb:205 - User favorites Boards=[]
+2020-09-01 20:15:34,368 [INFO] DbBoards:206 - Set 0 / 0 favorites Boards
+2020-09-01 20:16:49,314 [INFO] MainUpdater:2268 - connection check result : 10
+2020-09-01 20:16:49,314 [INFO] MainUpdater:2268 - connection check result : 10
+2020-09-01 20:16:49,369 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-09-01 20:16:49,370 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-09-01 20:16:49,370 [WARN] ThirdParty:775 - waiting for thirdparty lock release [close project]
+2020-09-01 20:16:49,370 [INFO] ThirdParty:777 - entering critical section [close project]
+2020-09-01 20:16:49,371 [INFO] ThirdParty:790 - exiting critical section [close project]
+2020-09-01 20:16:49,372 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-09-01 20:16:49,373 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 655246336 Bytes (932184064)
+2020-09-01 20:16:52,021 [INFO] MicroXplorer:384 - Change Database Path : 
+2020-09-01 20:16:52,021 [INFO] MicroXplorer:414 - Change Database Version : DB.6.0.0
+2020-09-01 20:16:52,021 [INFO] OpenFileManager:274 - Change cursor
+2020-09-01 20:16:53,313 [INFO] Rule:211 - rule align RCC SDMMC3CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC SDMMC12CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC QSPICLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC SPI6CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC LPTIM23CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC LPTIM1CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC USART1CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC USART24CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC USART6CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC UART78CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC USART35CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC I2C46CLockSelection BCLK value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC SPI45CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC I2C12CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,314 [INFO] Rule:211 - rule align RCC I2C35CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule align RCC LPTIM45CLockSelection default value on MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Rename DCMI PIXCK signal is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change Default Value for I2C46CLockSelection MP1 family is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change Default Value for UART for G4, G0 and WB families is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change Default Value for USART for G4, G0 and WB families is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change Default Value for USART for G4 family is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change USART1CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change USART2CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change USART3CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change UART4CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change UART5CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,315 [INFO] Rule:211 - rule Change LPUART1CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change LPTIM1CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change LPTIM2CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change RCC_MCO1Source refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change LSCOSource1 refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change SMPSCLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change LPTIM3CLockSelection refparam name for MP1 is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change MPCBB* Default Template Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change MPCWM* or MPCBB* Secure Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change MPCWM* or MPCBB* No Secure Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change TZSC IP Secure Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change TZSC IP No Secure Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change TZSC IP Privilege Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change TZSC IP No Privilege Mode to Parameters is applicable
+2020-09-01 20:16:53,316 [INFO] Rule:211 - rule Change TZIC IT Secure Mode to Parameters is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Change TZIC IT No Secure Mode to Parameters is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Add MPCBB1_NonSecureArea_Start_Address value with referenced to MPCBB1_NonSecureArea_Start value is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Add MPCBB2_NonSecureArea_Start_Address value with referenced to MPCBB2_NonSecureArea_Start value is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Add MPCWM1_NonSecureArea*_Start_Address value with referenced to MPCWM1_NonSecureArea*_Start value is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Add MPCWM2_NonSecureArea*_Start_Address value with referenced to MPCWM2_NonSecureArea*_Start value is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Add MPCWM3_NonSecureArea_Start_Address value with referenced to MPCWM3_NonSecureArea_Start value is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule Change Default Value for PLL1UserDefinedConfig is applicable
+2020-09-01 20:16:53,318 [INFO] Rule:211 - rule OPAMP is applicable
+2020-09-01 20:16:53,319 [INFO] DbConfProperties:294 - Apply Compatibility (0/51 Rules)
+2020-09-01 20:16:53,368 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS, mode=CMSIS_V1, owner=FREERTOS
+2020-09-01 20:16:53,368 [INFO] RtosManager:456 - Registered RTOS mode: class=CMSIS, group=RTOS2, mode=CMSIS_V2, owner=FREERTOS
+2020-09-01 20:16:53,368 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V1, owner=FREERTOS
+2020-09-01 20:16:53,369 [INFO] RtosManager:456 - Registered RTOS mode: class=RTOS, group=Core, mode=CMSIS_V2, owner=FREERTOS
+2020-09-01 20:16:53,369 [WARN] ModelIntegratedComponent:188 - Missing modes for component 1598987730080
+2020-09-01 20:16:53,373 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Parameter (ADCFreqValue) has invalid value (24000000)
+2020-09-01 20:16:53,374 [INFO] ImportTextPane:162 - (OptionalMessage_ERROR) IP (RCC) : Invalid parameter (FamilyName)
+2020-09-01 20:16:53,849 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 632664096 Bytes (932184064)
+2020-09-01 20:16:53,851 [WARN] ThirdParty:741 - waiting for thirdparty lock release [change project]
+2020-09-01 20:16:53,851 [INFO] ThirdParty:743 - entering critical section [change project]
+2020-09-01 20:16:53,851 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 2.0.0
+2020-09-01 20:16:53,851 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-09-01 20:16:53,851 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 1.0.0
+2020-09-01 20:16:53,851 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 3.0.0
+2020-09-01 20:16:53,851 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.16.2
+2020-09-01 20:16:53,851 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.0.3
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics lwIP 2.1.2
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics MBEDTLS 2.14.1
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_HOST 1.0.0
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.1.0
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.2.0
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics USB_DEVICE 2.0.0
+2020-09-01 20:16:53,852 [INFO] ThirdParty:968 - CMSIS Pack Vendor :STMicroelectronics PDM2PCM 3.3.0
+2020-09-01 20:16:53,852 [INFO] ThirdParty:749 - exiting critical section [change project]
+2020-09-01 20:16:54,057 [INFO] PinOutPanel:1418 - setPackage(No Configuration,No Configuration)
+2020-09-01 20:16:54,059 [INFO] PinOutPanel:1418 - setPackage(STM32F103C8Tx,LQFP48)
+2020-09-01 20:16:54,473 [INFO] UtilMem:74 - Before build in PCC Used Memory: 671234952 Bytes (932184064)
+2020-09-01 20:16:54,948 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Afonso Muralha/.stm32cubemx/plugins/power
+2020-09-01 20:16:55,019 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Afonso Muralha/.stm32cubemx/plugins/power
+2020-09-01 20:16:55,094 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Afonso Muralha/.stm32cubemx/plugins/power
+2020-09-01 20:16:55,099 [INFO] SharedServices:71 - Folder for power plug-in: C:/Users/Afonso Muralha/.stm32cubemx/plugins/power
+2020-09-01 20:16:55,317 [INFO] UtilMem:74 - After build in PCC Used Memory: 724190080 Bytes (932184064)
+2020-09-01 20:16:55,350 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,351 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,351 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,351 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,351 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,352 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,353 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,354 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,355 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,355 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,355 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,355 [INFO] IPUIPlugin:64 - create IPUIPlugin
+2020-09-01 20:16:55,387 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-09-01 20:16:55,606 [INFO] OpenFileManager:294 - Restore cursor
+2020-09-01 20:17:08,913 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 422969488 Bytes (932184064)
+2020-09-01 20:17:11,492 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 455997592 Bytes (932184064)
+2020-09-01 20:17:11,975 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-09-01 20:17:11,976 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-09-01 20:17:11,976 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-09-01 20:17:11,976 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-09-01 20:17:11,976 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-09-01 20:17:11,976 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-09-01 20:17:11,977 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2020-09-01 20:17:12,392 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp_save
+2020-09-01 20:17:12,943 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp
+2020-09-01 20:17:13,052 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp_save
+2020-09-01 20:17:13,141 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp
+2020-09-01 20:17:13,143 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-09-01 20:17:13,210 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp_save
+2020-09-01 20:17:13,292 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp
+2020-09-01 20:17:13,298 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp_save
+2020-09-01 20:17:13,403 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp
+2020-09-01 20:17:13,410 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp_save
+2020-09-01 20:17:13,551 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp
+2020-09-01 20:17:13,558 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp_save
+2020-09-01 20:17:13,640 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp
+2020-09-01 20:17:13,674 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-09-01 20:17:13,686 [INFO] ApiDbMcu:456 - Load IP Config File for USB_DEVICE
+2020-09-01 20:17:13,695 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-09-01 20:17:13,703 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c_save
+2020-09-01 20:17:13,892 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c
+2020-09-01 20:17:13,899 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h_save
+2020-09-01 20:17:13,983 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h
+2020-09-01 20:17:13,991 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h_save
+2020-09-01 20:17:14,124 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h
+2020-09-01 20:17:14,132 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c_save
+2020-09-01 20:17:14,219 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c
+2020-09-01 20:17:14,226 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h_save
+2020-09-01 20:17:14,387 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h
+2020-09-01 20:17:14,395 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c_save
+2020-09-01 20:17:14,467 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c
+2020-09-01 20:17:14,473 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h_save
+2020-09-01 20:17:14,539 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h
+2020-09-01 20:17:14,546 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c_save
+2020-09-01 20:17:14,619 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c
+2020-09-01 20:17:14,628 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c_save
+2020-09-01 20:17:14,906 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c
+2020-09-01 20:17:14,913 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h_save
+2020-09-01 20:17:14,971 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h
+2020-09-01 20:17:14,984 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c_save
+2020-09-01 20:17:15,074 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c
+2020-09-01 20:17:15,081 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp_save
+2020-09-01 20:17:15,150 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp
+2020-09-01 20:17:15,158 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h_save
+2020-09-01 20:17:15,225 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h
+2020-09-01 20:17:15,250 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-09-01 20:17:15,252 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-09-01 20:17:15,258 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h_save
+2020-09-01 20:17:15,347 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h
+2020-09-01 20:17:15,354 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c_save
+2020-09-01 20:17:15,455 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c
+2020-09-01 20:17:16,136 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 109mS.
+2020-09-01 20:17:16,157 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-09-01 20:17:16,445 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-09-01 20:17:16,452 [INFO] ApiDbMcu:456 - Load IP Config File for FATFS
+2020-09-01 20:17:16,457 [INFO] ApiDbMcu:456 - Load IP Config File for FREERTOS
+2020-09-01 20:17:23,518 [ERROR] root:96 - SUCCESS
+2020-09-01 20:17:23,571 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 7414mS.
+2020-09-01 20:17:23,572 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-09-01 20:17:23,574 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-09-01 20:31:32,087 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 436822800 Bytes (961544192)
+2020-09-01 20:31:34,059 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 464416368 Bytes (961544192)
+2020-09-01 20:31:34,241 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-09-01 20:31:34,241 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-09-01 20:31:34,241 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-09-01 20:31:34,241 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-09-01 20:31:34,242 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-09-01 20:31:34,242 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-09-01 20:31:34,255 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2020-09-01 20:31:34,439 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp_save
+2020-09-01 20:31:34,493 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp
+2020-09-01 20:31:34,525 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp_save
+2020-09-01 20:31:34,595 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp
+2020-09-01 20:31:34,598 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-09-01 20:31:34,616 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp_save
+2020-09-01 20:31:34,668 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp
+2020-09-01 20:31:34,679 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp_save
+2020-09-01 20:31:34,725 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp
+2020-09-01 20:31:34,732 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp_save
+2020-09-01 20:31:34,797 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp
+2020-09-01 20:31:34,804 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp_save
+2020-09-01 20:31:34,869 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp
+2020-09-01 20:31:34,890 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-09-01 20:31:34,908 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-09-01 20:31:34,917 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c_save
+2020-09-01 20:31:34,996 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c
+2020-09-01 20:31:35,002 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h_save
+2020-09-01 20:31:35,115 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h
+2020-09-01 20:31:35,122 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h_save
+2020-09-01 20:31:35,200 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h
+2020-09-01 20:31:35,208 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c_save
+2020-09-01 20:31:35,306 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c
+2020-09-01 20:31:35,313 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h_save
+2020-09-01 20:31:35,382 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h
+2020-09-01 20:31:35,389 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c_save
+2020-09-01 20:31:35,756 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c
+2020-09-01 20:31:35,764 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h_save
+2020-09-01 20:31:35,832 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h
+2020-09-01 20:31:35,839 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c_save
+2020-09-01 20:31:35,910 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c
+2020-09-01 20:31:35,921 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c_save
+2020-09-01 20:31:35,995 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c
+2020-09-01 20:31:36,001 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h_save
+2020-09-01 20:31:36,074 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h
+2020-09-01 20:31:36,085 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c_save
+2020-09-01 20:31:36,200 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c
+2020-09-01 20:31:36,206 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp_save
+2020-09-01 20:31:36,250 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp
+2020-09-01 20:31:36,257 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h_save
+2020-09-01 20:31:36,331 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h
+2020-09-01 20:31:36,347 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-09-01 20:31:36,348 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-09-01 20:31:36,354 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h_save
+2020-09-01 20:31:36,419 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h
+2020-09-01 20:31:36,437 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c_save
+2020-09-01 20:31:36,543 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c
+2020-09-01 20:31:37,106 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 146mS.
+2020-09-01 20:31:37,109 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-09-01 20:31:37,331 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-09-01 20:31:39,321 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 2212mS.
+2020-09-01 20:31:39,322 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-09-01 20:31:39,324 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-09-01 20:33:34,786 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 596336224 Bytes (987758592)
+2020-09-01 20:33:36,745 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 622024296 Bytes (987758592)
+2020-09-01 20:33:36,924 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-09-01 20:33:36,925 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-09-01 20:33:36,925 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-09-01 20:33:36,925 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-09-01 20:33:36,925 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-09-01 20:33:36,925 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-09-01 20:33:36,927 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2020-09-01 20:33:37,079 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp_save
+2020-09-01 20:33:37,120 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp
+2020-09-01 20:33:37,128 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp_save
+2020-09-01 20:33:37,171 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp
+2020-09-01 20:33:37,173 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-09-01 20:33:37,188 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp_save
+2020-09-01 20:33:37,292 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp
+2020-09-01 20:33:37,298 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp_save
+2020-09-01 20:33:37,346 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp
+2020-09-01 20:33:37,351 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp_save
+2020-09-01 20:33:37,400 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp
+2020-09-01 20:33:37,405 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp_save
+2020-09-01 20:33:37,472 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp
+2020-09-01 20:33:37,488 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-09-01 20:33:37,495 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-09-01 20:33:37,502 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c_save
+2020-09-01 20:33:37,560 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c
+2020-09-01 20:33:37,566 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h_save
+2020-09-01 20:33:37,621 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h
+2020-09-01 20:33:37,629 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h_save
+2020-09-01 20:33:37,693 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h
+2020-09-01 20:33:37,700 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c_save
+2020-09-01 20:33:37,798 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c
+2020-09-01 20:33:37,804 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h_save
+2020-09-01 20:33:37,909 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h
+2020-09-01 20:33:37,915 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c_save
+2020-09-01 20:33:37,984 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c
+2020-09-01 20:33:37,990 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h_save
+2020-09-01 20:33:38,041 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h
+2020-09-01 20:33:38,061 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c_save
+2020-09-01 20:33:38,122 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c
+2020-09-01 20:33:38,131 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c_save
+2020-09-01 20:33:38,210 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c
+2020-09-01 20:33:38,217 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h_save
+2020-09-01 20:33:38,296 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h
+2020-09-01 20:33:38,305 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c_save
+2020-09-01 20:33:38,383 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c
+2020-09-01 20:33:38,388 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp_save
+2020-09-01 20:33:38,429 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp
+2020-09-01 20:33:38,435 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h_save
+2020-09-01 20:33:38,488 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h
+2020-09-01 20:33:38,501 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-09-01 20:33:38,502 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-09-01 20:33:38,506 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h_save
+2020-09-01 20:33:38,559 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h
+2020-09-01 20:33:38,565 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c_save
+2020-09-01 20:33:38,631 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c
+2020-09-01 20:33:39,333 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 102mS.
+2020-09-01 20:33:39,336 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-09-01 20:33:39,625 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-09-01 20:33:41,199 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 1863mS.
+2020-09-01 20:33:41,200 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-09-01 20:33:41,202 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-09-01 21:39:28,383 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 588049328 Bytes (987758592)
+2020-09-01 21:39:28,627 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-09-01 21:39:28,629 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-09-01 21:39:28,629 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-09-01 21:39:28,629 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-09-01 21:39:28,629 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-09-01 21:39:28,629 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-09-01 21:39:28,631 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2020-09-01 21:39:28,802 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp_save
+2020-09-01 21:39:28,868 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp
+2020-09-01 21:39:28,888 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp_save
+2020-09-01 21:39:28,938 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp
+2020-09-01 21:39:28,944 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-09-01 21:39:28,964 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp_save
+2020-09-01 21:39:29,007 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp
+2020-09-01 21:39:29,012 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp_save
+2020-09-01 21:39:29,053 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp
+2020-09-01 21:39:29,058 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp_save
+2020-09-01 21:39:29,113 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp
+2020-09-01 21:39:29,118 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp_save
+2020-09-01 21:39:29,193 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp
+2020-09-01 21:39:29,212 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-09-01 21:39:29,220 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-09-01 21:39:29,228 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c_save
+2020-09-01 21:39:29,300 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c
+2020-09-01 21:39:29,306 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h_save
+2020-09-01 21:39:29,371 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h
+2020-09-01 21:39:29,377 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h_save
+2020-09-01 21:39:29,441 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h
+2020-09-01 21:39:29,448 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c_save
+2020-09-01 21:39:29,528 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c
+2020-09-01 21:39:29,534 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h_save
+2020-09-01 21:39:29,601 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h
+2020-09-01 21:39:29,609 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c_save
+2020-09-01 21:39:29,901 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c
+2020-09-01 21:39:29,907 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h_save
+2020-09-01 21:39:29,972 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h
+2020-09-01 21:39:29,979 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c_save
+2020-09-01 21:39:30,038 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c
+2020-09-01 21:39:30,045 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c_save
+2020-09-01 21:39:30,129 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c
+2020-09-01 21:39:30,135 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h_save
+2020-09-01 21:39:30,203 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h
+2020-09-01 21:39:30,229 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c_save
+2020-09-01 21:39:30,302 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c
+2020-09-01 21:39:30,307 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp_save
+2020-09-01 21:39:30,355 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp
+2020-09-01 21:39:30,361 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h_save
+2020-09-01 21:39:30,419 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h
+2020-09-01 21:39:30,434 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-09-01 21:39:30,436 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-09-01 21:39:30,447 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h_save
+2020-09-01 21:39:30,508 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h
+2020-09-01 21:39:30,516 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c_save
+2020-09-01 21:39:30,595 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c
+2020-09-01 21:39:31,260 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 202mS.
+2020-09-01 21:39:31,266 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-09-01 21:39:31,522 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-09-01 21:39:35,068 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 3802mS.
+2020-09-01 21:39:35,072 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 1mS.
+2020-09-01 21:39:35,074 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-09-01 21:50:50,626 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,489x251,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2020-09-01 21:51:09,708 [INFO] NvicIntPanel:90 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,489x251,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2020-09-01 21:51:22,623 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 474434064 Bytes (1061158912)
+2020-09-01 21:51:25,570 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 484291280 Bytes (1061158912)
+2020-09-01 21:51:27,567 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 517845712 Bytes (1061158912)
+2020-09-01 21:51:27,750 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: NVIC
+2020-09-01 21:51:27,750 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB_DEVICE
+2020-09-01 21:51:27,750 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: USB
+2020-09-01 21:51:27,750 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: SYS
+2020-09-01 21:51:27,751 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: GPIO
+2020-09-01 21:51:27,751 [INFO] BlockDiagram:2729 - set Specific Code input for plugin: RCC
+2020-09-01 21:51:27,751 [INFO] CodeGenerator:622 - code generatio: config db path: C:\ST\STM32CubeIDE_1.0.2\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.0.1.202008101643\\db\
+2020-09-01 21:51:27,894 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp_save
+2020-09-01 21:51:27,935 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\license.tmp
+2020-09-01 21:51:27,944 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp_save
+2020-09-01 21:51:27,992 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\gpio.tmp
+2020-09-01 21:51:27,995 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-09-01 21:51:28,011 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp_save
+2020-09-01 21:51:28,052 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_vars.tmp
+2020-09-01 21:51:28,056 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp_save
+2020-09-01 21:51:28,096 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_inc.tmp
+2020-09-01 21:51:28,102 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp_save
+2020-09-01 21:51:28,150 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_HalInit.tmp
+2020-09-01 21:51:28,156 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp_save
+2020-09-01 21:51:28,221 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\usb_Msp.tmp
+2020-09-01 21:51:28,237 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-09-01 21:51:28,242 [INFO] Middleware:1168 - No code input for Bsp Dependency
+2020-09-01 21:51:28,248 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c_save
+2020-09-01 21:51:28,305 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usb_device.c
+2020-09-01 21:51:28,310 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h_save
+2020-09-01 21:51:28,372 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usb_device.h
+2020-09-01 21:51:28,378 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h_save
+2020-09-01 21:51:28,457 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_conf.h
+2020-09-01 21:51:28,464 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c_save
+2020-09-01 21:51:28,559 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_conf.c
+2020-09-01 21:51:28,566 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h_save
+2020-09-01 21:51:28,630 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_desc.h
+2020-09-01 21:51:28,637 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c_save
+2020-09-01 21:51:28,722 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_desc.c
+2020-09-01 21:51:28,728 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h_save
+2020-09-01 21:51:28,786 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\usbd_audio_if.h
+2020-09-01 21:51:28,793 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c_save
+2020-09-01 21:51:28,861 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\usbd_audio_if.c
+2020-09-01 21:51:28,869 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c_save
+2020-09-01 21:51:28,969 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_it.c
+2020-09-01 21:51:28,975 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h_save
+2020-09-01 21:51:29,039 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_it.h
+2020-09-01 21:51:29,049 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c_save
+2020-09-01 21:51:29,159 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\stm32f1xx_hal_msp.c
+2020-09-01 21:51:29,164 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp_save
+2020-09-01 21:51:29,207 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\MXTmpFiles\system.tmp
+2020-09-01 21:51:29,217 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h_save
+2020-09-01 21:51:29,451 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\stm32f1xx_hal_conf.h
+2020-09-01 21:51:29,464 [WARN] IPConfigManager:2884 - IP not found : gpio
+2020-09-01 21:51:29,465 [WARN] CodeGenerator:2866 - IP not found : gpio
+2020-09-01 21:51:29,471 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h_save
+2020-09-01 21:51:29,568 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Inc\main.h
+2020-09-01 21:51:29,575 [INFO] CodeEngine:188 - oldGeneratedFile, F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c_save
+2020-09-01 21:51:29,697 [INFO] CodeEngine:206 - Generated code: F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F1_USB\Src\main.c
+2020-09-01 21:51:30,263 [INFO] ProjectBuilder:2168 - Time for Copy HAL[1] : 161mS.
+2020-09-01 21:51:30,267 [INFO] ProjectBuilder:2988 - Project Generator version: 3.10.0-B14
+2020-09-01 21:51:30,511 [INFO] ConfigFileManager:1183 - The Die is : DIE410
+2020-09-01 21:51:32,531 [INFO] ProjectBuilder:3155 - Time for Generating toolchain IDE Files: 2264mS.
+2020-09-01 21:51:32,532 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-09-01 21:51:32,535 [INFO] ProjectBuilder:2044 - Time for Copy CMSIS : 0mS.
+2020-09-02 12:45:56,164 [INFO] Activator:178 - 
+
+
+2020-09-02 12:45:56,185 [INFO] Activator:179 - !SESSION log4j initialized
+2020-09-03 23:59:10,461 [INFO] Activator:178 - 
+
+
+2020-09-03 23:59:10,487 [INFO] Activator:179 - !SESSION log4j initialized

@@ -1,5 +1,5 @@
 Fitter report for USB-to-I2S-Converter
-Sat Aug 29 00:24:00 2020
+Fri Sep 04 18:15:26 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -69,18 +69,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sat Aug 29 00:24:00 2020       ;
+; Fitter Status                      ; Successful - Fri Sep 04 18:15:26 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; USB-to-I2S-Converter                        ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone 10 LP                               ;
 ; Device                             ; 10CL025YU256C8G                             ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 76 / 24,624 ( < 1 % )                       ;
-;     Total combinational functions  ; 44 / 24,624 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 60 / 24,624 ( < 1 % )                       ;
-; Total registers                    ; 60                                          ;
-; Total pins                         ; 19 / 151 ( 13 % )                           ;
+; Total logic elements               ; 114 / 24,624 ( < 1 % )                      ;
+;     Total combinational functions  ; 114 / 24,624 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 82 / 24,624 ( < 1 % )                       ;
+; Total registers                    ; 82                                          ;
+; Total pins                         ; 27 / 151 ( 18 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                             ;
@@ -157,12 +157,12 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.02        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.5%      ;
+;     Processors 2-4         ;   0.6%      ;
 +----------------------------+-------------+
 
 
@@ -181,8 +181,8 @@ https://fpgasoftware.intel.com/eula.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 153 ) ; 0.00 % ( 0 / 153 )         ; 0.00 % ( 0 / 153 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 153 ) ; 0.00 % ( 0 / 153 )         ; 0.00 % ( 0 / 153 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 262 ) ; 0.00 % ( 0 / 262 )         ; 0.00 % ( 0 / 262 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 262 ) ; 0.00 % ( 0 / 262 )         ; 0.00 % ( 0 / 262 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -205,7 +205,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 141 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 250 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 12 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -216,128 +216,128 @@ https://fpgasoftware.intel.com/eula.
 The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/USB-to-I2S-Converter.pin.
 
 
-+---------------------------------------------------------------------+
-; Fitter Resource Usage Summary                                       ;
-+---------------------------------------------+-----------------------+
-; Resource                                    ; Usage                 ;
-+---------------------------------------------+-----------------------+
-; Total logic elements                        ; 76 / 24,624 ( < 1 % ) ;
-;     -- Combinational with no register       ; 16                    ;
-;     -- Register only                        ; 32                    ;
-;     -- Combinational with a register        ; 28                    ;
-;                                             ;                       ;
-; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 17                    ;
-;     -- 3 input functions                    ; 7                     ;
-;     -- <=2 input functions                  ; 20                    ;
-;     -- Register only                        ; 32                    ;
-;                                             ;                       ;
-; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 30                    ;
-;     -- arithmetic mode                      ; 14                    ;
-;                                             ;                       ;
-; Total registers*                            ; 60 / 25,304 ( < 1 % ) ;
-;     -- Dedicated logic registers            ; 60 / 24,624 ( < 1 % ) ;
-;     -- I/O registers                        ; 0 / 680 ( 0 % )       ;
-;                                             ;                       ;
-; Total LABs:  partially or completely used   ; 5 / 1,539 ( < 1 % )   ;
-; Virtual pins                                ; 0                     ;
-; I/O pins                                    ; 19 / 151 ( 13 % )     ;
-;     -- Clock pins                           ; 1 / 8 ( 13 % )        ;
-;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )         ;
-;                                             ;                       ;
-; M9Ks                                        ; 0 / 66 ( 0 % )        ;
-; Total block memory bits                     ; 0 / 608,256 ( 0 % )   ;
-; Total block memory implementation bits      ; 0 / 608,256 ( 0 % )   ;
-; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )       ;
-; PLLs                                        ; 1 / 4 ( 25 % )        ;
-; Global signals                              ; 1                     ;
-;     -- Global clocks                        ; 1 / 20 ( 5 % )        ;
-; JTAGs                                       ; 0 / 1 ( 0 % )         ;
-; CRC blocks                                  ; 0 / 1 ( 0 % )         ;
-; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
-; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
-; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.1% / 0.1% / 0.1%    ;
-; Maximum fan-out                             ; 60                    ;
-; Highest non-global fan-out                  ; 12                    ;
-; Total fan-out                               ; 339                   ;
-; Average fan-out                             ; 1.93                  ;
-+---------------------------------------------+-----------------------+
++----------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                        ;
++---------------------------------------------+------------------------+
+; Resource                                    ; Usage                  ;
++---------------------------------------------+------------------------+
+; Total logic elements                        ; 114 / 24,624 ( < 1 % ) ;
+;     -- Combinational with no register       ; 32                     ;
+;     -- Register only                        ; 0                      ;
+;     -- Combinational with a register        ; 82                     ;
+;                                             ;                        ;
+; Logic element usage by number of LUT inputs ;                        ;
+;     -- 4 input functions                    ; 49                     ;
+;     -- 3 input functions                    ; 14                     ;
+;     -- <=2 input functions                  ; 51                     ;
+;     -- Register only                        ; 0                      ;
+;                                             ;                        ;
+; Logic elements by mode                      ;                        ;
+;     -- normal mode                          ; 100                    ;
+;     -- arithmetic mode                      ; 14                     ;
+;                                             ;                        ;
+; Total registers*                            ; 82 / 25,304 ( < 1 % )  ;
+;     -- Dedicated logic registers            ; 82 / 24,624 ( < 1 % )  ;
+;     -- I/O registers                        ; 0 / 680 ( 0 % )        ;
+;                                             ;                        ;
+; Total LABs:  partially or completely used   ; 9 / 1,539 ( < 1 % )    ;
+; Virtual pins                                ; 0                      ;
+; I/O pins                                    ; 27 / 151 ( 18 % )      ;
+;     -- Clock pins                           ; 1 / 8 ( 13 % )         ;
+;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
+;                                             ;                        ;
+; M9Ks                                        ; 0 / 66 ( 0 % )         ;
+; Total block memory bits                     ; 0 / 608,256 ( 0 % )    ;
+; Total block memory implementation bits      ; 0 / 608,256 ( 0 % )    ;
+; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )        ;
+; PLLs                                        ; 1 / 4 ( 25 % )         ;
+; Global signals                              ; 1                      ;
+;     -- Global clocks                        ; 1 / 20 ( 5 % )         ;
+; JTAGs                                       ; 0 / 1 ( 0 % )          ;
+; CRC blocks                                  ; 0 / 1 ( 0 % )          ;
+; ASMI blocks                                 ; 0 / 1 ( 0 % )          ;
+; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
+; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
+; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%     ;
+; Peak interconnect usage (total/H/V)         ; 0.3% / 0.3% / 0.4%     ;
+; Maximum fan-out                             ; 82                     ;
+; Highest non-global fan-out                  ; 69                     ;
+; Total fan-out                               ; 609                    ;
+; Average fan-out                             ; 2.32                   ;
++---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Fitter Partition Statistics                                                                         ;
-+---------------------------------------------+----------------------+--------------------------------+
-; Statistic                                   ; Top                  ; hard_block:auto_generated_inst ;
-+---------------------------------------------+----------------------+--------------------------------+
-; Difficulty Clustering Region                ; Low                  ; Low                            ;
-;                                             ;                      ;                                ;
-; Total logic elements                        ; 76 / 24624 ( < 1 % ) ; 0 / 24624 ( 0 % )              ;
-;     -- Combinational with no register       ; 16                   ; 0                              ;
-;     -- Register only                        ; 32                   ; 0                              ;
-;     -- Combinational with a register        ; 28                   ; 0                              ;
-;                                             ;                      ;                                ;
-; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 17                   ; 0                              ;
-;     -- 3 input functions                    ; 7                    ; 0                              ;
-;     -- <=2 input functions                  ; 20                   ; 0                              ;
-;     -- Register only                        ; 32                   ; 0                              ;
-;                                             ;                      ;                                ;
-; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 30                   ; 0                              ;
-;     -- arithmetic mode                      ; 14                   ; 0                              ;
-;                                             ;                      ;                                ;
-; Total registers                             ; 60                   ; 0                              ;
-;     -- Dedicated logic registers            ; 60 / 24624 ( < 1 % ) ; 0 / 24624 ( 0 % )              ;
-;     -- I/O registers                        ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Total LABs:  partially or completely used   ; 5 / 1539 ( < 1 % )   ; 0 / 1539 ( 0 % )               ;
-;                                             ;                      ;                                ;
-; Virtual pins                                ; 0                    ; 0                              ;
-; I/O pins                                    ; 19                   ; 0                              ;
-; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )      ; 0 / 132 ( 0 % )                ;
-; Total memory bits                           ; 0                    ; 0                              ;
-; Total RAM block bits                        ; 0                    ; 0                              ;
-; PLL                                         ; 0 / 4 ( 0 % )        ; 1 / 4 ( 25 % )                 ;
-; Clock control block                         ; 0 / 24 ( 0 % )       ; 1 / 24 ( 4 % )                 ;
-;                                             ;                      ;                                ;
-; Connections                                 ;                      ;                                ;
-;     -- Input Connections                    ; 60                   ; 1                              ;
-;     -- Registered Input Connections         ; 60                   ; 0                              ;
-;     -- Output Connections                   ; 1                    ; 60                             ;
-;     -- Registered Output Connections        ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 332                  ; 68                             ;
-;     -- Registered Connections               ; 181                  ; 0                              ;
-;                                             ;                      ;                                ;
-; External Connections                        ;                      ;                                ;
-;     -- Top                                  ; 0                    ; 61                             ;
-;     -- hard_block:auto_generated_inst       ; 61                   ; 0                              ;
-;                                             ;                      ;                                ;
-; Partition Interface                         ;                      ;                                ;
-;     -- Input Ports                          ; 13                   ; 1                              ;
-;     -- Output Ports                         ; 6                    ; 1                              ;
-;     -- Bidir Ports                          ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Registered Ports                            ;                      ;                                ;
-;     -- Registered Input Ports               ; 0                    ; 0                              ;
-;     -- Registered Output Ports              ; 0                    ; 0                              ;
-;                                             ;                      ;                                ;
-; Port Connectivity                           ;                      ;                                ;
-;     -- Input Ports driven by GND            ; 0                    ; 0                              ;
-;     -- Output Ports driven by GND           ; 0                    ; 0                              ;
-;     -- Input Ports driven by VCC            ; 0                    ; 0                              ;
-;     -- Output Ports driven by VCC           ; 0                    ; 0                              ;
-;     -- Input Ports with no Source           ; 0                    ; 0                              ;
-;     -- Output Ports with no Source          ; 0                    ; 0                              ;
-;     -- Input Ports with no Fanout           ; 0                    ; 0                              ;
-;     -- Output Ports with no Fanout          ; 0                    ; 0                              ;
-+---------------------------------------------+----------------------+--------------------------------+
++------------------------------------------------------------------------------------------------------+
+; Fitter Partition Statistics                                                                          ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Statistic                                   ; Top                   ; hard_block:auto_generated_inst ;
++---------------------------------------------+-----------------------+--------------------------------+
+; Difficulty Clustering Region                ; Low                   ; Low                            ;
+;                                             ;                       ;                                ;
+; Total logic elements                        ; 114 / 24624 ( < 1 % ) ; 0 / 24624 ( 0 % )              ;
+;     -- Combinational with no register       ; 32                    ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
+;     -- Combinational with a register        ; 82                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic element usage by number of LUT inputs ;                       ;                                ;
+;     -- 4 input functions                    ; 49                    ; 0                              ;
+;     -- 3 input functions                    ; 14                    ; 0                              ;
+;     -- <=2 input functions                  ; 51                    ; 0                              ;
+;     -- Register only                        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Logic elements by mode                      ;                       ;                                ;
+;     -- normal mode                          ; 100                   ; 0                              ;
+;     -- arithmetic mode                      ; 14                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Total registers                             ; 82                    ; 0                              ;
+;     -- Dedicated logic registers            ; 82 / 24624 ( < 1 % )  ; 0 / 24624 ( 0 % )              ;
+;     -- I/O registers                        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Total LABs:  partially or completely used   ; 9 / 1539 ( < 1 % )    ; 0 / 1539 ( 0 % )               ;
+;                                             ;                       ;                                ;
+; Virtual pins                                ; 0                     ; 0                              ;
+; I/O pins                                    ; 27                    ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )       ; 0 / 132 ( 0 % )                ;
+; Total memory bits                           ; 0                     ; 0                              ;
+; Total RAM block bits                        ; 0                     ; 0                              ;
+; PLL                                         ; 0 / 4 ( 0 % )         ; 1 / 4 ( 25 % )                 ;
+; Clock control block                         ; 0 / 24 ( 0 % )        ; 1 / 24 ( 4 % )                 ;
+;                                             ;                       ;                                ;
+; Connections                                 ;                       ;                                ;
+;     -- Input Connections                    ; 82                    ; 1                              ;
+;     -- Registered Input Connections         ; 82                    ; 0                              ;
+;     -- Output Connections                   ; 1                     ; 82                             ;
+;     -- Registered Output Connections        ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Internal Connections                        ;                       ;                                ;
+;     -- Total Connections                    ; 602                   ; 90                             ;
+;     -- Registered Connections               ; 297                   ; 0                              ;
+;                                             ;                       ;                                ;
+; External Connections                        ;                       ;                                ;
+;     -- Top                                  ; 0                     ; 83                             ;
+;     -- hard_block:auto_generated_inst       ; 83                    ; 0                              ;
+;                                             ;                       ;                                ;
+; Partition Interface                         ;                       ;                                ;
+;     -- Input Ports                          ; 13                    ; 1                              ;
+;     -- Output Ports                         ; 14                    ; 1                              ;
+;     -- Bidir Ports                          ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Registered Ports                            ;                       ;                                ;
+;     -- Registered Input Ports               ; 0                     ; 0                              ;
+;     -- Registered Output Ports              ; 0                     ; 0                              ;
+;                                             ;                       ;                                ;
+; Port Connectivity                           ;                       ;                                ;
+;     -- Input Ports driven by GND            ; 0                     ; 0                              ;
+;     -- Output Ports driven by GND           ; 0                     ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0                     ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0                     ; 0                              ;
+;     -- Input Ports with no Source           ; 0                     ; 0                              ;
+;     -- Output Ports with no Source          ; 0                     ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0                     ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0                     ; 0                              ;
++---------------------------------------------+-----------------------+--------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -357,7 +357,7 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; FIFO_RXF   ; K15   ; 5        ; 53           ; 13           ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; FIFO_TXE   ; K16   ; 5        ; 53           ; 12           ; 0            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
 ; fpga_clk   ; M2    ; 2        ; 0            ; 16           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; User                 ; no        ;
-; nrst       ; L8    ; 3        ; 18           ; 0            ; 7            ; 0                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
+; nrst       ; F14   ; 6        ; 53           ; 24           ; 21           ; 69                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 3.3-V LVTTL  ; --                        ; Fitter               ; no        ;
 +------------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -372,6 +372,14 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; I2S_clk_out     ; C16   ; 6        ; 53           ; 30           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; I2S_data_out    ; B16   ; 6        ; 53           ; 22           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
 ; I2S_word_select ; C15   ; 6        ; 53           ; 30           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; User                 ; -                    ; -                   ;
+; LED[0]          ; N9    ; 4        ; 29           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[1]          ; N8    ; 3        ; 20           ; 0            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[2]          ; E8    ; 8        ; 20           ; 34           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[3]          ; N12   ; 4        ; 47           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[4]          ; E10   ; 7        ; 45           ; 34           ; 14           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[5]          ; F9    ; 7        ; 34           ; 34           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[6]          ; P6    ; 3        ; 11           ; 0            ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; LED[7]          ; C2    ; 1        ; 0            ; 27           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 8mA              ; Off         ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +-----------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -393,23 +401,24 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; G12      ; MSEL2                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; G12      ; MSEL3                       ; -                        ; -                       ; Dedicated Programming Pin ;
 ; F16      ; DIFFIO_R4n, nCEO            ; Use as programming pin   ; ~ALTERA_nCEO~           ; Dual Purpose Pin          ;
+; E8       ; DIFFIO_T10n, DATA2          ; Use as regular IO        ; LED[2]                  ; Dual Purpose Pin          ;
 +----------+-----------------------------+--------------------------+-------------------------+---------------------------+
 
 
-+-----------------------------------------------------------+
-; I/O Bank Usage                                            ;
-+----------+-----------------+---------------+--------------+
-; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
-+----------+-----------------+---------------+--------------+
-; 1        ; 4 / 12 ( 33 % ) ; 3.3V          ; --           ;
-; 2        ; 1 / 16 ( 6 % )  ; 3.3V          ; --           ;
-; 3        ; 1 / 25 ( 4 % )  ; 3.3V          ; --           ;
-; 4        ; 8 / 20 ( 40 % ) ; 3.3V          ; --           ;
-; 5        ; 6 / 18 ( 33 % ) ; 3.3V          ; --           ;
-; 6        ; 4 / 13 ( 31 % ) ; 3.3V          ; --           ;
-; 7        ; 0 / 24 ( 0 % )  ; 3.3V          ; --           ;
-; 8        ; 0 / 23 ( 0 % )  ; 3.3V          ; --           ;
-+----------+-----------------+---------------+--------------+
++------------------------------------------------------------+
+; I/O Bank Usage                                             ;
++----------+------------------+---------------+--------------+
+; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
++----------+------------------+---------------+--------------+
+; 1        ; 5 / 12 ( 42 % )  ; 3.3V          ; --           ;
+; 2        ; 1 / 16 ( 6 % )   ; 3.3V          ; --           ;
+; 3        ; 2 / 25 ( 8 % )   ; 3.3V          ; --           ;
+; 4        ; 10 / 20 ( 50 % ) ; 3.3V          ; --           ;
+; 5        ; 6 / 18 ( 33 % )  ; 3.3V          ; --           ;
+; 6        ; 5 / 13 ( 38 % )  ; 3.3V          ; --           ;
+; 7        ; 2 / 24 ( 8 % )   ; 3.3V          ; --           ;
+; 8        ; 1 / 23 ( 4 % )   ; 3.3V          ; --           ;
++----------+------------------+---------------+--------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -450,7 +459,7 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; B15      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B16      ; 164        ; 6        ; I2S_data_out                                              ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; Y               ; no       ; Off          ;
 ; C1       ; 7          ; 1        ; ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP     ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; On           ;
-; C2       ; 6          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; C2       ; 6          ; 1        ; LED[7]                                                    ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; C3       ; 245        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; C4       ;            ; 8        ; VCCIO8                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; C5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -488,9 +497,9 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; E5       ;            ;          ; GNDA3                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E6       ; 231        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ; 227        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E8       ; 218        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E8       ; 218        ; 8        ; LED[2]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E9       ; 205        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; E10      ; 184        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; E10      ; 184        ; 7        ; LED[4]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; E11      ; 183        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E12      ;            ;          ; GNDA2                                                     ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; E13      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -505,12 +514,12 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; F6       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F7       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F8       ; 219        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; F9       ; 197        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; F9       ; 197        ; 7        ; LED[5]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; F10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; F11      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; F12      ;            ; --       ; VCCA2                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; F13      ; 161        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; F14      ; 167        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
+; F14      ; 167        ; 6        ; nrst                                                      ; input  ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; F15      ; 163        ; 6        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; F16      ; 162        ; 6        ; ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN                ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; G1       ; 16         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -585,7 +594,7 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; L5       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; L6       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; L7       ; 75         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; L8       ; 79         ; 3        ; nrst                                                      ; input  ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; L8       ; 79         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; L9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; L11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -617,11 +626,11 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; N5       ; 62         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N6       ; 63         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; N7       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; N8       ; 82         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N9       ; 93         ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N8       ; 82         ; 3        ; LED[1]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
+; N9       ; 93         ; 4        ; LED[0]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N11      ; 112        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
-; N12      ; 117        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
+; N12      ; 117        ; 4        ; LED[3]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; N13      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N14      ; 126        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N15      ; 133        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -631,7 +640,7 @@ The pin-out file can be found in F:/Documents/GitHub/FPG USB to I2S Converter/sr
 ; P3       ; 53         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P4       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; P5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; P6       ; 67         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
+; P6       ; 67         ; 3        ; LED[6]                                                    ; output ; 3.3-V LVTTL  ;         ; Column I/O ; N               ; no       ; Off          ;
 ; P7       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; P8       ; 85         ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; P9       ; 105        ; 4        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -734,12 +743,28 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------+-----------------------------+
 ; Pin Name        ; Reason                      ;
 +-----------------+-----------------------------+
+; LED[0]          ; Missing drive strength      ;
+; LED[1]          ; Missing drive strength      ;
+; LED[2]          ; Missing drive strength      ;
+; LED[3]          ; Missing drive strength      ;
+; LED[4]          ; Missing drive strength      ;
+; LED[5]          ; Missing drive strength      ;
+; LED[6]          ; Missing drive strength      ;
+; LED[7]          ; Missing drive strength      ;
 ; FIFO_RD         ; Missing drive strength      ;
 ; FIFO_WR         ; Missing drive strength      ;
 ; FIFO_RST        ; Missing drive strength      ;
 ; I2S_word_select ; Missing drive strength      ;
 ; I2S_data_out    ; Missing drive strength      ;
 ; I2S_clk_out     ; Missing drive strength      ;
+; LED[0]          ; Missing location assignment ;
+; LED[1]          ; Missing location assignment ;
+; LED[2]          ; Missing location assignment ;
+; LED[3]          ; Missing location assignment ;
+; LED[4]          ; Missing location assignment ;
+; LED[5]          ; Missing location assignment ;
+; LED[6]          ; Missing location assignment ;
+; LED[7]          ; Missing location assignment ;
 ; nrst            ; Missing location assignment ;
 +-----------------+-----------------------------+
 
@@ -749,13 +774,13 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node              ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                              ; Entity Name      ; Library Name ;
 +-----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+------------------+--------------+
-; |top                                    ; 76 (1)      ; 60 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 19   ; 0            ; 16 (1)       ; 32 (0)            ; 28 (0)           ; |top                                                             ; top              ; work         ;
+; |top                                    ; 114 (1)     ; 82 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 27   ; 0            ; 32 (1)       ; 0 (0)             ; 82 (0)           ; |top                                                             ; top              ; work         ;
 ;    |PLL:pll1|                           ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|PLL:pll1                                                    ; PLL              ; work         ;
 ;       |altpll:altpll_component|         ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|PLL:pll1|altpll:altpll_component                            ; altpll           ; work         ;
 ;          |PLL_altpll1:auto_generated|   ; 0 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; |top|PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated ; PLL_altpll1      ; work         ;
-;    |sample_generator:sample_generator1| ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 31 (31)           ; 1 (1)            ; |top|sample_generator:sample_generator1                          ; sample_generator ; work         ;
-;    |sample_processor:sample_processor1| ; 6 (6)       ; 5 (5)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 5 (5)            ; |top|sample_processor:sample_processor1                          ; sample_processor ; work         ;
-;    |shift_register:I2S_shift_register1| ; 37 (37)     ; 23 (23)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 14 (14)      ; 1 (1)             ; 22 (22)          ; |top|shift_register:I2S_shift_register1                          ; shift_register   ; work         ;
+;    |sample_generator:sample_generator1| ; 32 (32)     ; 32 (32)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 32 (32)          ; |top|sample_generator:sample_generator1                          ; sample_generator ; work         ;
+;    |sample_processor:sample_processor1| ; 18 (18)     ; 13 (13)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 13 (13)          ; |top|sample_processor:sample_processor1                          ; sample_processor ; work         ;
+;    |shift_register:I2S_shift_register1| ; 63 (63)     ; 37 (37)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 26 (26)      ; 0 (0)             ; 37 (37)          ; |top|shift_register:I2S_shift_register1                          ; shift_register   ; work         ;
 +-----------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -765,7 +790,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------+---------------+---------------+-----------------------+-----+------+
 ; Name            ; Pin Type ; Pad to Core 0 ; Pad to Core 1 ; Pad to Input Register ; TCO ; TCOE ;
 +-----------------+----------+---------------+---------------+-----------------------+-----+------+
-; nrst            ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_IO[0]      ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_IO[1]      ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_IO[2]      ; Input    ; --            ; --            ; --                    ; --  ; --   ;
@@ -777,35 +801,113 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; FIFO_RXF        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_TXE        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_PWREN      ; Input    ; --            ; --            ; --                    ; --  ; --   ;
+; LED[0]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[1]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[2]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[3]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[4]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[5]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[6]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; LED[7]          ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_RD         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_WR         ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; FIFO_RST        ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; I2S_word_select ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; I2S_data_out    ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; I2S_clk_out     ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; nrst            ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 ; fpga_clk        ; Input    ; --            ; --            ; --                    ; --  ; --   ;
 +-----------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------+
-; Pad To Core Delay Chain Fanout                    ;
-+---------------------+-------------------+---------+
-; Source Pin / Fanout ; Pad To Core Index ; Setting ;
-+---------------------+-------------------+---------+
-; nrst                ;                   ;         ;
-; FIFO_IO[0]          ;                   ;         ;
-; FIFO_IO[1]          ;                   ;         ;
-; FIFO_IO[2]          ;                   ;         ;
-; FIFO_IO[3]          ;                   ;         ;
-; FIFO_IO[4]          ;                   ;         ;
-; FIFO_IO[5]          ;                   ;         ;
-; FIFO_IO[6]          ;                   ;         ;
-; FIFO_IO[7]          ;                   ;         ;
-; FIFO_RXF            ;                   ;         ;
-; FIFO_TXE            ;                   ;         ;
-; FIFO_PWREN          ;                   ;         ;
-; fpga_clk            ;                   ;         ;
-+---------------------+-------------------+---------+
++-------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                  ;
++-------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                               ; Pad To Core Index ; Setting ;
++-------------------------------------------------------------------+-------------------+---------+
+; FIFO_IO[0]                                                        ;                   ;         ;
+; FIFO_IO[1]                                                        ;                   ;         ;
+; FIFO_IO[2]                                                        ;                   ;         ;
+; FIFO_IO[3]                                                        ;                   ;         ;
+; FIFO_IO[4]                                                        ;                   ;         ;
+; FIFO_IO[5]                                                        ;                   ;         ;
+; FIFO_IO[6]                                                        ;                   ;         ;
+; FIFO_IO[7]                                                        ;                   ;         ;
+; FIFO_RXF                                                          ;                   ;         ;
+; FIFO_TXE                                                          ;                   ;         ;
+; FIFO_PWREN                                                        ;                   ;         ;
+; nrst                                                              ;                   ;         ;
+;      - shift_register:I2S_shift_register1|current_out             ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|data_out                ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[0]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[0]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[1]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[1]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[2]        ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out[0]                  ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[2]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[3]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[3]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[4]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[4]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[5]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[5]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[6]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[6]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[7]        ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[7]       ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|bit_counter_right[0]~11 ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|state~7                 ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|bit_counter_left[5]~1   ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_right_r[3]~2     ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|sample_left_r[4]~2      ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|state~8                 ; 0                 ; 6       ;
+;      - shift_register:I2S_shift_register1|state~9                 ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~2         ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|data_ready~0            ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|data_ready~1            ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|current_block_n[1]~0    ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~3         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~1                   ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~2                   ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~3                   ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~4         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~4                   ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~5                   ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~6                   ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~5         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~7                   ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~8                   ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~9                   ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~6         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~10                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~11                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~12                  ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~7         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~13                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~14                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~15                  ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~8         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~16                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~17                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~18                  ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks~9         ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~19                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~20                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~21                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~22                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~23                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~24                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~25                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~26                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~27                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~28                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~29                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~30                  ; 0                 ; 6       ;
+;      - sample_generator:sample_generator1|out~31                  ; 0                 ; 6       ;
+;      - sample_processor:sample_processor1|sample_blocks[0][2]~10  ; 0                 ; 6       ;
+; fpga_clk                                                          ;                   ;         ;
++-------------------------------------------------------------------+-------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -813,12 +915,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                                         ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[1] ; PLL_1              ; 60      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[1] ; PLL_1              ; 82      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
 ; fpga_clk                                                                     ; PIN_M2             ; 1       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; shift_register:I2S_shift_register1|bit_counter_left[5]~10                    ; LCCOMB_X52_Y26_N0  ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; shift_register:I2S_shift_register1|bit_counter_left[5]~11                    ; LCCOMB_X52_Y26_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; shift_register:I2S_shift_register1|bit_counter_right[0]~10                   ; LCCOMB_X51_Y26_N10 ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; shift_register:I2S_shift_register1|bit_counter_right[0]~11                   ; LCCOMB_X51_Y26_N28 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; nrst                                                                         ; PIN_F14            ; 69      ; Sync. clear  ; no     ; --                   ; --               ; --                        ;
+; sample_processor:sample_processor1|sample_blocks[0][2]~10                    ; LCCOMB_X48_Y24_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; shift_register:I2S_shift_register1|bit_counter_left[5]~1                     ; LCCOMB_X50_Y22_N22 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; shift_register:I2S_shift_register1|bit_counter_right[0]~11                   ; LCCOMB_X50_Y23_N26 ; 8       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; shift_register:I2S_shift_register1|bit_counter_right[7]~10                   ; LCCOMB_X50_Y23_N8  ; 8       ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; shift_register:I2S_shift_register1|sample_left_r[4]~2                        ; LCCOMB_X50_Y24_N4  ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; shift_register:I2S_shift_register1|sample_right_r[3]~2                       ; LCCOMB_X50_Y24_N18 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -827,7 +932,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                                                                         ; Location ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[1] ; PLL_1    ; 60      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
+; PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[1] ; PLL_1    ; 82      ; 0                                    ; Global Clock         ; GCLK4            ; --                        ;
 +------------------------------------------------------------------------------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -836,26 +941,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------+
 ; Routing Resource Type ; Usage                 ;
 +-----------------------+-----------------------+
-; Block interconnects   ; 28 / 71,559 ( < 1 % ) ;
+; Block interconnects   ; 79 / 71,559 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 2,597 ( 0 % )     ;
-; C4 interconnects      ; 2 / 46,848 ( < 1 % )  ;
-; Direct links          ; 18 / 71,559 ( < 1 % ) ;
+; C4 interconnects      ; 21 / 46,848 ( < 1 % ) ;
+; Direct links          ; 39 / 71,559 ( < 1 % ) ;
 ; Global clocks         ; 1 / 20 ( 5 % )        ;
-; Local interconnects   ; 66 / 24,624 ( < 1 % ) ;
-; R24 interconnects     ; 0 / 2,496 ( 0 % )     ;
-; R4 interconnects      ; 7 / 62,424 ( < 1 % )  ;
+; Local interconnects   ; 87 / 24,624 ( < 1 % ) ;
+; R24 interconnects     ; 1 / 2,496 ( < 1 % )   ;
+; R4 interconnects      ; 15 / 62,424 ( < 1 % ) ;
 +-----------------------+-----------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 15.20) ; Number of LABs  (Total = 5) ;
+; Number of Logic Elements  (Average = 12.67) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
-; 2                                           ; 0                           ;
+; 2                                           ; 1                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
+; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
@@ -867,31 +972,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 13                                          ; 0                           ;
 ; 14                                          ; 1                           ;
 ; 15                                          ; 2                           ;
-; 16                                          ; 2                           ;
+; 16                                          ; 4                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +------------------------------------------------------------------+
 ; LAB-wide Signals                                                 ;
 +------------------------------------+-----------------------------+
-; LAB-wide Signals  (Average = 1.00) ; Number of LABs  (Total = 5) ;
+; LAB-wide Signals  (Average = 1.56) ; Number of LABs  (Total = 9) ;
 +------------------------------------+-----------------------------+
-; 1 Clock                            ; 5                           ;
+; 1 Clock                            ; 9                           ;
+; 1 Clock enable                     ; 1                           ;
+; 1 Sync. clear                      ; 3                           ;
+; 2 Clock enables                    ; 1                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 25.20) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced  (Average = 21.78) ; Number of LABs  (Total = 9) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
 ; 2                                            ; 0                           ;
 ; 3                                            ; 0                           ;
-; 4                                            ; 0                           ;
+; 4                                            ; 1                           ;
 ; 5                                            ; 0                           ;
-; 6                                            ; 0                           ;
+; 6                                            ; 1                           ;
 ; 7                                            ; 0                           ;
 ; 8                                            ; 0                           ;
 ; 9                                            ; 0                           ;
@@ -907,41 +1015,58 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 19                                           ; 0                           ;
 ; 20                                           ; 0                           ;
 ; 21                                           ; 0                           ;
-; 22                                           ; 0                           ;
+; 22                                           ; 1                           ;
 ; 23                                           ; 0                           ;
-; 24                                           ; 1                           ;
-; 25                                           ; 2                           ;
-; 26                                           ; 2                           ;
+; 24                                           ; 2                           ;
+; 25                                           ; 0                           ;
+; 26                                           ; 0                           ;
+; 27                                           ; 0                           ;
+; 28                                           ; 2                           ;
+; 29                                           ; 0                           ;
+; 30                                           ; 2                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 3.40) ; Number of LABs  (Total = 5) ;
+; Number of Signals Sourced Out  (Average = 4.44) ; Number of LABs  (Total = 9) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 2                           ;
-; 3                                               ; 0                           ;
+; 1                                               ; 1                           ;
+; 2                                               ; 1                           ;
+; 3                                               ; 2                           ;
 ; 4                                               ; 2                           ;
-; 5                                               ; 1                           ;
+; 5                                               ; 0                           ;
+; 6                                               ; 1                           ;
+; 7                                               ; 0                           ;
+; 8                                               ; 1                           ;
+; 9                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 4.80) ; Number of LABs  (Total = 5) ;
+; Number of Distinct Inputs  (Average = 7.56) ; Number of LABs  (Total = 9) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
-; 2                                           ; 1                           ;
+; 2                                           ; 0                           ;
 ; 3                                           ; 1                           ;
-; 4                                           ; 0                           ;
-; 5                                           ; 0                           ;
-; 6                                           ; 2                           ;
+; 4                                           ; 2                           ;
+; 5                                           ; 1                           ;
+; 6                                           ; 1                           ;
 ; 7                                           ; 1                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 1                           ;
+; 10                                          ; 0                           ;
+; 11                                          ; 0                           ;
+; 12                                          ; 0                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 1                           ;
+; 15                                          ; 0                           ;
+; 16                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1001,11 +1126,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001    ; IO_000002    ; IO_000003    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 18           ; 0            ; 18           ; 0            ; 0            ; 19        ; 18           ; 0            ; 19        ; 19        ; 0            ; 0            ; 0            ; 0            ; 13           ; 0            ; 0            ; 13           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 19        ; 0            ; 0            ;
+; Total Pass         ; 18           ; 0            ; 18           ; 0            ; 0            ; 27        ; 18           ; 0            ; 27        ; 27        ; 0            ; 0            ; 0            ; 0            ; 13           ; 0            ; 0            ; 13           ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 27        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 1            ; 19           ; 1            ; 19           ; 19           ; 0         ; 1            ; 19           ; 0         ; 0         ; 19           ; 19           ; 19           ; 19           ; 6            ; 19           ; 19           ; 6            ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ; 19           ; 0         ; 19           ; 19           ;
+; Total Inapplicable ; 9            ; 27           ; 9            ; 27           ; 27           ; 0         ; 9            ; 27           ; 0         ; 0         ; 27           ; 27           ; 27           ; 27           ; 14           ; 27           ; 27           ; 14           ; 27           ; 27           ; 27           ; 27           ; 27           ; 27           ; 27           ; 27           ; 27           ; 0         ; 27           ; 27           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; nrst               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_IO[0]         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_IO[1]         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_IO[2]         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -1017,12 +1141,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; FIFO_RXF           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_TXE           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_PWREN         ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[4]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[5]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[6]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; LED[7]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_RD            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_WR            ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; FIFO_RST           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; I2S_word_select    ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; I2S_data_out       ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; I2S_clk_out        ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; nrst               ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; fpga_clk           ; Pass         ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass      ; Pass         ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1087,7 +1220,7 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location H2
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location F16
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 1 pins of 19 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 9 pins of 27 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Info (176353): Automatically promoted node PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[1] (placed in counter C1 of PLL_1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 78
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G4
 Info (332104): Reading SDC File: 'nios_custom/synthesis/submodules/altera_reset_controller.sdc'
@@ -1141,7 +1274,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 1 (unused VREF, 3.3V VCCIO, 1 input, 0 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 9 (unused VREF, 3.3V VCCIO, 1 input, 8 output, 0 bidirectional)
         Info (176212): I/O standards used: 3.3-V LVTTL.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1155,7 +1288,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  23 pins available
 Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "rst" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1169,7 +1302,7 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1177,7 +1310,6 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 13 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone 10 LP Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin nrst uses I/O standard 3.3-V LVTTL at L8 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 8
     Info (169178): Pin FIFO_IO[0] uses I/O standard 3.3-V LVTTL at T15 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
     Info (169178): Pin FIFO_IO[1] uses I/O standard 3.3-V LVTTL at R14 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
     Info (169178): Pin FIFO_IO[2] uses I/O standard 3.3-V LVTTL at P14 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
@@ -1189,12 +1321,13 @@ Warning (169177): 13 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
     Info (169178): Pin FIFO_RXF uses I/O standard 3.3-V LVTTL at K15 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 10
     Info (169178): Pin FIFO_TXE uses I/O standard 3.3-V LVTTL at K16 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 11
     Info (169178): Pin FIFO_PWREN uses I/O standard 3.3-V LVTTL at N16 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 12
+    Info (169178): Pin nrst uses I/O standard 3.3-V LVTTL at F14 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 8
     Info (169178): Pin fpga_clk uses I/O standard 3.3-V LVTTL at M2 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 7
 Info (144001): Generated suppressed messages file F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/USB-to-I2S-Converter.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 40 warnings
-    Info: Peak virtual memory: 5430 megabytes
-    Info: Processing ended: Sat Aug 29 00:24:00 2020
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 5432 megabytes
+    Info: Processing ended: Fri Sep 04 18:15:27 2020
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:06
 
 

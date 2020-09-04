@@ -1,10 +1,20 @@
-23:35:17 **** Incremental Build of configuration Debug for project STM32F4_USB ****
+02:21:19 **** Incremental Build of configuration Debug for project STM32F4_USB ****
 make -j4 all 
+arm-none-eabi-gcc "../Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F412Zx -DDEBUG -c -I../Inc -I../Drivers/CMSIS/Include -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.d" -MT"Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Middlewares/ST/STM32_USB_Device_Library/Class/AUDIO/Src/usbd_audio.o"
+arm-none-eabi-gcc -o "STM32F4_USB.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\Documents\GitHub\FPG USB to I2S Converter\dev\STM32F4_USB\STM32F412ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32F4_USB.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32F4_USB.elf
+ 
+arm-none-eabi-objdump -h -S  STM32F4_USB.elf  > "STM32F4_USB.list"
+arm-none-eabi-objcopy  -O binary  STM32F4_USB.elf  "STM32F4_USB.bin"
 arm-none-eabi-size   STM32F4_USB.elf 
    text	   data	    bss	    dec	    hex	filename
-  38980	    424	   4336	  43740	   aadc	STM32F4_USB.elf
+  38980	    428	   4332	  43740	   aadc	STM32F4_USB.elf
 Finished building: default.size.stdout
+Finished building: STM32F4_USB.bin
+ 
+ 
+Finished building: STM32F4_USB.list
  
 
-23:35:22 Build Finished. 0 errors, 0 warnings. (took 4s.591ms)
+02:21:21 Build Finished. 0 errors, 0 warnings. (took 1s.806ms)
 

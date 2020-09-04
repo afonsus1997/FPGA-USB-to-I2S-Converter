@@ -17,6 +17,12 @@ RM := rm -rf
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(S_DEPS)),)
+-include $(S_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
 ifneq ($(strip $(C_DEPS)),)
 -include $(C_DEPS)
 endif
@@ -33,6 +39,9 @@ default.size.stdout \
 
 OBJDUMP_LIST += \
 STM32F4_USB.list \
+
+OBJCOPY_BIN += \
+STM32F4_USB.bin \
 
 
 # All Target
@@ -54,12 +63,17 @@ STM32F4_USB.list: $(EXECUTABLES)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+STM32F4_USB.bin: $(EXECUTABLES)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "STM32F4_USB.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
 	-$(RM) *
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 .PHONY: all clean dependents
 .SECONDARY:

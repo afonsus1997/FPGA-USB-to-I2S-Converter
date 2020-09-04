@@ -1,5 +1,5 @@
 Analysis & Synthesis report for USB-to-I2S-Converter
-Sat Aug 29 00:23:54 2020
+Fri Sep 04 18:15:19 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -16,26 +16,25 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   8. Analysis & Synthesis IP Cores Summary
   9. State Machine - |top|shift_register:I2S_shift_register1|state
  10. Registers Removed During Synthesis
- 11. Removed Registers Triggering Further Register Optimizations
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: Top-level Entity: |top
- 15. Parameter Settings for User Entity Instance: PLL:pll1|altpll:altpll_component
- 16. Parameter Settings for User Entity Instance: PLL2:pll2|altpll:altpll_component
- 17. Parameter Settings for User Entity Instance: audio_clock_mux:clk_mux
- 18. Parameter Settings for User Entity Instance: sample_generator:sample_generator1
- 19. Parameter Settings for User Entity Instance: sample_processor:sample_processor1
- 20. Parameter Settings for User Entity Instance: shift_register:I2S_shift_register1
- 21. altpll Parameter Settings by Entity Instance
- 22. Port Connectivity Checks: "shift_register:I2S_shift_register1"
- 23. Port Connectivity Checks: "sample_processor:sample_processor1"
- 24. Port Connectivity Checks: "sample_generator:sample_generator1"
- 25. Port Connectivity Checks: "audio_clock_mux:clk_mux"
- 26. Port Connectivity Checks: "PLL:pll1"
- 27. Post-Synthesis Netlist Statistics for Top Partition
- 28. Elapsed Time Per Partition
- 29. Analysis & Synthesis Messages
- 30. Analysis & Synthesis Suppressed Messages
+ 11. General Register Statistics
+ 12. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 13. Parameter Settings for User Entity Instance: Top-level Entity: |top
+ 14. Parameter Settings for User Entity Instance: PLL:pll1|altpll:altpll_component
+ 15. Parameter Settings for User Entity Instance: PLL2:pll2|altpll:altpll_component
+ 16. Parameter Settings for User Entity Instance: audio_clock_mux:clk_mux
+ 17. Parameter Settings for User Entity Instance: sample_generator:sample_generator1
+ 18. Parameter Settings for User Entity Instance: sample_processor:sample_processor1
+ 19. Parameter Settings for User Entity Instance: shift_register:I2S_shift_register1
+ 20. altpll Parameter Settings by Entity Instance
+ 21. Port Connectivity Checks: "shift_register:I2S_shift_register1"
+ 22. Port Connectivity Checks: "sample_processor:sample_processor1"
+ 23. Port Connectivity Checks: "sample_generator:sample_generator1"
+ 24. Port Connectivity Checks: "audio_clock_mux:clk_mux"
+ 25. Port Connectivity Checks: "PLL:pll1"
+ 26. Post-Synthesis Netlist Statistics for Top Partition
+ 27. Elapsed Time Per Partition
+ 28. Analysis & Synthesis Messages
+ 29. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -62,16 +61,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Aug 29 00:23:54 2020       ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 04 18:15:19 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; USB-to-I2S-Converter                        ;
 ; Top-level Entity Name              ; top                                         ;
 ; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 76                                          ;
-;     Total combinational functions  ; 43                                          ;
-;     Dedicated logic registers      ; 60                                          ;
-; Total registers                    ; 60                                          ;
-; Total pins                         ; 19                                          ;
+; Total logic elements               ; 114                                         ;
+;     Total combinational functions  ; 114                                         ;
+;     Dedicated logic registers      ; 82                                          ;
+; Total registers                    ; 82                                          ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -209,23 +208,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                        ;
 +---------------------------------------------+------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 76                                                                           ;
+; Estimated Total logic elements              ; 114                                                                          ;
 ;                                             ;                                                                              ;
-; Total combinational functions               ; 43                                                                           ;
+; Total combinational functions               ; 114                                                                          ;
 ; Logic element usage by number of LUT inputs ;                                                                              ;
-;     -- 4 input functions                    ; 17                                                                           ;
-;     -- 3 input functions                    ; 7                                                                            ;
-;     -- <=2 input functions                  ; 19                                                                           ;
+;     -- 4 input functions                    ; 49                                                                           ;
+;     -- 3 input functions                    ; 14                                                                           ;
+;     -- <=2 input functions                  ; 51                                                                           ;
 ;                                             ;                                                                              ;
 ; Logic elements by mode                      ;                                                                              ;
-;     -- normal mode                          ; 29                                                                           ;
+;     -- normal mode                          ; 100                                                                          ;
 ;     -- arithmetic mode                      ; 14                                                                           ;
 ;                                             ;                                                                              ;
-; Total registers                             ; 60                                                                           ;
-;     -- Dedicated logic registers            ; 60                                                                           ;
+; Total registers                             ; 82                                                                           ;
+;     -- Dedicated logic registers            ; 82                                                                           ;
 ;     -- I/O registers                        ; 0                                                                            ;
 ;                                             ;                                                                              ;
-; I/O pins                                    ; 19                                                                           ;
+; I/O pins                                    ; 27                                                                           ;
 ;                                             ;                                                                              ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                            ;
 ;                                             ;                                                                              ;
@@ -233,9 +232,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                            ;
 ;                                             ;                                                                              ;
 ; Maximum fan-out node                        ; PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 61                                                                           ;
-; Total fan-out                               ; 310                                                                          ;
-; Average fan-out                             ; 2.18                                                                         ;
+; Maximum fan-out                             ; 83                                                                           ;
+; Total fan-out                               ; 603                                                                          ;
+; Average fan-out                             ; 2.40                                                                         ;
 +---------------------------------------------+------------------------------------------------------------------------------+
 
 
@@ -244,13 +243,13 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name      ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+------------------+--------------+
-; |top                                    ; 43 (1)              ; 60 (0)                    ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |top                                                             ; top              ; work         ;
+; |top                                    ; 114 (1)             ; 82 (0)                    ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |top                                                             ; top              ; work         ;
 ;    |PLL:pll1|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|PLL:pll1                                                    ; PLL              ; work         ;
 ;       |altpll:altpll_component|         ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|PLL:pll1|altpll:altpll_component                            ; altpll           ; work         ;
 ;          |PLL_altpll1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated ; PLL_altpll1      ; work         ;
-;    |sample_generator:sample_generator1| ; 1 (1)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sample_generator:sample_generator1                          ; sample_generator ; work         ;
-;    |sample_processor:sample_processor1| ; 6 (6)               ; 5 (5)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sample_processor:sample_processor1                          ; sample_processor ; work         ;
-;    |shift_register:I2S_shift_register1| ; 35 (35)             ; 23 (23)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|shift_register:I2S_shift_register1                          ; shift_register   ; work         ;
+;    |sample_generator:sample_generator1| ; 32 (32)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sample_generator:sample_generator1                          ; sample_generator ; work         ;
+;    |sample_processor:sample_processor1| ; 18 (18)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sample_processor:sample_processor1                          ; sample_processor ; work         ;
+;    |shift_register:I2S_shift_register1| ; 63 (63)             ; 37 (37)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|shift_register:I2S_shift_register1                          ; shift_register   ; work         ;
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -277,57 +276,20 @@ Encoding Type:  One-Hot
 +-----------------+---------------+-----------------+--------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                  ;
-+-------------------------------------------------------+---------------------------------------------+
-; Register name                                         ; Reason for Removal                          ;
-+-------------------------------------------------------+---------------------------------------------+
-; shift_register:I2S_shift_register1|counter_size[0]    ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|clk_out            ; Stuck at GND due to stuck port clock_enable ;
-; shift_register:I2S_shift_register1|counter_size[1..3] ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|counter_size[4]    ; Stuck at VCC due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|counter_size[5..7] ; Stuck at GND due to stuck port data_in      ;
-; sample_processor:sample_processor1|data_ready         ; Stuck at VCC due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[7]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[7]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[6]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[6]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[5]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[5]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[4]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[4]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[3]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[3]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[2]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[2]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_right_r[1]  ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|sample_left_r[1]   ; Stuck at GND due to stuck port data_in      ;
-; shift_register:I2S_shift_register1|state~4            ; Lost fanout                                 ;
-; shift_register:I2S_shift_register1|state~5            ; Lost fanout                                 ;
-; Total Number of Removed Registers = 26                ;                                             ;
-+-------------------------------------------------------+---------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                       ;
-+-----------------------------------------------+---------------------------+-------------------------------------------------------+
-; Register name                                 ; Reason for Removal        ; Registers Removed due to This Register                ;
-+-----------------------------------------------+---------------------------+-------------------------------------------------------+
-; sample_processor:sample_processor1|data_ready ; Stuck at VCC              ; shift_register:I2S_shift_register1|sample_right_r[7], ;
-;                                               ; due to stuck port data_in ; shift_register:I2S_shift_register1|sample_left_r[7],  ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_right_r[6], ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_left_r[6],  ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_right_r[5], ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_left_r[5],  ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_right_r[4], ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_left_r[4],  ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_right_r[3], ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_left_r[3],  ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_right_r[2], ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_left_r[2],  ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_right_r[1], ;
-;                                               ;                           ; shift_register:I2S_shift_register1|sample_left_r[1]   ;
-+-----------------------------------------------+---------------------------+-------------------------------------------------------+
++------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                             ;
++-------------------------------------------------------+----------------------------------------+
+; Register name                                         ; Reason for Removal                     ;
++-------------------------------------------------------+----------------------------------------+
+; shift_register:I2S_shift_register1|counter_size[0]    ; Stuck at GND due to stuck port data_in ;
+; shift_register:I2S_shift_register1|clk_out            ; Stuck at GND due to stuck port data_in ;
+; shift_register:I2S_shift_register1|counter_size[1..3] ; Stuck at GND due to stuck port data_in ;
+; shift_register:I2S_shift_register1|counter_size[4]    ; Stuck at VCC due to stuck port data_in ;
+; shift_register:I2S_shift_register1|counter_size[5..7] ; Stuck at GND due to stuck port data_in ;
+; shift_register:I2S_shift_register1|state~4            ; Lost fanout                            ;
+; shift_register:I2S_shift_register1|state~5            ; Lost fanout                            ;
+; Total Number of Removed Registers = 11                ;                                        ;
++-------------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -335,12 +297,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 60    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 16    ;
+; Total registers                              ; 82    ;
+; Number of registers using Synchronous Clear  ; 19    ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Clock Enable       ; 38    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -350,8 +312,13 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|shift_register:I2S_shift_register1|bit_counter_left[5]  ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|shift_register:I2S_shift_register1|bit_counter_right[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |top|sample_processor:sample_processor1|current_block_n[3]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top|sample_processor:sample_processor1|sample_blocks[0][2]  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|shift_register:I2S_shift_register1|bit_counter_left[3]  ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top|shift_register:I2S_shift_register1|bit_counter_right[7] ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|shift_register:I2S_shift_register1|sample_left_r[4]     ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top|shift_register:I2S_shift_register1|sample_right_r[3]    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|shift_register:I2S_shift_register1|state                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 
 
@@ -1217,8 +1184,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
 +-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; sample_left       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "sample_left[31..1]" will be connected to GND.                              ;
-; sample_right      ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "sample_right[31..1]" will be connected to GND.                             ;
 ; sample_size       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; sample_size[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
 ; sample_size[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
@@ -1229,16 +1194,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "sample_processor:sample_processor1"                                                                                                                                                             ;
-+-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port              ; Type   ; Severity ; Details                                                                                                                                                                            ;
-+-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; data_in           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "data_in[7..1]" will be connected to GND.                                    ;
-; data_out          ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "data_out[31..1]" have no fanouts                                                      ;
-; sample_size       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
-; sample_size[1..0] ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
-; sample_size[3..2] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; data_available    ; Input  ; Info     ; Explicitly unconnected                                                                                                                                                             ;
-+-------------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++--------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                                                                                                                                                            ;
++--------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; sample_size        ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (4 bits) it drives.  The 28 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; sample_size[1..0]  ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
+; sample_size[3..2]  ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
+; data_available     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; data_available[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++--------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1251,7 +1215,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; seed[2]     ; Input  ; Info     ; Stuck at GND                                                                                                             ;
 ; seed[1]     ; Input  ; Info     ; Stuck at VCC                                                                                                             ;
 ; seed[0]     ; Input  ; Info     ; Stuck at GND                                                                                                             ;
-; out         ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "out[31..1]" have no fanouts ;
+; out         ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (8 bits) it drives; bit(s) "out[31..8]" have no fanouts ;
 +-------------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1278,23 +1242,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 19                          ;
-; cycloneiii_ff         ; 60                          ;
-;     ENA SLD           ; 16                          ;
-;     plain             ; 44                          ;
-; cycloneiii_lcell_comb ; 43                          ;
+; boundary_port         ; 27                          ;
+; cycloneiii_ff         ; 82                          ;
+;     ENA               ; 16                          ;
+;     ENA SCLR          ; 14                          ;
+;     ENA SLD           ; 8                           ;
+;     SCLR              ; 5                           ;
+;     plain             ; 39                          ;
+; cycloneiii_lcell_comb ; 114                         ;
 ;     arith             ; 14                          ;
 ;         2 data inputs ; 14                          ;
-;     normal            ; 29                          ;
+;     normal            ; 100                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 7                           ;
-;         4 data inputs ; 17                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 34                          ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 49                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.45                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 1.85                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1313,11 +1280,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Aug 29 00:23:37 2020
+    Info: Processing started: Fri Sep 04 18:15:03 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off USB-to-I2S-Converter -c USB-to-I2S-Converter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Warning (10275): Verilog HDL Module Instantiation warning at top.v(87): ignored dangling comma in List of Port Connections File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 87
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
     Info (12023): Found entity 1: top File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file sample_generator.v
@@ -1484,11 +1450,11 @@ Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v
 Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(338): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 338
 Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(682): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 682
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at top.v(28): object "rst" assigned a value but never read File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 28
-Warning (10034): Output port "FIFO_RD" at top.v(13) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-Warning (10034): Output port "FIFO_WR" at top.v(14) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 14
-Warning (10034): Output port "FIFO_RST" at top.v(15) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 15
-Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 50
+Warning (10034): Output port "LED" at top.v(13) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+Warning (10034): Output port "FIFO_RD" at top.v(14) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 14
+Warning (10034): Output port "FIFO_WR" at top.v(15) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 15
+Warning (10034): Output port "FIFO_RST" at top.v(16) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 16
+Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 51
 Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll1|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 99
 Info (12130): Elaborated megafunction instantiation "PLL:pll1|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 99
 Info (12133): Instantiated megafunction "PLL:pll1|altpll:altpll_component" with the following parameter: File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 99
@@ -1557,7 +1523,7 @@ Info (12133): Instantiated megafunction "PLL:pll1|altpll:altpll_component" with 
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll1.v
     Info (12023): Found entity 1: PLL_altpll1 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 30
 Info (12128): Elaborating entity "PLL_altpll1" for hierarchy "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "PLL2" for hierarchy "PLL2:pll2" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 55
+Info (12128): Elaborating entity "PLL2" for hierarchy "PLL2:pll2" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 56
 Info (12128): Elaborating entity "altpll" for hierarchy "PLL2:pll2|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 91
 Info (12130): Elaborated megafunction instantiation "PLL2:pll2|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 91
 Info (12133): Instantiated megafunction "PLL2:pll2|altpll:altpll_component" with the following parameter: File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 91
@@ -1618,83 +1584,85 @@ Info (12133): Instantiated megafunction "PLL2:pll2|altpll:altpll_component" with
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll2_altpll.v
     Info (12023): Found entity 1: PLL2_altpll File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll2_altpll.v Line: 30
 Info (12128): Elaborating entity "PLL2_altpll" for hierarchy "PLL2:pll2|altpll:altpll_component|PLL2_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "audio_clock_mux" for hierarchy "audio_clock_mux:clk_mux" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 64
-Info (12128): Elaborating entity "sample_generator" for hierarchy "sample_generator:sample_generator1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 77
-Info (12128): Elaborating entity "sample_processor" for hierarchy "sample_processor:sample_processor1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 87
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(23): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 23
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(24): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 24
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(25): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Info (12128): Elaborating entity "audio_clock_mux" for hierarchy "audio_clock_mux:clk_mux" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 65
+Info (12128): Elaborating entity "sample_generator" for hierarchy "sample_generator:sample_generator1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 78
+Info (12128): Elaborating entity "sample_processor" for hierarchy "sample_processor:sample_processor1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 88
 Warning (10230): Verilog HDL assignment warning at sample_processor.v(26): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 26
 Warning (10230): Verilog HDL assignment warning at sample_processor.v(27): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 27
-Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(22): incomplete case statement has no default case item File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(22): inferring latch(es) for variable "n_blocks_per_sample", which holds its previous value in one or more paths through the always construct File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(32): incomplete case statement has no default case item File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(32): inferring latch(es) for variable "sample_mask", which holds its previous value in one or more paths through the always construct File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(57): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 57
-Info (10041): Inferred latch for "sample_mask[0]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[1]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[2]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[3]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[4]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[5]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[6]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[7]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[8]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[9]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[10]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[11]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[12]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[13]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[14]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[15]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[16]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[17]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[18]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[19]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[20]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[21]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[22]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[23]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[24]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[25]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[26]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[27]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[28]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[29]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[30]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "sample_mask[31]" at sample_processor.v(32) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 32
-Info (10041): Inferred latch for "n_blocks_per_sample[0]" at sample_processor.v(22) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Info (10041): Inferred latch for "n_blocks_per_sample[1]" at sample_processor.v(22) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Info (10041): Inferred latch for "n_blocks_per_sample[2]" at sample_processor.v(22) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Info (10041): Inferred latch for "n_blocks_per_sample[3]" at sample_processor.v(22) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:I2S_shift_register1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 102
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(28): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 28
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(29): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 29
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(30): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 30
+Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(25): incomplete case statement has no default case item File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(25): inferring latch(es) for variable "n_blocks_per_sample", which holds its previous value in one or more paths through the always construct File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(35): incomplete case statement has no default case item File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(35): inferring latch(es) for variable "sample_mask", which holds its previous value in one or more paths through the always construct File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(60): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 60
+Info (10041): Inferred latch for "sample_mask[0]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[1]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[2]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[3]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[4]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[5]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[6]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[7]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[8]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[9]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[10]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[11]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[12]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[13]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[14]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[15]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[16]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[17]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[18]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[19]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[20]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[21]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[22]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[23]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[24]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[25]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[26]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[27]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[28]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[29]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[30]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[31]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "n_blocks_per_sample[0]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Info (10041): Inferred latch for "n_blocks_per_sample[1]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Info (10041): Inferred latch for "n_blocks_per_sample[2]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Info (10041): Inferred latch for "n_blocks_per_sample[3]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:I2S_shift_register1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 103
 Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(78): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 78
 Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(79): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 79
 Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(81): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 81
 Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(82): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 82
 Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(92): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 92
 Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(95): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 95
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(104): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 104
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(107): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 107
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "main_rst" is missing source, defaulting to GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 34
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "main_rst" is missing source, defaulting to GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 34
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "main_rst" is missing source, defaulting to GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 34
-Warning (12011): Net is missing source, defaulting to GND
-    Warning (12110): Net "main_rst" is missing source, defaulting to GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 34
-Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[0]" is permanently enabled File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
-Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[1]" is permanently enabled File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 22
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(96): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 96
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(105): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 105
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(108): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 108
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(109): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 109
+Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[0]" is permanently enabled File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[1]" is permanently enabled File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
         Warning (14320): Synthesized away node "PLL2:pll2|altpll:altpll_component|PLL2_altpll:auto_generated|wire_pll1_clk[0]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll2_altpll.v Line: 78
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "FIFO_RD" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "FIFO_WR" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 14
-    Warning (13410): Pin "FIFO_RST" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 15
-    Warning (13410): Pin "I2S_clk_out" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 21
+    Warning (13410): Pin "LED[0]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[1]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[2]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[3]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[4]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[5]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[6]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[7]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
+    Warning (13410): Pin "FIFO_RD" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 14
+    Warning (13410): Pin "FIFO_WR" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 15
+    Warning (13410): Pin "FIFO_RST" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 16
+    Warning (13410): Pin "I2S_clk_out" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 22
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 23 assignments for entity "altera_avalon_sc_fifo" -- entity does not exist in design
@@ -1739,8 +1707,7 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|pll1" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 44
 Warning (15899): PLL "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|pll1" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 44
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "nrst" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 8
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "FIFO_IO[0]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
     Warning (15610): No output dependent on input pin "FIFO_IO[1]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
     Warning (15610): No output dependent on input pin "FIFO_IO[2]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
@@ -1752,15 +1719,15 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "FIFO_RXF" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 10
     Warning (15610): No output dependent on input pin "FIFO_TXE" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 11
     Warning (15610): No output dependent on input pin "FIFO_PWREN" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 12
-Info (21057): Implemented 96 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 6 output pins
-    Info (21061): Implemented 76 logic cells
+    Info (21059): Implemented 14 output pins
+    Info (21061): Implemented 114 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 99 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Sat Aug 29 00:23:54 2020
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 4778 megabytes
+    Info: Processing ended: Fri Sep 04 18:15:19 2020
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:26
 
 
