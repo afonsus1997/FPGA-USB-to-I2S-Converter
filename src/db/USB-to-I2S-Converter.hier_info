@@ -23,6 +23,7 @@ LED[7] << <GND>
 FIFO_RD << <GND>
 FIFO_WR << <GND>
 FIFO_RST << <GND>
+audio_clk << <GND>
 I2S_word_select << shift_register:I2S_shift_register1.word_select
 I2S_data_out << shift_register:I2S_shift_register1.data_out
 I2S_clk_out << shift_register:I2S_shift_register1.clk_out
@@ -520,7 +521,6 @@ clk => bit_counter_right[5].CLK
 clk => bit_counter_right[6].CLK
 clk => bit_counter_right[7].CLK
 clk => current_out.CLK
-clk => clk_out~reg0.CLK
 clk => data_out~reg0.CLK
 clk => busy_left~reg0.CLK
 clk => busy_right~reg0.CLK
@@ -548,6 +548,7 @@ clk => counter_size[4].CLK
 clk => counter_size[5].CLK
 clk => counter_size[6].CLK
 clk => counter_size[7].CLK
+clk => clk_out.DATAIN
 clk => state~1.DATAIN
 sample_left[0] => sample_left_r.DATAA
 sample_left[0] => sample_left_r.DATAB
@@ -688,13 +689,12 @@ rst => bit_counter_right[4].ENA
 rst => bit_counter_right[5].ENA
 rst => bit_counter_right[6].ENA
 rst => bit_counter_right[7].ENA
-rst => clk_out~reg0.ENA
 rst => busy_left~reg0.ENA
 rst => busy_right~reg0.ENA
 busy_right <= busy_right~reg0.DB_MAX_OUTPUT_PORT_TYPE
 busy_left <= busy_left~reg0.DB_MAX_OUTPUT_PORT_TYPE
 word_select <= current_out.DB_MAX_OUTPUT_PORT_TYPE
 data_out <= data_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= clk.DB_MAX_OUTPUT_PORT_TYPE
 
 

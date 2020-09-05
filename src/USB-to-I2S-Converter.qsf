@@ -87,8 +87,9 @@ set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_location_assignment PIN_M2 -to fpga_clk
-set_location_assignment PIN_N6 -to rst
 set_location_assignment PIN_C16 -to I2S_clk_out
 set_location_assignment PIN_B16 -to I2S_data_out
 set_location_assignment PIN_C15 -to I2S_word_select
+set_location_assignment PIN_N6 -to nrst
+set_location_assignment PIN_D16 -to audio_clk
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

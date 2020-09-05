@@ -1,4 +1,4 @@
-Fitter Status : Successful - Fri Sep 04 18:15:26 2020
+Fitter Status : Successful - Sat Sep 05 19:05:26 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : USB-to-I2S-Converter
 Top-level Entity Name : top
@@ -9,7 +9,7 @@ Total logic elements : 114 / 24,624 ( < 1 % )
     Total combinational functions : 114 / 24,624 ( < 1 % )
     Dedicated logic registers : 82 / 24,624 ( < 1 % )
 Total registers : 82
-Total pins : 27 / 151 ( 18 % )
+Total pins : 28 / 151 ( 19 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

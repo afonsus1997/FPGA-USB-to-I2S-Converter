@@ -1,5 +1,5 @@
 Analysis & Synthesis report for USB-to-I2S-Converter
-Fri Sep 04 18:15:19 2020
+Sat Sep 05 19:05:19 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -61,7 +61,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 04 18:15:19 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Sep 05 19:05:19 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; USB-to-I2S-Converter                        ;
 ; Top-level Entity Name              ; top                                         ;
@@ -70,7 +70,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 114                                         ;
 ;     Dedicated logic registers      ; 82                                          ;
 ; Total registers                    ; 82                                          ;
-; Total pins                         ; 27                                          ;
+; Total pins                         ; 28                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -170,37 +170,37 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
-; top.v                            ; yes             ; User Verilog HDL File        ; F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v                   ;         ;
-; sample_generator.v               ; yes             ; User Verilog HDL File        ; F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_generator.v      ;         ;
-; audio_clock_mux.v                ; yes             ; User Verilog HDL File        ; F:/Documents/GitHub/FPG USB to I2S Converter/src/audio_clock_mux.v       ;         ;
-; sample_processor.v               ; yes             ; User Verilog HDL File        ; F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v      ;         ;
-; PLL.v                            ; yes             ; User Wizard-Generated File   ; F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v                   ;         ;
-; I2S_shift_register.v             ; yes             ; User Verilog HDL File        ; F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v    ;         ;
-; PLL2.v                           ; yes             ; User Wizard-Generated File   ; F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v                  ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf        ;         ;
-; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc    ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
-; db/pll_altpll1.v                 ; yes             ; Auto-Generated Megafunction  ; F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v        ;         ;
-; db/pll2_altpll.v                 ; yes             ; Auto-Generated Megafunction  ; F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll2_altpll.v        ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
+; top.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v                ;         ;
+; sample_generator.v               ; yes             ; User Verilog HDL File        ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_generator.v   ;         ;
+; audio_clock_mux.v                ; yes             ; User Verilog HDL File        ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/audio_clock_mux.v    ;         ;
+; sample_processor.v               ; yes             ; User Verilog HDL File        ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v   ;         ;
+; PLL.v                            ; yes             ; User Wizard-Generated File   ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL.v                ;         ;
+; I2S_shift_register.v             ; yes             ; User Verilog HDL File        ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v ;         ;
+; PLL2.v                           ; yes             ; User Wizard-Generated File   ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL2.v               ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf                           ;         ;
+; aglobal201.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                       ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_pll.inc                      ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratixii_pll.inc                    ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/cycloneii_pll.inc                    ;         ;
+; db/pll_altpll1.v                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll_altpll1.v     ;         ;
+; db/pll2_altpll.v                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll2_altpll.v     ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------+
@@ -224,7 +224,7 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 82                                                                           ;
 ;     -- I/O registers                        ; 0                                                                            ;
 ;                                             ;                                                                              ;
-; I/O pins                                    ; 27                                                                           ;
+; I/O pins                                    ; 28                                                                           ;
 ;                                             ;                                                                              ;
 ; Embedded Multiplier 9-bit elements          ; 0                                                                            ;
 ;                                             ;                                                                              ;
@@ -232,9 +232,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1                                                                            ;
 ;                                             ;                                                                              ;
 ; Maximum fan-out node                        ; PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 83                                                                           ;
-; Total fan-out                               ; 603                                                                          ;
-; Average fan-out                             ; 2.40                                                                         ;
+; Maximum fan-out                             ; 84                                                                           ;
+; Total fan-out                               ; 605                                                                          ;
+; Average fan-out                             ; 2.39                                                                         ;
 +---------------------------------------------+------------------------------------------------------------------------------+
 
 
@@ -243,7 +243,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                              ; Entity Name      ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------+------------------+--------------+
-; |top                                    ; 114 (1)             ; 82 (0)                    ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |top                                                             ; top              ; work         ;
+; |top                                    ; 114 (1)             ; 82 (0)                    ; 0           ; 0            ; 0       ; 0         ; 28   ; 0            ; |top                                                             ; top              ; work         ;
 ;    |PLL:pll1|                           ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|PLL:pll1                                                    ; PLL              ; work         ;
 ;       |altpll:altpll_component|         ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|PLL:pll1|altpll:altpll_component                            ; altpll           ; work         ;
 ;          |PLL_altpll1:auto_generated|   ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated ; PLL_altpll1      ; work         ;
@@ -281,14 +281,12 @@ Encoding Type:  One-Hot
 +-------------------------------------------------------+----------------------------------------+
 ; Register name                                         ; Reason for Removal                     ;
 +-------------------------------------------------------+----------------------------------------+
-; shift_register:I2S_shift_register1|counter_size[0]    ; Stuck at GND due to stuck port data_in ;
-; shift_register:I2S_shift_register1|clk_out            ; Stuck at GND due to stuck port data_in ;
-; shift_register:I2S_shift_register1|counter_size[1..3] ; Stuck at GND due to stuck port data_in ;
+; shift_register:I2S_shift_register1|counter_size[0..3] ; Stuck at GND due to stuck port data_in ;
 ; shift_register:I2S_shift_register1|counter_size[4]    ; Stuck at VCC due to stuck port data_in ;
 ; shift_register:I2S_shift_register1|counter_size[5..7] ; Stuck at GND due to stuck port data_in ;
 ; shift_register:I2S_shift_register1|state~4            ; Lost fanout                            ;
 ; shift_register:I2S_shift_register1|state~5            ; Lost fanout                            ;
-; Total Number of Removed Registers = 11                ;                                        ;
+; Total Number of Removed Registers = 10                ;                                        ;
 +-------------------------------------------------------+----------------------------------------+
 
 
@@ -1242,7 +1240,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 27                          ;
+; boundary_port         ; 28                          ;
 ; cycloneiii_ff         ; 82                          ;
 ;     ENA               ; 16                          ;
 ;     ENA SCLR          ; 14                          ;
@@ -1270,7 +1268,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1280,184 +1278,185 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Sep 04 18:15:03 2020
+    Info: Processing started: Sat Sep 05 19:05:00 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off USB-to-I2S-Converter -c USB-to-I2S-Converter
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file top.v
-    Info (12023): Found entity 1: top File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 6
+    Info (12023): Found entity 1: top File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file sample_generator.v
-    Info (12023): Found entity 1: sample_generator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_generator.v Line: 3
+    Info (12023): Found entity 1: sample_generator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_generator.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file audio_clock_mux.v
-    Info (12023): Found entity 1: audio_clock_mux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/audio_clock_mux.v Line: 4
+    Info (12023): Found entity 1: audio_clock_mux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/audio_clock_mux.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file sample_processor_tb.v
-    Info (12023): Found entity 1: I2S_shift_register_tb File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor_tb.v Line: 3
+    Info (12023): Found entity 1: I2S_shift_register_tb File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor_tb.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file sample_processor.v
-    Info (12023): Found entity 1: sample_processor File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 1
+    Info (12023): Found entity 1: sample_processor File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/my_nios.v
-    Info (12023): Found entity 1: my_nios File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/my_nios.v Line: 6
+    Info (12023): Found entity 1: my_nios File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/my_nios.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_reset_controller.v
-    Info (12023): Found entity 1: altera_reset_controller File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_reset_controller.v Line: 42
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_reset_synchronizer.v
-    Info (12023): Found entity 1: altera_reset_synchronizer File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_reset_synchronizer.v Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_irq_mapper.sv
-    Info (12023): Found entity 1: my_nios_irq_mapper File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_irq_mapper.sv Line: 31
+    Info (12023): Found entity 1: my_nios_irq_mapper File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_irq_mapper.sv Line: 31
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0.v
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0.v Line: 9
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006.v
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006.v Line: 9
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv Line: 66
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_006_error_adapter_0.sv Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter.v
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter.v Line: 9
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv Line: 66
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_width_adapter.sv
-    Info (12023): Found entity 1: altera_merlin_width_adapter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_width_adapter.sv Line: 25
+    Info (12023): Found entity 1: altera_merlin_width_adapter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_width_adapter.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_address_alignment.sv
-    Info (12023): Found entity 1: altera_merlin_address_alignment File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_address_alignment.sv Line: 26
+    Info (12023): Found entity 1: altera_merlin_address_alignment File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_address_alignment.sv Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_uncompressor.sv
-    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_uncompressor.sv Line: 40
+    Info (12023): Found entity 1: altera_merlin_burst_uncompressor File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_uncompressor.sv Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux_001.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux_001 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux_001.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux_001 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux_001.sv Line: 51
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv
-    Info (12023): Found entity 1: altera_merlin_arbitrator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 103
-    Info (12023): Found entity 2: altera_merlin_arb_adder File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 228
+    Info (12023): Found entity 1: altera_merlin_arbitrator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 103
+    Info (12023): Found entity 2: altera_merlin_arb_adder File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_arbitrator.sv Line: 228
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_mux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_mux.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux_002.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux_002 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux_002.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux_002 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux_002.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_rsp_demux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_rsp_demux.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux_002.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux_002 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux_002.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux_002 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux_002.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux.sv Line: 51
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_mux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_mux.sv Line: 51
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux_001.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux_001 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux_001.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux_001 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux_001.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux.sv Line: 43
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_cmd_demux File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_cmd_demux.sv Line: 43
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter.sv Line: 21
+    Info (12023): Found entity 1: altera_merlin_burst_adapter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter.sv Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_uncompressed_only File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv Line: 39
 Info (12021): Found 5 design units, including 5 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
-    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
-    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
-    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
-    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_burstwrap_increment File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 40
+    Info (12023): Found entity 2: altera_merlin_burst_adapter_adder File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 55
+    Info (12023): Found entity 3: altera_merlin_burst_adapter_subtractor File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 77
+    Info (12023): Found entity 4: altera_merlin_burst_adapter_min File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 98
+    Info (12023): Found entity 5: altera_merlin_burst_adapter_13_1 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv Line: 264
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_burst_adapter_new.sv
-    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_new.sv Line: 25
+    Info (12023): Found entity 1: altera_merlin_burst_adapter_new File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_burst_adapter_new.sv Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_incr_burst_converter.sv
-    Info (12023): Found entity 1: altera_incr_burst_converter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_incr_burst_converter.sv Line: 28
+    Info (12023): Found entity 1: altera_incr_burst_converter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_incr_burst_converter.sv Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_wrap_burst_converter.sv
-    Info (12023): Found entity 1: altera_wrap_burst_converter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_wrap_burst_converter.sv Line: 27
+    Info (12023): Found entity 1: altera_wrap_burst_converter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_wrap_burst_converter.sv Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_default_burst_converter.sv
-    Info (12023): Found entity 1: altera_default_burst_converter File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_default_burst_converter.sv Line: 30
+    Info (12023): Found entity 1: altera_default_burst_converter File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_default_burst_converter.sv Line: 30
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
-    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_stage File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_stage.sv Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_avalon_st_pipeline_base.v
-    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
+    Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_008_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_008 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_008_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_008 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_008.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_004_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_004 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_004_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_004 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_004.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_002_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_002 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_002_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_002 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_002.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_001_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_001 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_001_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router_001 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router_001.sv Line: 84
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv
-    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_default_decode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 45
-    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 84
+    Info (12023): Found entity 1: my_nios_mm_interconnect_0_router_default_decode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 45
+    Info (12023): Found entity 2: my_nios_mm_interconnect_0_router File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_mm_interconnect_0_router.sv Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_avalon_sc_fifo.v
-    Info (12023): Found entity 1: altera_avalon_sc_fifo File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
+    Info (12023): Found entity 1: altera_avalon_sc_fifo File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_avalon_sc_fifo.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_slave_agent.sv
-    Info (12023): Found entity 1: altera_merlin_slave_agent File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_agent.sv Line: 34
+    Info (12023): Found entity 1: altera_merlin_slave_agent File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_agent.sv Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_master_agent.sv
-    Info (12023): Found entity 1: altera_merlin_master_agent File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_agent.sv Line: 28
+    Info (12023): Found entity 1: altera_merlin_master_agent File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_agent.sv Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_slave_translator.sv
-    Info (12023): Found entity 1: altera_merlin_slave_translator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_translator.sv Line: 35
+    Info (12023): Found entity 1: altera_merlin_slave_translator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_slave_translator.sv Line: 35
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/altera_merlin_master_translator.sv
-    Info (12023): Found entity 1: altera_merlin_master_translator File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_translator.sv Line: 32
+    Info (12023): Found entity 1: altera_merlin_master_translator File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/altera_merlin_master_translator.sv Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_timer_0.v
-    Info (12023): Found entity 1: my_nios_timer_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_timer_0.v Line: 21
+    Info (12023): Found entity 1: my_nios_timer_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_timer_0.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_sysid_qsys_0.v
-    Info (12023): Found entity 1: my_nios_sysid_qsys_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_sysid_qsys_0.v Line: 34
+    Info (12023): Found entity 1: my_nios_sysid_qsys_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_sysid_qsys_0.v Line: 34
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_pio_1.v
-    Info (12023): Found entity 1: my_nios_pio_1 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_pio_1.v Line: 21
+    Info (12023): Found entity 1: my_nios_pio_1 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_pio_1.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_pio_0.v
-    Info (12023): Found entity 1: my_nios_pio_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_pio_0.v Line: 21
+    Info (12023): Found entity 1: my_nios_pio_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_pio_0.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_onchip_memory2_0.v
-    Info (12023): Found entity 1: my_nios_onchip_memory2_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_onchip_memory2_0.v Line: 21
+    Info (12023): Found entity 1: my_nios_onchip_memory2_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_onchip_memory2_0.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0.v Line: 9
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0.v Line: 9
 Info (12021): Found 21 design units, including 21 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_register_bank_a_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 21
-    Info (12023): Found entity 2: my_nios_nios2_gen2_0_cpu_register_bank_b_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 87
-    Info (12023): Found entity 3: my_nios_nios2_gen2_0_cpu_nios2_oci_debug File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 153
-    Info (12023): Found entity 4: my_nios_nios2_gen2_0_cpu_nios2_oci_break File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 295
-    Info (12023): Found entity 5: my_nios_nios2_gen2_0_cpu_nios2_oci_xbrk File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 588
-    Info (12023): Found entity 6: my_nios_nios2_gen2_0_cpu_nios2_oci_dbrk File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 795
-    Info (12023): Found entity 7: my_nios_nios2_gen2_0_cpu_nios2_oci_itrace File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 982
-    Info (12023): Found entity 8: my_nios_nios2_gen2_0_cpu_nios2_oci_td_mode File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1115
-    Info (12023): Found entity 9: my_nios_nios2_gen2_0_cpu_nios2_oci_dtrace File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1183
-    Info (12023): Found entity 10: my_nios_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1265
-    Info (12023): Found entity 11: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1337
-    Info (12023): Found entity 12: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1380
-    Info (12023): Found entity 13: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1427
-    Info (12023): Found entity 14: my_nios_nios2_gen2_0_cpu_nios2_oci_pib File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1913
-    Info (12023): Found entity 15: my_nios_nios2_gen2_0_cpu_nios2_oci_im File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1936
-    Info (12023): Found entity 16: my_nios_nios2_gen2_0_cpu_nios2_performance_monitors File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2006
-    Info (12023): Found entity 17: my_nios_nios2_gen2_0_cpu_nios2_avalon_reg File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2023
-    Info (12023): Found entity 18: my_nios_nios2_gen2_0_cpu_ociram_sp_ram_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2116
-    Info (12023): Found entity 19: my_nios_nios2_gen2_0_cpu_nios2_ocimem File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2181
-    Info (12023): Found entity 20: my_nios_nios2_gen2_0_cpu_nios2_oci File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2362
-    Info (12023): Found entity 21: my_nios_nios2_gen2_0_cpu File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2834
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_register_bank_a_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 21
+    Info (12023): Found entity 2: my_nios_nios2_gen2_0_cpu_register_bank_b_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 87
+    Info (12023): Found entity 3: my_nios_nios2_gen2_0_cpu_nios2_oci_debug File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 153
+    Info (12023): Found entity 4: my_nios_nios2_gen2_0_cpu_nios2_oci_break File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 295
+    Info (12023): Found entity 5: my_nios_nios2_gen2_0_cpu_nios2_oci_xbrk File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 588
+    Info (12023): Found entity 6: my_nios_nios2_gen2_0_cpu_nios2_oci_dbrk File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 795
+    Info (12023): Found entity 7: my_nios_nios2_gen2_0_cpu_nios2_oci_itrace File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 982
+    Info (12023): Found entity 8: my_nios_nios2_gen2_0_cpu_nios2_oci_td_mode File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1115
+    Info (12023): Found entity 9: my_nios_nios2_gen2_0_cpu_nios2_oci_dtrace File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1183
+    Info (12023): Found entity 10: my_nios_nios2_gen2_0_cpu_nios2_oci_compute_input_tm_cnt File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1265
+    Info (12023): Found entity 11: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_wrptr_inc File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1337
+    Info (12023): Found entity 12: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo_cnt_inc File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1380
+    Info (12023): Found entity 13: my_nios_nios2_gen2_0_cpu_nios2_oci_fifo File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1427
+    Info (12023): Found entity 14: my_nios_nios2_gen2_0_cpu_nios2_oci_pib File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1913
+    Info (12023): Found entity 15: my_nios_nios2_gen2_0_cpu_nios2_oci_im File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 1936
+    Info (12023): Found entity 16: my_nios_nios2_gen2_0_cpu_nios2_performance_monitors File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2006
+    Info (12023): Found entity 17: my_nios_nios2_gen2_0_cpu_nios2_avalon_reg File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2023
+    Info (12023): Found entity 18: my_nios_nios2_gen2_0_cpu_ociram_sp_ram_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2116
+    Info (12023): Found entity 19: my_nios_nios2_gen2_0_cpu_nios2_ocimem File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2181
+    Info (12023): Found entity 20: my_nios_nios2_gen2_0_cpu_nios2_oci File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2362
+    Info (12023): Found entity 21: my_nios_nios2_gen2_0_cpu File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu.v Line: 2834
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_sysclk.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_sysclk File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_sysclk.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_sysclk File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_sysclk.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_tck.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_tck File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_tck.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_tck File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_tck.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_wrapper.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_wrapper File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_wrapper.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_debug_slave_wrapper File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_debug_slave_wrapper.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_test_bench.v
-    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_test_bench File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_test_bench.v Line: 21
+    Info (12023): Found entity 1: my_nios_nios2_gen2_0_cpu_test_bench File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_nios2_gen2_0_cpu_test_bench.v Line: 21
 Info (12021): Found 2 design units, including 2 entities, in source file nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v
-    Info (12023): Found entity 1: my_nios_new_sdram_controller_0_input_efifo_module File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 21
-    Info (12023): Found entity 2: my_nios_new_sdram_controller_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 159
+    Info (12023): Found entity 1: my_nios_new_sdram_controller_0_input_efifo_module File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 21
+    Info (12023): Found entity 2: my_nios_new_sdram_controller_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 159
 Info (12021): Found 5 design units, including 5 entities, in source file nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v
-    Info (12023): Found entity 1: my_nios_jtag_uart_0_sim_scfifo_w File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 21
-    Info (12023): Found entity 2: my_nios_jtag_uart_0_scfifo_w File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 78
-    Info (12023): Found entity 3: my_nios_jtag_uart_0_sim_scfifo_r File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 164
-    Info (12023): Found entity 4: my_nios_jtag_uart_0_scfifo_r File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 243
-    Info (12023): Found entity 5: my_nios_jtag_uart_0 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 331
+    Info (12023): Found entity 1: my_nios_jtag_uart_0_sim_scfifo_w File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 21
+    Info (12023): Found entity 2: my_nios_jtag_uart_0_scfifo_w File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 78
+    Info (12023): Found entity 3: my_nios_jtag_uart_0_sim_scfifo_r File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 164
+    Info (12023): Found entity 4: my_nios_jtag_uart_0_scfifo_r File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 243
+    Info (12023): Found entity 5: my_nios_jtag_uart_0 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_jtag_uart_0.v Line: 331
 Info (12021): Found 1 design units, including 1 entities, in source file usb-to-i2s-converter.bdf
     Info (12023): Found entity 1: USB-to-I2S-Converter
 Info (12021): Found 1 design units, including 1 entities, in source file fifo_manager.v
-    Info (12023): Found entity 1: FIFO_Manager File: F:/Documents/GitHub/FPG USB to I2S Converter/src/FIFO_Manager.v Line: 5
+    Info (12023): Found entity 1: FIFO_Manager File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/FIFO_Manager.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: PLL File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 40
+    Info (12023): Found entity 1: PLL File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file i2s_shift_register.v
-    Info (12023): Found entity 1: shift_register File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 1
+    Info (12023): Found entity 1: shift_register File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll2.v
-    Info (12023): Found entity 1: PLL2 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 40
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(318): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 318
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(328): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 328
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(338): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 338
-Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(682): conditional expression evaluates to a constant File: F:/Documents/GitHub/FPG USB to I2S Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 682
+    Info (12023): Found entity 1: PLL2 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL2.v Line: 40
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(318): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 318
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(328): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 328
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(338): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 338
+Warning (10037): Verilog HDL or VHDL warning at my_nios_new_sdram_controller_0.v(682): conditional expression evaluates to a constant File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/nios_custom/synthesis/submodules/my_nios_new_sdram_controller_0.v Line: 682
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Warning (10034): Output port "LED" at top.v(13) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-Warning (10034): Output port "FIFO_RD" at top.v(14) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 14
-Warning (10034): Output port "FIFO_WR" at top.v(15) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 15
-Warning (10034): Output port "FIFO_RST" at top.v(16) has no driver File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 16
-Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 51
-Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll1|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 99
-Info (12130): Elaborated megafunction instantiation "PLL:pll1|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 99
-Info (12133): Instantiated megafunction "PLL:pll1|altpll:altpll_component" with the following parameter: File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL.v Line: 99
+Warning (10034): Output port "LED" at top.v(13) has no driver File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+Warning (10034): Output port "FIFO_RD" at top.v(14) has no driver File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 14
+Warning (10034): Output port "FIFO_WR" at top.v(15) has no driver File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 15
+Warning (10034): Output port "FIFO_RST" at top.v(16) has no driver File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 16
+Warning (10034): Output port "audio_clk" at top.v(17) has no driver File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 17
+Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 52
+Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll1|altpll:altpll_component" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL.v Line: 99
+Info (12130): Elaborated megafunction instantiation "PLL:pll1|altpll:altpll_component" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL.v Line: 99
+Info (12133): Instantiated megafunction "PLL:pll1|altpll:altpll_component" with the following parameter: File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL.v Line: 99
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "6"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1521,12 +1520,12 @@ Info (12133): Instantiated megafunction "PLL:pll1|altpll:altpll_component" with 
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll1.v
-    Info (12023): Found entity 1: PLL_altpll1 File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 30
+    Info (12023): Found entity 1: PLL_altpll1 File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll_altpll1.v Line: 30
 Info (12128): Elaborating entity "PLL_altpll1" for hierarchy "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "PLL2" for hierarchy "PLL2:pll2" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 56
-Info (12128): Elaborating entity "altpll" for hierarchy "PLL2:pll2|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 91
-Info (12130): Elaborated megafunction instantiation "PLL2:pll2|altpll:altpll_component" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 91
-Info (12133): Instantiated megafunction "PLL2:pll2|altpll:altpll_component" with the following parameter: File: F:/Documents/GitHub/FPG USB to I2S Converter/src/PLL2.v Line: 91
+Info (12128): Elaborating entity "PLL2" for hierarchy "PLL2:pll2" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 57
+Info (12128): Elaborating entity "altpll" for hierarchy "PLL2:pll2|altpll:altpll_component" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL2.v Line: 91
+Info (12130): Elaborated megafunction instantiation "PLL2:pll2|altpll:altpll_component" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL2.v Line: 91
+Info (12133): Instantiated megafunction "PLL2:pll2|altpll:altpll_component" with the following parameter: File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/PLL2.v Line: 91
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "125"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1582,87 +1581,87 @@ Info (12133): Instantiated megafunction "PLL2:pll2|altpll:altpll_component" with
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll2_altpll.v
-    Info (12023): Found entity 1: PLL2_altpll File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll2_altpll.v Line: 30
+    Info (12023): Found entity 1: PLL2_altpll File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll2_altpll.v Line: 30
 Info (12128): Elaborating entity "PLL2_altpll" for hierarchy "PLL2:pll2|altpll:altpll_component|PLL2_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "audio_clock_mux" for hierarchy "audio_clock_mux:clk_mux" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 65
-Info (12128): Elaborating entity "sample_generator" for hierarchy "sample_generator:sample_generator1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 78
-Info (12128): Elaborating entity "sample_processor" for hierarchy "sample_processor:sample_processor1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 88
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(26): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 26
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(27): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 27
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(28): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 28
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(29): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 29
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(30): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 30
-Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(25): incomplete case statement has no default case item File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(25): inferring latch(es) for variable "n_blocks_per_sample", which holds its previous value in one or more paths through the always construct File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(35): incomplete case statement has no default case item File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(35): inferring latch(es) for variable "sample_mask", which holds its previous value in one or more paths through the always construct File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Warning (10230): Verilog HDL assignment warning at sample_processor.v(60): truncated value with size 32 to match size of target (4) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 60
-Info (10041): Inferred latch for "sample_mask[0]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[1]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[2]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[3]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[4]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[5]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[6]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[7]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[8]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[9]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[10]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[11]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[12]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[13]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[14]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[15]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[16]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[17]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[18]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[19]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[20]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[21]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[22]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[23]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[24]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[25]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[26]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[27]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[28]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[29]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[30]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "sample_mask[31]" at sample_processor.v(35) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 35
-Info (10041): Inferred latch for "n_blocks_per_sample[0]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Info (10041): Inferred latch for "n_blocks_per_sample[1]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Info (10041): Inferred latch for "n_blocks_per_sample[2]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Info (10041): Inferred latch for "n_blocks_per_sample[3]" at sample_processor.v(25) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:I2S_shift_register1" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 103
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(78): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 78
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(79): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 79
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(81): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 81
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(82): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 82
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(92): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 92
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(95): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 95
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(96): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 96
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(105): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 105
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(108): truncated value with size 32 to match size of target (1) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 108
-Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(109): truncated value with size 32 to match size of target (8) File: F:/Documents/GitHub/FPG USB to I2S Converter/src/I2S_shift_register.v Line: 109
-Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[0]" is permanently enabled File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
-Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[1]" is permanently enabled File: F:/Documents/GitHub/FPG USB to I2S Converter/src/sample_processor.v Line: 25
+Info (12128): Elaborating entity "audio_clock_mux" for hierarchy "audio_clock_mux:clk_mux" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 66
+Info (12128): Elaborating entity "sample_generator" for hierarchy "sample_generator:sample_generator1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 79
+Info (12128): Elaborating entity "sample_processor" for hierarchy "sample_processor:sample_processor1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 89
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(26): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 26
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(27): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 27
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(28): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 28
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(29): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 29
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(30): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 30
+Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(25): incomplete case statement has no default case item File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(25): inferring latch(es) for variable "n_blocks_per_sample", which holds its previous value in one or more paths through the always construct File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Warning (10270): Verilog HDL Case Statement warning at sample_processor.v(35): incomplete case statement has no default case item File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Warning (10240): Verilog HDL Always Construct warning at sample_processor.v(35): inferring latch(es) for variable "sample_mask", which holds its previous value in one or more paths through the always construct File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Warning (10230): Verilog HDL assignment warning at sample_processor.v(60): truncated value with size 32 to match size of target (4) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 60
+Info (10041): Inferred latch for "sample_mask[0]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[1]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[2]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[3]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[4]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[5]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[6]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[7]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[8]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[9]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[10]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[11]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[12]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[13]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[14]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[15]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[16]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[17]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[18]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[19]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[20]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[21]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[22]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[23]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[24]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[25]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[26]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[27]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[28]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[29]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[30]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "sample_mask[31]" at sample_processor.v(35) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 35
+Info (10041): Inferred latch for "n_blocks_per_sample[0]" at sample_processor.v(25) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Info (10041): Inferred latch for "n_blocks_per_sample[1]" at sample_processor.v(25) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Info (10041): Inferred latch for "n_blocks_per_sample[2]" at sample_processor.v(25) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Info (10041): Inferred latch for "n_blocks_per_sample[3]" at sample_processor.v(25) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Info (12128): Elaborating entity "shift_register" for hierarchy "shift_register:I2S_shift_register1" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 104
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(79): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 79
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(80): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 80
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(82): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 82
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(83): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 83
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(93): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 93
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(96): truncated value with size 32 to match size of target (1) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 96
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(97): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 97
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(106): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 106
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(109): truncated value with size 32 to match size of target (1) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 109
+Warning (10230): Verilog HDL assignment warning at I2S_shift_register.v(110): truncated value with size 32 to match size of target (8) File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/I2S_shift_register.v Line: 110
+Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[0]" is permanently enabled File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
+Warning (14026): LATCH primitive "sample_processor:sample_processor1|n_blocks_per_sample[1]" is permanently enabled File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/sample_processor.v Line: 25
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "PLL2:pll2|altpll:altpll_component|PLL2_altpll:auto_generated|wire_pll1_clk[0]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll2_altpll.v Line: 78
+        Warning (14320): Synthesized away node "PLL2:pll2|altpll:altpll_component|PLL2_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll2_altpll.v Line: 78
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LED[0]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[1]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[2]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[3]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[4]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[5]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[6]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "LED[7]" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 13
-    Warning (13410): Pin "FIFO_RD" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 14
-    Warning (13410): Pin "FIFO_WR" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 15
-    Warning (13410): Pin "FIFO_RST" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 16
-    Warning (13410): Pin "I2S_clk_out" is stuck at GND File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 22
+    Warning (13410): Pin "LED[0]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[1]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[2]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[3]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[4]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[5]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[6]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "LED[7]" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 13
+    Warning (13410): Pin "FIFO_RD" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 14
+    Warning (13410): Pin "FIFO_WR" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 15
+    Warning (13410): Pin "FIFO_RST" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 16
+    Warning (13410): Pin "audio_clk" is stuck at GND File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 17
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 23 assignments for entity "altera_avalon_sc_fifo" -- entity does not exist in design
@@ -1702,38 +1701,38 @@ Warning (20013): Ignored 22 assignments for entity "my_nios_pio_0" -- entity doe
 Warning (20013): Ignored 23 assignments for entity "my_nios_pio_1" -- entity does not exist in design
 Warning (20013): Ignored 10 assignments for entity "my_nios_sysid_qsys_0" -- entity does not exist in design
 Warning (20013): Ignored 26 assignments for entity "my_nios_timer_0" -- entity does not exist in design
-Info (144001): Generated suppressed messages file F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/USB-to-I2S-Converter.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/output_files/USB-to-I2S-Converter.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (15897): PLL "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|pll1" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 44
-Warning (15899): PLL "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|pll1" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: F:/Documents/GitHub/FPG USB to I2S Converter/src/db/pll_altpll1.v Line: 44
+Warning (15897): PLL "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|pll1" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll_altpll1.v Line: 44
+Warning (15899): PLL "PLL:pll1|altpll:altpll_component|PLL_altpll1:auto_generated|pll1" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/db/pll_altpll1.v Line: 44
 Warning (21074): Design contains 11 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "FIFO_IO[0]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[1]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[2]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[3]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[4]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[5]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[6]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_IO[7]" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 9
-    Warning (15610): No output dependent on input pin "FIFO_RXF" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 10
-    Warning (15610): No output dependent on input pin "FIFO_TXE" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 11
-    Warning (15610): No output dependent on input pin "FIFO_PWREN" File: F:/Documents/GitHub/FPG USB to I2S Converter/src/top.v Line: 12
-Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "FIFO_IO[0]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[1]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[2]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[3]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[4]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[5]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[6]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_IO[7]" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 9
+    Warning (15610): No output dependent on input pin "FIFO_RXF" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 10
+    Warning (15610): No output dependent on input pin "FIFO_TXE" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 11
+    Warning (15610): No output dependent on input pin "FIFO_PWREN" File: C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/top.v Line: 12
+Info (21057): Implemented 143 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 14 output pins
+    Info (21059): Implemented 15 output pins
     Info (21061): Implemented 114 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 99 warnings
-    Info: Peak virtual memory: 4778 megabytes
-    Info: Processing ended: Fri Sep 04 18:15:19 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 100 warnings
+    Info: Peak virtual memory: 4771 megabytes
+    Info: Processing ended: Sat Sep 05 19:05:19 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:40
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/USB-to-I2S-Converter.map.smsg.
+The suppressed messages can be found in C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/output_files/USB-to-I2S-Converter.map.smsg.
 
 

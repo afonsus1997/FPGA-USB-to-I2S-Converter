@@ -14,6 +14,7 @@ module top (
 	 output FIFO_RD,
 	 output FIFO_WR,
 	 output FIFO_RST,
+	 output audio_clk,
 	 output I2S_word_select,
 	 output I2S_data_out,
 	 output I2S_clk_out

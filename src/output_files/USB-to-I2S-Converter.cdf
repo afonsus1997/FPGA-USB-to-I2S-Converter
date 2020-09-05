@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10CL025YU256) Path("F:/Documents/GitHub/FPG USB to I2S Converter/src/output_files/") File("USB-to-I2S-Converter.sof") MfrSpec(OpMask(1));
+		Device PartName(10CL025YU256) Path("C:/Users/Afonso Muralha/Documents/GitHub/FPGA-USB-to-I2S-Converter/src/output_files/") File("USB-to-I2S-Converter.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

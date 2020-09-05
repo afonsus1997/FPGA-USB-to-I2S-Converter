@@ -9,7 +9,7 @@ module shift_register(
 	output reg busy_left,
 	output word_select,
 	output reg data_out,
-	output reg clk_out
+	output clk_out
 	);
 	
 	parameter IDLE_s=0, START_s=1, RUNNING_s=3;
@@ -26,6 +26,7 @@ module shift_register(
 	reg current_out;
 	
 	assign word_select = current_out;
+	assign clk_out = clk;
 	
 	always @ (posedge clk) begin
 		case(sample_size)
@@ -70,7 +71,7 @@ module shift_register(
 		busy_left <= 0;
 //		word_select <= 0;
 		data_out <= 0;
-		clk_out <= 0;
+//		clk_out <= 0;
 		current_out <= 0;
 		end
 		
