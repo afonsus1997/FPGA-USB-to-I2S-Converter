@@ -1,4 +1,4 @@
-# FPG USB to I2S Converter
+# FPGA USB to I2S Converter
 
 ### Useful information
 
